@@ -76,7 +76,7 @@ namespace InvoiceCoreAPI.Controllers
                     Error = new ApiError
                     {
                         Code = "500",
-                        Details = ex.Message
+                        Details = ex.Message 
                     }
                 });
             }

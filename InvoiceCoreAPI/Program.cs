@@ -12,6 +12,17 @@ builder.Services.AddScoped<IItemMasterService, ItemMasterService>();
 builder.Services.AddAutoMapper(typeof(ItemMasterProfile));
 
 // Add services to the container.
+//added course
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -26,6 +37,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("AllowAngular");
 
 app.UseAuthorization();
 
