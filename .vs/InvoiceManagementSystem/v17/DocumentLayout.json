@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\CoreAPI\\InvoiceManagementSystem\\InvoiceCoreAPI_Git\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\projects\\coreapi\\invoicemanagementsystem\\invoicecoreapi_git\\invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\CoreAPI\\InvoiceManagementSystem\\InvoiceCoreAPI_Git\\InvoiceCoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Program.cs",
+              "ToolTip": "C:\\Projects\\CoreAPI\\InvoiceManagementSystem\\InvoiceCoreAPI_Git\\InvoiceCoreAPI\\Program.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:02:03.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

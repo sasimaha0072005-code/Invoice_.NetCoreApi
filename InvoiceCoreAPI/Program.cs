@@ -12,6 +12,7 @@ builder.Services.AddScoped<IItemMasterService, ItemMasterService>();
 builder.Services.AddAutoMapper(typeof(ItemMasterProfile));
 
 // Add services to the container.
+//added course
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
