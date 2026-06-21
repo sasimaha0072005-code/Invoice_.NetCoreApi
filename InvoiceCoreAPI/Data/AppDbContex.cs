@@ -10,9 +10,11 @@ public class AppDbContext : DbContext
 
     public DbSet<Itemmaster> Itemmasters { get; set; }
     public DbSet<Category> Category { get; set; }
-
+    public DbSet<Users> Users { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
     }
+  
+
 }

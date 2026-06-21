@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\database\\invoicedbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\database\\invoicedbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\contracts\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\contracts\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\database\\invoicedbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\database\\invoicedbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceDbScript.sql ",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DataBase\\InvoiceDbScript.sql",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DataBase\\InvoiceDbScript.sql",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DataBase\\InvoiceDbScript.sql",
+              "RelativeToolTip": "InvoiceCoreAPI\\DataBase\\InvoiceDbScript.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-21T15:00:24.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Program.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T11:21:15.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsersRepository.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IUsersRepository.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Contracts\\IUsersRepository.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IUsersRepository.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Contracts\\IUsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T08:50:03.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\UsersDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\UsersDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T08:38:22.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "users.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Entities\\users.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Entities\\users.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Entities\\users.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Entities\\users.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T08:30:56.629Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
