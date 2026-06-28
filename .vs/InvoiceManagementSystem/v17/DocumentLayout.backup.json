@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\repositories\\categoryrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\repositories\\categoryrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\mapper\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\mapper\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\repositories\\customerrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\repositories\\customerrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\contracts\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\contracts\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\contracts\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\contracts\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryRepositories.cs",
-              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "RelativeToolTip": "InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwIoAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Program.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Program.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwJ8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T12:44:33.67Z",
+              "WhenOpened": "2026-06-28T05:38:19.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Contracts\\ICustomerService.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\ICustomerService.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Contracts\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:20:52.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerProfile.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Mapper\\CustomerProfile.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Mapper\\CustomerProfile.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Mapper\\CustomerProfile.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Mapper\\CustomerProfile.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA+wBIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:25:42.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerRepositories.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CustomerRepositories.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Repositories\\CustomerRepositories.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CustomerRepositories.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Repositories\\CustomerRepositories.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAgwLwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:29:53.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Services\\CustomerService.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:34:52.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:37:27.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Contracts\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\ICustomerRepository.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Contracts\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:20:23.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\CustomerDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\CustomerDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\CustomerDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:15:45.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContex.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:17:32.477Z",
               "EditorCaption": ""
             }
           ]
