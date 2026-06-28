@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\repositories\\categoryrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\repositories\\categoryrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\services\\vendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\services\\vendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\repositories\\vendorrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\repositories\\vendorrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\mapper\\vendorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\mapper\\vendorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\contracts\\ivendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\contracts\\ivendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\contracts\\ivendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\contracts\\ivendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\vendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\vendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\entities\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\entities\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\data\\appdbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoryRepositories.cs",
-              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "RelativeToolTip": "InvoiceCoreAPI\\Repositories\\CategoryRepositories.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwIoAAAAhAAAAAAAAAA==",
+              "Title": "VendorController.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\VendorController.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Controllers\\VendorController.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\VendorController.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Controllers\\VendorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYBAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T12:44:33.67Z",
+              "WhenOpened": "2026-06-28T12:01:00.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Program.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:59:25.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VendorProfile.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Mapper\\VendorProfile.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Mapper\\VendorProfile.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Mapper\\VendorProfile.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Mapper\\VendorProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:56:07.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendorService.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Services\\VendorService.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Services\\VendorService.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Services\\VendorService.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Services\\VendorService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAwwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:35:47.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendorRepositories.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\VendorRepositories.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Repositories\\VendorRepositories.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\VendorRepositories.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Repositories\\VendorRepositories.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:35:08.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IVendorService.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IVendorService.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Contracts\\IVendorService.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IVendorService.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Contracts\\IVendorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:33:30.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IVendorRepository.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IVendorRepository.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Contracts\\IVendorRepository.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Contracts\\IVendorRepository.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Contracts\\IVendorRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:32:52.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Entities\\Vendor.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Entities\\Vendor.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Entities\\Vendor.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Entities\\Vendor.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA1wFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:29:51.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VendorDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\VendorDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\VendorDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\VendorDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\VendorDto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA2wC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T11:30:28.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContex.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Data\\AppDbContex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:17:32.477Z",
               "EditorCaption": ""
             }
           ]
