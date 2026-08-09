@@ -13,16 +13,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepositories>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
+
+builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
 
 builder.Services.AddScoped<IItemMasterService, ItemMasterService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<IUsersService, UsersService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 builder.Services.AddAutoMapper(typeof(ItemMasterProfile));
 builder.Services.AddAutoMapper(typeof(CategoryProfile));
+builder.Services.AddAutoMapper(typeof(VendorProfile));
 builder.Services.AddAutoMapper(typeof(UsersProfile));
 builder.Services.AddAutoMapper(typeof(CustomerProfile));
 
@@ -55,7 +59,7 @@ builder.Services.AddAuthentication(options =>
 
 {
 
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; ;
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; 
 
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
