@@ -14,81 +14,134 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepositories>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
 builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
+
 builder.Services.AddScoped<IItemMasterService, ItemMasterService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+
 builder.Services.AddAutoMapper(typeof(ItemMasterProfile));
 builder.Services.AddAutoMapper(typeof(CategoryProfile));
 builder.Services.AddAutoMapper(typeof(UsersProfile));
+builder.Services.AddAutoMapper(typeof(CustomerProfile));
 
-// Add services to the container.
-//added course
+var AllowAngular = "_allowAngular";
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngular",
+    options.AddPolicy(name: AllowAngular,
         policy =>
         {
-            policy.AllowAnyOrigin()
+            policy.WithOrigins("http://localhost:4200")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
+                  
         });
+
 });
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
+
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "v2UJQxTrwUCqqJkehkxvSUZKQCX6gNmRWq7q1bWa3Jw=";
+
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "yourapiissuer";
 
-
 builder.Services.AddAuthentication(options =>
+
 {
+
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; ;
+
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
 }).AddJwtBearer(options =>
+
 {
+
     options.TokenValidationParameters = new TokenValidationParameters
+
     {
+
         ValidateIssuer = true,
+
         ValidateAudience = false,
+
         ValidateLifetime = true,
+
         ValidateIssuerSigningKey = true,
+
         ValidIssuer = jwtIssuer,
+
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+
     };
-});
-builder.Services.AddSwaggerGen(c => {
-    c.EnableAnnotations();
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        In = ParameterLocation.Header,
-        Description = "Insert JWT like: Bearer {your token}",
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement{
-        {
-            new OpenApiSecurityScheme{
-                Reference = new OpenApiReference{
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
+
 });
 
-var app = builder.Build();
+builder.Services.AddSwaggerGen(c => {
+
+    c.EnableAnnotations();
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+
+    {
+
+        In = ParameterLocation.Header,
+
+        Description = "Insert JWT like: Bearer {your token}",
+
+        Name = "Authorization",
+
+        Type = SecuritySchemeType.ApiKey,
+
+        Scheme = "Bearer"
+
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement{
+
+        {
+
+            new OpenApiSecurityScheme{
+
+                Reference = new OpenApiReference{
+
+                    Type = ReferenceType.SecurityScheme,
+
+                    Id = "Bearer"
+
+                }
+
+            },
+
+            Array.Empty<string>()
+
+        }
+
+    });
+
+});
+
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
+
 {
+
     app.UseSwagger();
+
     app.UseSwaggerUI();
+
 }
-app.UseCors("AllowAngular");
+
+app.UseCors(AllowAngular);
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -96,3 +149,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
