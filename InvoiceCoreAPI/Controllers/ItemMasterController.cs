@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InvoiceCoreAPI.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     [Authorize]
+
     public class ItemMasterController : ControllerBase
     {
         private readonly IItemMasterService _service;
@@ -191,7 +193,7 @@ namespace InvoiceCoreAPI.Controllers
     
     [HttpGet("GetAllPaged")]
         public async Task<IActionResult> GetAllPaged(
-        string? catCode,
+        int? categoryId,
         string? itemName,
         string? uom,
         int pageNumber = 1,
@@ -200,7 +202,7 @@ namespace InvoiceCoreAPI.Controllers
             try
             {
                 var result = await _service.GetAllPagedAsync(
-                    catCode, itemName, uom, pageNumber, pageSize);
+                   categoryId , itemName, uom, pageNumber, pageSize);
 
                 return Ok(new ApiResponse<IEnumerable<ItemmasterDto>>
                 {
