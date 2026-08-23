@@ -19,7 +19,7 @@ public class ItemmasterRepositories : IItemmasterRepository
     {
         var result = await _dbContext.Database.ExecuteSqlRawAsync(
             @"EXEC sp_Itemmaster_Insert
-            @CatCode,
+            @CategoryId,
             @ItemBarCode,
             @ItemCode,
             @ItemName,
@@ -29,7 +29,7 @@ public class ItemmasterRepositories : IItemmasterRepository
             @Minimumstock,
             @Maximumstock,
             @IsActive",
-            new SqlParameter("@CatCode", itemmaster.CatCode),
+            new SqlParameter("@CategoryId", itemmaster.CategoryId),
             new SqlParameter("@ItemBarCode", itemmaster.ItemBarCode),
             new SqlParameter("@Itemcode", itemmaster.ItemCode),
             new SqlParameter("@Itemname", itemmaster.ItemName),
@@ -48,7 +48,7 @@ public class ItemmasterRepositories : IItemmasterRepository
         var affectedRows = await _dbContext.Database.ExecuteSqlRawAsync(
             @"EXEC sp_Itemmaster_Update
             @Id,
-            @CatCode,
+            @CategoryId,
             @ItemBarCode,
             @Itemcode,
             @Itemname,
@@ -59,7 +59,7 @@ public class ItemmasterRepositories : IItemmasterRepository
             @Maximumstock,
             @IsActive",
             new SqlParameter("@Id", itemmaster.Id),
-            new SqlParameter("@CatCode", itemmaster.CatCode),
+            new SqlParameter("@CategoryId", itemmaster.CategoryId),
             new SqlParameter("@ItemBarCode", itemmaster.ItemBarCode),
             new SqlParameter("@Itemcode", itemmaster.ItemCode),
             new SqlParameter("@Itemname", itemmaster.ItemName),
@@ -101,7 +101,7 @@ public class ItemmasterRepositories : IItemmasterRepository
         return affectedRows > 0;
     }
     public async Task<PagedResultDto<Itemmaster>> GetAllPagedAsync(
-string? catCode,
+int? categoryId,
 string? itemName,
 string? uom,
 int pageNumber,
@@ -113,7 +113,7 @@ int pageSize)
             using var command = connection.CreateCommand();
             command.CommandText = "sp_Itemmaster_GetPaged";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add(new SqlParameter("@CatCode", (object?)catCode ?? DBNull.Value));
+            command.Parameters.Add(new SqlParameter("@Categtory", (object?)categoryId ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@ItemName", (object?)itemName ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@Uom", (object?)uom ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@PageNumber", pageNumber));
@@ -128,7 +128,7 @@ int pageSize)
                 items.Add(new Itemmaster
                 {
                     Id = reader.GetInt32(0),
-                    CatCode = reader.GetString(1),
+                    CategoryId = reader.GetInt32(1),
                     ItemBarCode = reader.GetString(2),
                     ItemCode = reader.GetString(3),
                     ItemName = reader.GetString(4),

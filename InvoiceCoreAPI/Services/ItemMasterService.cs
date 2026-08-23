@@ -80,14 +80,14 @@ namespace InvoiceCoreAPI.Services
 
     
     public async Task<PagedResultDto<ItemmasterDto>> GetAllPagedAsync(
-string? catCode,
+int? categoryId,
 string? itemName,
 string? uom,
 int pageNumber,
 int pageSize)
         {
             var result = await _repository.GetAllPagedAsync(
-                catCode, itemName, uom, pageNumber, pageSize);
+                categoryId, itemName, uom, pageNumber, pageSize);
 
             return new PagedResultDto<ItemmasterDto>
             {

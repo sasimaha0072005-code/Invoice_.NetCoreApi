@@ -1,78 +1,166 @@
-USE [Invoice_Test]
+USE [invoice]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Update]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_Update]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Update]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_Update]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Insert]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_Insert]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_Insert]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetPaged]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_GetPaged]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_GetPaged]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetById]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_GetById]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_GetById]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetAll]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_GetAll]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_GetAll]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Delete]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Users_Delete]
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Vendor_Delete]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Update]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_Update]
+/****** Object:  StoredProcedure [dbo].[sp_Users_UpdateLastLogin]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_UpdateLastLogin]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Insert]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_Insert]
+/****** Object:  StoredProcedure [dbo].[sp_Users_Update]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_Update]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetPaged]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_GetPaged]
+/****** Object:  StoredProcedure [dbo].[sp_Users_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_Insert]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetById]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_GetById]
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_GetPaged]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetAll]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_GetAll]
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetByUserName]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_GetByUserName]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Delete]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Itemmaster_Delete]
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_GetById]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Update]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_Update]
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetByEmail]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_GetByEmail]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Insert]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_Insert]
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_GetAll]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetPaged]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_GetPaged]
+/****** Object:  StoredProcedure [dbo].[sp_Users_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Users_Delete]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetById]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_GetById]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Update]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_Update]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetAll]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_GetAll]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_Insert]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Delete]    Script Date: 21-06-2026 20:19:42 ******/
-DROP PROCEDURE [dbo].[sp_Category_Delete]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_GetPaged]
 GO
-ALTER TABLE [dbo].[Users] DROP CONSTRAINT [DF__Users__CreatedDa__3E1D39E1]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_GetById]
 GO
-ALTER TABLE [dbo].[Users] DROP CONSTRAINT [DF__Users__IsDeleted__3D2915A8]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_GetAll]
 GO
-ALTER TABLE [dbo].[Users] DROP CONSTRAINT [DF__Users__IsActive__3C34F16F]
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Itemmaster_Delete]
 GO
-/****** Object:  Table [dbo].[Users]    Script Date: 21-06-2026 20:19:42 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Update]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_Update]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_Insert]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_GetPaged]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_GetById]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_GetAll]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Customer_Delete]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_Update]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_Update]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_Insert]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_GetPaged]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_GetById]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_GetAll]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+DROP PROCEDURE IF EXISTS [dbo].[sp_Category_Delete]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Itemmaster]') AND type in (N'U'))
+ALTER TABLE [dbo].[Itemmaster] DROP CONSTRAINT IF EXISTS [FK_Itemmaster_Category]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Vendor]') AND type in (N'U'))
+ALTER TABLE [dbo].[Vendor] DROP CONSTRAINT IF EXISTS [DF__Vendor__CreatedD__5D95E53A]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Vendor]') AND type in (N'U'))
+ALTER TABLE [dbo].[Vendor] DROP CONSTRAINT IF EXISTS [DF__Vendor__IsDelete__5CA1C101]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Vendor]') AND type in (N'U'))
+ALTER TABLE [dbo].[Vendor] DROP CONSTRAINT IF EXISTS [DF__Vendor__IsActive__5BAD9CC8]
+GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Users]') AND type in (N'U'))
-DROP TABLE [dbo].[Users]
+ALTER TABLE [dbo].[Users] DROP CONSTRAINT IF EXISTS [DF__Users__CreatedDa__3E1D39E1]
 GO
-/****** Object:  Table [dbo].[itemmaster]    Script Date: 21-06-2026 20:19:42 ******/
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[itemmaster]') AND type in (N'U'))
-DROP TABLE [dbo].[itemmaster]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Users]') AND type in (N'U'))
+ALTER TABLE [dbo].[Users] DROP CONSTRAINT IF EXISTS [DF__Users__IsDeleted__3D2915A8]
 GO
-/****** Object:  Table [dbo].[Category]    Script Date: 21-06-2026 20:19:42 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Users]') AND type in (N'U'))
+ALTER TABLE [dbo].[Users] DROP CONSTRAINT IF EXISTS [DF__Users__IsActive__3C34F16F]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Customer]') AND type in (N'U'))
+ALTER TABLE [dbo].[Customer] DROP CONSTRAINT IF EXISTS [DF__Customer__Create__5224328E]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Customer]') AND type in (N'U'))
+ALTER TABLE [dbo].[Customer] DROP CONSTRAINT IF EXISTS [DF__Customer__IsDele__51300E55]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Customer]') AND type in (N'U'))
+ALTER TABLE [dbo].[Customer] DROP CONSTRAINT IF EXISTS [DF__Customer__IsActi__503BEA1C]
+GO
+/****** Object:  Index [UQ__Vendor__10C18F5C06464571]    Script Date: 23-08-2026 21:22:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Vendor]') AND type in (N'U'))
+ALTER TABLE [dbo].[Vendor] DROP CONSTRAINT IF EXISTS [UQ__Vendor__10C18F5C06464571]
+GO
+/****** Object:  Index [UQ__Customer__0667852196A07634]    Script Date: 23-08-2026 21:22:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Customer]') AND type in (N'U'))
+ALTER TABLE [dbo].[Customer] DROP CONSTRAINT IF EXISTS [UQ__Customer__0667852196A07634]
+GO
+/****** Object:  Index [UQ_Category_Code]    Script Date: 23-08-2026 21:22:49 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Category]') AND type in (N'U'))
-DROP TABLE [dbo].[Category]
+ALTER TABLE [dbo].[Category] DROP CONSTRAINT IF EXISTS [UQ_Category_Code]
 GO
-/****** Object:  Table [dbo].[Category]    Script Date: 21-06-2026 20:19:42 ******/
+/****** Object:  Index [UQ__Category__A25C5AA7C2BC29F5]    Script Date: 23-08-2026 21:22:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Category]') AND type in (N'U'))
+ALTER TABLE [dbo].[Category] DROP CONSTRAINT IF EXISTS [UQ__Category__A25C5AA7C2BC29F5]
+GO
+/****** Object:  Table [dbo].[Vendor]    Script Date: 23-08-2026 21:22:49 ******/
+DROP TABLE IF EXISTS [dbo].[Vendor]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 23-08-2026 21:22:49 ******/
+DROP TABLE IF EXISTS [dbo].[Users]
+GO
+/****** Object:  Table [dbo].[Itemmaster]    Script Date: 23-08-2026 21:22:49 ******/
+DROP TABLE IF EXISTS [dbo].[Itemmaster]
+GO
+/****** Object:  Table [dbo].[Customer]    Script Date: 23-08-2026 21:22:49 ******/
+DROP TABLE IF EXISTS [dbo].[Customer]
+GO
+/****** Object:  Table [dbo].[Category]    Script Date: 23-08-2026 21:22:49 ******/
+DROP TABLE IF EXISTS [dbo].[Category]
+GO
+/****** Object:  Table [dbo].[Category]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -93,34 +181,65 @@ CREATE TABLE [dbo].[Category](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[itemmaster]    Script Date: 21-06-2026 20:19:42 ******/
+/****** Object:  Table [dbo].[Customer]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[itemmaster](
-	[catcode] [varchar](50) NULL,
-	[itembarcode] [varchar](50) NULL,
-	[uom] [varchar](50) NULL,
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[itemcode] [varchar](10) NOT NULL,
-	[itemname] [varchar](100) NOT NULL,
-	[description] [varchar](250) NULL,
-	[Rate] [decimal](18, 2) NULL,
-	[minimumstock] [decimal](18, 2) NULL,
-	[maximumstock] [decimal](18, 2) NULL,
-	[isActive] [bit] NULL,
-	[createdby] [varchar](100) NULL,
-	[createddate] [datetime] NULL,
-	[updatedby] [varchar](100) NULL,
-	[updateddate] [datetime] NULL,
-PRIMARY KEY CLUSTERED 
+CREATE TABLE [dbo].[Customer](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerCode] [varchar](20) NOT NULL,
+	[CustomerName] [nvarchar](100) NOT NULL,
+	[ContactPerson] [nvarchar](100) NULL,
+	[MobileNo] [varchar](20) NULL,
+	[Email] [varchar](100) NULL,
+	[Address1] [nvarchar](200) NULL,
+	[Address2] [nvarchar](200) NULL,
+	[City] [nvarchar](100) NULL,
+	[State] [nvarchar](100) NULL,
+	[Country] [nvarchar](100) NULL,
+	[ZipCode] [varchar](20) NULL,
+	[GstNo] [varchar](50) NULL,
+	[IsActive] [bit] NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedBy] [nvarchar](100) NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[UpdatedBy] [nvarchar](100) NULL,
+	[UpdatedDate] [datetime] NULL,
+ CONSTRAINT [PK__Customer__3214EC073988574E] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Users]    Script Date: 21-06-2026 20:19:42 ******/
+/****** Object:  Table [dbo].[Itemmaster]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Itemmaster](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CategoryId] [int] NOT NULL,
+	[ItemBarCode] [varchar](25) NOT NULL,
+	[ItemCode] [varchar](10) NOT NULL,
+	[ItemName] [varchar](100) NOT NULL,
+	[Description] [varchar](250) NULL,
+	[Uom] [varchar](3) NOT NULL,
+	[Rate] [decimal](18, 2) NULL,
+	[MinimumStock] [decimal](18, 2) NULL,
+	[MaximumStock] [decimal](18, 2) NULL,
+	[IsActive] [bit] NULL,
+	[CreatedBy] [varchar](100) NULL,
+	[CreatedDate] [datetime] NULL,
+	[UpdatedBy] [varchar](100) NULL,
+	[UpdatedDate] [datetime] NULL,
+ CONSTRAINT [PK__Itemmast__3214EC07A7784BE8] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -129,7 +248,7 @@ CREATE TABLE [dbo].[Users](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[UserName] [varchar](100) NOT NULL,
 	[Email] [varchar](255) NOT NULL,
-	[Password] [varchar](500) NOT NULL,
+	[PasswordHash] [varchar](500) NOT NULL,
 	[FirstName] [varchar](100) NOT NULL,
 	[MiddleName] [varchar](100) NULL,
 	[LastName] [varchar](100) NOT NULL,
@@ -145,11 +264,43 @@ CREATE TABLE [dbo].[Users](
 	[DateOfBirth] [date] NULL,
 	[IsActive] [bit] NOT NULL,
 	[IsDeleted] [bit] NOT NULL,
+	[LastLoginDate] [datetime] NULL,
 	[CreatedBy] [nvarchar](100) NOT NULL,
 	[CreatedDate] [datetime] NOT NULL,
 	[UpdatedBy] [nvarchar](100) NULL,
 	[UpdatedDate] [datetime] NULL,
-PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK__Users__3214EC07C50F4D07] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Vendor]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Vendor](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[VendorCode] [varchar](20) NOT NULL,
+	[VendorName] [nvarchar](100) NOT NULL,
+	[ContactPerson] [nvarchar](100) NULL,
+	[MobileNo] [varchar](20) NULL,
+	[Email] [varchar](100) NULL,
+	[Address1] [nvarchar](200) NULL,
+	[Address2] [nvarchar](200) NULL,
+	[City] [nvarchar](100) NULL,
+	[State] [nvarchar](100) NULL,
+	[Country] [nvarchar](100) NULL,
+	[ZipCode] [varchar](20) NULL,
+	[GstNo] [varchar](50) NULL,
+	[IsActive] [bit] NOT NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedBy] [varchar](100) NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[UpdatedBy] [varchar](100) NULL,
+	[UpdatedDate] [datetime] NULL,
+ CONSTRAINT [PK__Vendor__3214EC07E8B64C59] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
@@ -157,255 +308,268 @@ PRIMARY KEY CLUSTERED
 GO
 SET IDENTITY_INSERT [dbo].[Category] ON 
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'C001', N'Rice', N'All types of rice products', 1, N'sa', CAST(N'2026-05-17T17:23:31.867' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'RI001', N'Rice', N'All types of rice', 1, N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime), N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'C002', N'Oil', N'Cooking oils and related products', 1, N'sa', CAST(N'2026-05-17T17:23:31.870' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'VE001', N'Vegitables', N'All types of vegitables', 1, N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime), N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'C003', N'Snacks', N'Ready-to-eat snack items', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'SN001', N'Snacks', N'All types of snacks', 1, N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime), N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (4, N'C004', N'Pulses', N'Dal, lentils and pulses', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (4, N'OI001', N'Oil', N'All types of oils', 1, N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime), N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (5, N'C005', N'Spices', N'Masala and spice powders', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (5, N'SO001', N'Soap', N'All types of soaps', 1, N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime), N'sa', CAST(N'2026-08-02T18:06:35.820' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'C006', N'Beverages', N'Drinks and juices', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'GN001', N'General', N'General Stores', 1, N'sa', CAST(N'2026-08-02T18:09:43.597' AS DateTime), N'sa', CAST(N'2026-08-02T18:09:43.597' AS DateTime))
 GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (7, N'C007', N'Dairy', N'Milk and dairy products', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (8, N'C008', N'Bakery', N'Bread, cakes, and bakery items', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (9, N'C009', N'Frozen', N'Frozen food items', 1, N'sa', CAST(N'2026-05-17T17:23:31.873' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10, N'546', N'ak', N'car', 1, N'sa', CAST(N'2026-05-17T17:23:31.877' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-07T19:09:06.020' AS DateTime))
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (11, N'hggg', N'dfgf', N'', 1, N'sa', CAST(N'2026-05-17T17:23:31.877' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-07T18:29:57.763' AS DateTime))
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (18, N'cds', N'vxy', N'fugui', 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-14T12:47:49.060' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (20, N'ddf', N'hiii', N'xcdf', 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-14T13:35:07.483' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-14T13:35:39.157' AS DateTime))
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (23, N'strin', N'string', N'string', 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-21T17:41:35.310' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (24, N'453', N'laptop', N'sdfdgf', 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-21T17:43:30.693' AS DateTime), NULL, NULL)
+INSERT [dbo].[Category] ([Id], [Code], [Name], [Description], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (7, N'PL001', N'Pulses', N'Pulses Stores', 1, N'sa', CAST(N'2026-08-02T19:47:22.210' AS DateTime), N'sa', CAST(N'2026-08-02T19:47:22.210' AS DateTime))
 GO
 SET IDENTITY_INSERT [dbo].[Category] OFF
 GO
-SET IDENTITY_INSERT [dbo].[itemmaster] ON 
+SET IDENTITY_INSERT [dbo].[Customer] ON 
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'pen', N'bar001', N'lr', 11, N'pen08', N'blue pen', N'writing', CAST(10.00 AS Decimal(18, 2)), CAST(54.00 AS Decimal(18, 2)), CAST(67.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-03-15T16:04:53.367' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-03-29T16:59:58.177' AS DateTime))
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'C001', N'Arun Electronics', N'Arun Kumar', N'9840214567', N'arun.electronics@gmail.com', N'14 Anna Nagar', N'Near Water Tank', N'Chennai', N'Tamil Nadu', N'India', N'600040', N'33AAAPA1234A1Z1', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.573' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'mobil', N'android001', N'lr', 12, N'mobile08', N'one_pluse', N'smartphone', CAST(25000.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-03-15T16:06:41.800' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'C002', N'Sri Ganesh Traders', N'Ganesh', N'9789456123', N'ganeshtraders@yahoo.com', N'22 Market Road', N'Opp Bus Stand', N'Madurai', N'Tamil Nadu', N'India', N'625002', N'33BBBPQ2345B1Z2', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.577' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'gdhfh', N'jjdmkjd', N'LTR', 14, N'aagd', N'`t68gh', N'8yuhu', CAST(54.00 AS Decimal(18, 2)), CAST(87.00 AS Decimal(18, 2)), CAST(568.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-03-29T17:53:46.667' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'C003', N'Blue Star Mobiles', N'Praveen', N'9894561230', N'bluestarmobiles@gmail.com', N'7 East Car Street', N'Near SBI Bank', N'Salem', N'Tamil Nadu', N'India', N'636007', N'33CCCR5678C1Z3', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.577' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ggg', N'58', N'NOS', 15, N'ykhbi', N'6tbb', N'hvvk', CAST(76.00 AS Decimal(18, 2)), CAST(856.00 AS Decimal(18, 2)), CAST(87765.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-03-29T17:54:11.877' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T13:16:37.310' AS DateTime))
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (4, N'C004', N'Siva Agencies', N'Sivakumar', N'9751147896', N'sivaagencies@gmail.com', N'89 Gandhi Road', N'Near Temple', N'Trichy', N'Tamil Nadu', N'India', N'620018', N'33DDDT6789D1Z4', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR001', N'PCS', 16, N'ITM001', N'Mobile Charger', N'Fast charger', CAST(500.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T09:58:49.037' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (5, N'C005', N'Kavi Super Stores', N'Kavitha', N'9942678912', N'kavistores@gmail.com', N'101 Bazaar Street', N'Old Bus Stand', N'Coimbatore', N'Tamil Nadu', N'India', N'641012', N'33EEEU7890E1Z5', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR001', N'PCS', 17, N'ITM001', N'Mobile Charger', N'Fast charger', CAST(500.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'C006', N'Muthu Hardwares', N'Muthuraj', N'9361147823', N'muthuhardware@gmail.com', N'35 Main Road', N'Near Police Station', N'Tirunelveli', N'Tamil Nadu', N'India', N'627005', N'33FFFV8901F1Z6', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR002', N'PCS', 18, N'ITM002', N'USB Cable', N'Type C cable', CAST(150.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (7, N'C007', N'Velavan Textiles', N'Saravanan', N'9790456128', N'velavantextiles@gmail.com', N'18 Textile Market', N'Near Clock Tower', N'Erode', N'Tamil Nadu', N'India', N'638003', N'33GGGW9012G1Z7', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR003', N'PCS', 19, N'ITM003', N'Headphones', N'Wired headphones', CAST(300.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (8, N'C008', N'RK Stationery', N'Ramesh', N'9843156782', N'rkstationery@gmail.com', N'11 School Road', N'Near College', N'Karur', N'Tamil Nadu', N'India', N'639001', N'33HHHX0123H1Z8', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR004', N'PCS', 20, N'ITM004', N'Bluetooth Speaker', N'Portable speaker', CAST(1200.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (9, N'C009', N'Sun Bakery', N'Mohan', N'9500345612', N'sunbakery@gmail.com', N'9 Lake View Road', N'Near Park', N'Vellore', N'Tamil Nadu', N'India', N'632009', N'33IIIY1234I1Z9', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR005', N'PCS', 21, N'ITM005', N'Power Bank', N'10000mAh', CAST(900.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Customer] ([Id], [CustomerCode], [CustomerName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10, N'C010', N'Nila Medicals & Surgicals', N'Deepa', N'9952678341', N'deepa.medicals@gmail.com', N'60 Hospital Road', N'Near Signal', N'Thanjavur', N'Tamil Nadu', N'India', N'613001', N'33JJJZ2345J1Z1', 1, 0, N'sa', CAST(N'2026-06-28T10:04:30.580' AS DateTime), N'sa', CAST(N'2026-06-28T10:04:38.610' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR006', N'PCS', 22, N'ITM006', N'LED Bulb', N'9W bulb', CAST(120.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Customer] OFF
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR007', N'PCS', 23, N'ITM007', N'Extension Box', N'4 socket', CAST(400.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Itemmaster] ON 
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR008', N'PCS', 24, N'ITM008', N'Smart Watch', N'Fitness watch', CAST(2500.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, 5, N'Bar001', N'Soap000001', N'Lux ', N'Bath Soap', N'NOS', CAST(85.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'Valavan', CAST(N'2026-02-15T12:44:17.597' AS DateTime), N'LAPTOP-INKMOE0V\VALAVAN S', CAST(N'2026-04-26T17:19:38.980' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR009', N'PCS', 25, N'ITM009', N'Earbuds', N'Wireless earbuds', CAST(1800.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.130' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, 1, N'Bar003', N'Rice00003', N'Aachi', N'Ponni', N'kg', CAST(85.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'Valavan', CAST(N'2026-02-15T15:31:08.550' AS DateTime), N'Valavan', CAST(N'2026-02-15T15:31:08.550' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'ELEC', N'BAR010', N'PCS', 26, N'ITM010', N'Laptop Mouse', N'Wireless mouse', CAST(350.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, 5, N'Bar002', N'Soap000002', N'Dove', N'Beauty Soap', N'No', CAST(120.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'Valavan', CAST(N'2026-02-15T17:09:40.210' AS DateTime), N'LAPTOP-INKMOE0V\VALAVAN S', CAST(N'2026-07-30T16:44:18.780' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR011', N'KG', 27, N'ITM011', N'Rice 1kg', N'Premium rice', CAST(60.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (4, 4, N'Bar002', N'Oil0003', N'Fortune', N'Cooking Oil', N'Lit', CAST(120.55 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(130.00 AS Decimal(18, 2)), 1, N'Valavan', CAST(N'2026-02-15T15:19:18.477' AS DateTime), N'Valavan', CAST(N'2026-02-15T15:19:18.477' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR012', N'KG', 28, N'ITM012', N'Wheat Flour', N'1kg atta', CAST(45.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (13, 5, N'100001', N'ITM001', N'Bath Soap', N'Regular bathing soap', N'Nos', CAST(30.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:05:31.743' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR013', N'KG', 29, N'ITM013', N'Sugar', N'Refined sugar', CAST(50.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (14, 5, N'100002', N'ITM002', N'Antibacterial Soap', N'Germ protection', N'Nos', CAST(35.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:07:48.530' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR014', N'KG', 30, N'ITM014', N'Salt', N'Iodized salt', CAST(20.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (15, 5, N'100003', N'ITM003', N'Herbal Soap', N'Natural ingredients', N'Nos', CAST(40.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:12.590' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR015', N'LTR', 31, N'ITM015', N'Cooking Oil', N'1L sunflower oil', CAST(150.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (16, 5, N'100004', N'ITM004', N'Medicated Soap', N'Skin treatment', N'Nos', CAST(60.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:22.200' AS DateTime), N'LAPTOP-INKMOE0V\VALAVAN S', CAST(N'2026-04-19T17:00:13.893' AS DateTime))
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR016', N'KG', 32, N'ITM016', N'Toor Dal', N'Premium dal', CAST(120.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(400.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (17, 5, N'100005', N'ITM005', N'Moisturizing Soap', N'Soft skin care', N'Nos', CAST(45.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:28.267' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR017', N'PKT', 33, N'ITM017', N'Tea Powder', N'500g tea', CAST(200.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (18, 5, N'100006', N'ITM006', N'Glycerin Soap', N'Gentle transparent soap', N'Nos', CAST(55.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(60.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:32.353' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR018', N'PKT', 34, N'ITM018', N'Coffee Powder', N'250g coffee', CAST(180.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (19, 5, N'100007', N'ITM007', N'Baby Soap', N'Mild baby care', N'Nos', CAST(60.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:39.893' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR019', N'PKT', 35, N'ITM019', N'Biscuits', N'Sweet biscuits', CAST(30.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (20, 5, N'100008', N'ITM008', N'Handmade Soap', N'Organic handmade', N'Nos', CAST(70.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:48.177' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'GROC', N'BAR020', N'PKT', 36, N'ITM020', N'Milk Packet', N'500ml milk', CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:06.133' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (21, 5, N'100009', N'ITM009', N'Beauty Soap', N'Skin glow', N'Nos', CAST(50.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(70.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:13:54.273' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR021', N'PCS', 37, N'ITM021', N'T-Shirt', N'Cotton T-shirt', CAST(300.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.557' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (22, 5, N'100010', N'ITM010', N'Laundry Soap', N'Cloth washing', N'Nos', CAST(25.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:14:19.137' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR022', N'PCS', 38, N'ITM022', N'Shirt', N'Formal shirt', CAST(600.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.573' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (23, 4, N'100011', N'ITM011', N'Sunflower Oil', N'Cooking oil', N'Ltr', CAST(150.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:17:34.200' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR023', N'PCS', 39, N'ITM023', N'Jeans', N'Denim jeans', CAST(1200.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.573' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (24, 4, N'100012', N'ITM012', N'Groundnut Oil', N'Peanut oil', N'Ltr', CAST(180.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:17:46.030' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR024', N'PCS', 40, N'ITM024', N'Shorts', N'Casual shorts', CAST(400.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.573' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (25, 4, N'100013', N'ITM013', N'Coconut Oil', N'Multipurpose oil', N'Ltr', CAST(200.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(60.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:17:52.353' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR025', N'PCS', 41, N'ITM025', N'Jacket', N'Winter jacket', CAST(2000.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (26, 4, N'100014', N'ITM014', N'Mustard Oil', N'Strong flavor', N'Ltr', CAST(170.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(70.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:17:58.697' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR026', N'PCS', 42, N'ITM026', N'Saree', N'Silk saree', CAST(3000.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (27, 4, N'100015', N'ITM015', N'Olive Oil', N'Healthy oil', N'Ltr', CAST(500.00 AS Decimal(18, 2)), CAST(5.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:03.503' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR027', N'PCS', 43, N'ITM027', N'Kurta', N'Cotton kurta', CAST(700.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (28, 4, N'100016', N'ITM016', N'Palm Oil', N'Affordable cooking oil', N'Ltr', CAST(140.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:08.690' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR028', N'PCS', 44, N'ITM028', N'Leggings', N'Stretch leggings', CAST(250.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (29, 4, N'100017', N'ITM017', N'Gingelly Oil', N'Sesame oil', N'Ltr', CAST(220.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(60.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:13.077' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR029', N'PCS', 45, N'ITM029', N'Innerwear', N'Mens innerwear', CAST(150.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (30, 4, N'100018', N'ITM018', N'Rice Bran Oil', N'Heart-friendly oil', N'Ltr', CAST(160.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:18.127' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'CLOT', N'BAR030', N'PCS', 46, N'ITM030', N'Socks', N'Cotton socks', CAST(50.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:09:34.577' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (31, 4, N'100019', N'ITM019', N'Vegetable Oil', N'Mixed oil', N'Ltr', CAST(150.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(90.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:28.637' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR031', N'PCS', 47, N'ITM031', N'Notebook', N'200 pages', CAST(80.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.240' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (32, 4, N'100020', N'ITM020', N'Vanaspati', N'Cooking fat', N'Kg', CAST(130.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(70.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:18:35.893' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR032', N'PCS', 48, N'ITM032', N'Pen', N'Blue pen', CAST(10.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), CAST(2000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.240' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (33, 4, N'100021', N'ITM021', N'Basmati Rice', N'Premium long grain', N'Kg', CAST(120.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:34.207' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR033', N'PCS', 49, N'ITM033', N'Pencil', N'HB pencil', CAST(5.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), CAST(2000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.240' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (34, 4, N'100022', N'ITM022', N'Ponni Rice', N'South Indian rice', N'Kg', CAST(60.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:36.783' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR034', N'PCS', 50, N'ITM034', N'Eraser', N'Rubber eraser', CAST(5.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), CAST(2000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.240' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (35, 4, N'100023', N'ITM023', N'Brown Rice', N'Healthy whole grain', N'Kg', CAST(90.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:38.730' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR035', N'PCS', 51, N'ITM035', N'Sharpener', N'Metal sharpener', CAST(10.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), CAST(2000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.240' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (36, 4, N'100024', N'ITM024', N'Raw Rice', N'Daily cooking', N'Kg', CAST(55.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:45.880' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR036', N'PCS', 52, N'ITM036', N'Scale', N'30cm scale', CAST(15.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.243' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (37, 4, N'100025', N'ITM025', N'Boiled Rice', N'Parboiled rice', N'Kg', CAST(50.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:48.230' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR037', N'PCS', 53, N'ITM037', N'Marker', N'Whiteboard marker', CAST(40.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.243' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (38, 4, N'100026', N'ITM026', N'Sona Masoori Rice', N'Medium grain', N'Kg', CAST(65.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(180.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:50.347' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR038', N'PCS', 54, N'ITM038', N'Highlighter', N'Fluorescent pen', CAST(50.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.243' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (39, 4, N'100027', N'ITM027', N'Idli Rice', N'Used for batter', N'Kg', CAST(58.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:52.720' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR039', N'PCS', 55, N'ITM039', N'Stapler', N'Small stapler', CAST(120.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.243' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (40, 4, N'100028', N'ITM028', N'Jeera Rice', N'Aromatic rice', N'Kg', CAST(110.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:19:55.160' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'STAT', N'BAR040', N'PCS', 56, N'ITM040', N'Glue', N'Adhesive glue', CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:02.243' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (41, 4, N'100029', N'ITM029', N'Red Rice', N'Traditional rice', N'Kg', CAST(80.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:20:35.780' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR041', N'BOX', 57, N'ITM041', N'Paracetamol', N'Fever tablet', CAST(40.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.847' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (42, 4, N'100030', N'ITM030', N'Broken Rice', N'Budget rice', N'Kg', CAST(40.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:20:39.087' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR042', N'BOT', 58, N'ITM042', N'Cough Syrup', N'100ml syrup', CAST(90.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (43, 3, N'100031', N'ITM031', N'Biscuits', N'Sweet biscuits', N'Pac', CAST(20.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:21:45.470' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR043', N'BOX', 59, N'ITM043', N'Vitamin Tablets', N'Multivitamin', CAST(120.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (44, 3, N'100032', N'ITM032', N'Chips', N'Potato chips', N'Pac', CAST(30.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:21:49.417' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR044', N'PCS', 60, N'ITM044', N'Face Mask', N'Disposable mask', CAST(5.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), CAST(2000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (45, 3, N'100033', N'ITM033', N'Noodles', N'Instant noodles', N'Pac', CAST(25.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:21:51.970' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR045', N'BOT', 61, N'ITM045', N'Hand Sanitizer', N'100ml sanitizer', CAST(50.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (46, 3, N'100034', N'ITM034', N'Pasta', N'Italian snack', N'Pac', CAST(50.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:21:55.310' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR046', N'PCS', 62, N'ITM046', N'Thermometer', N'Digital thermometer', CAST(250.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (47, 3, N'100035', N'ITM035', N'Popcorn', N'Ready to cook', N'Pac', CAST(40.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:21:59.523' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR047', N'PCS', 63, N'ITM047', N'Bandage', N'Medical bandage', CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(1000.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (48, 3, N'100036', N'ITM036', N'Mixture', N'Spicy mix', N'Pac', CAST(60.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:22:04.780' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR048', N'BOT', 64, N'ITM048', N'Antiseptic Liquid', N'Dettol type', CAST(100.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(200.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (49, 3, N'100037', N'ITM037', N'Murukku', N'South Indian snack', N'Pac', CAST(70.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:22:07.513' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR049', N'PCS', 65, N'ITM049', N'Pain Relief Balm', N'Pain balm', CAST(60.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), CAST(500.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (50, 3, N'100038', N'ITM038', N'Namkeen', N'Salted snack', N'Pac', CAST(50.00 AS Decimal(18, 2)), CAST(20.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:22:10.050' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'MEDI', N'BAR050', N'PKT', 66, N'ITM050', N'Glucose Powder', N'Energy drink', CAST(80.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(300.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-05T10:10:30.863' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (51, 3, N'100039', N'ITM039', N'Chocolate', N'Sweet snack', N'Pac', CAST(40.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:22:13.077' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 68, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:01:19.707' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (52, 1, N'100040', N'ITM040', N'Cake', N'Bakery item', N'Pac', CAST(100.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(50.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:22:20.683' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 69, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:01:28.807' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (53, 7, N'100041', N'ITM041', N'Toor Dal', N'Yellow dal', N'Kg', CAST(120.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(150.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:19.413' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 70, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:01:34.740' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (54, 7, N'100042', N'ITM042', N'Urad Dal', N'Black gram', N'Kg', CAST(130.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:23.310' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 71, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:01:43.353' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (55, 7, N'100043', N'ITM043', N'Moong Dal', N'Green gram split', N'Kg', CAST(110.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:25.627' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 72, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:03:38.167' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (56, 7, N'100044', N'ITM044', N'Chana Dal', N'Bengal gram split', N'Kg', CAST(90.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:29.237' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 73, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:08:59.037' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (57, 7, N'100045', N'ITM045', N'Masoor Dal', N'Red lentils', N'Kg', CAST(100.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:31.357' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 74, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:09:28.100' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (58, 7, N'100046', N'ITM046', N'Green Gram', N'Whole moong', N'Kg', CAST(95.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:35.410' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 75, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:09:54.523' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (59, 7, N'100047', N'ITM047', N'Black Gram', N'Whole urad', N'Kg', CAST(120.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:37.670' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'hijj', N'glijj', N'LTR', 76, N'56', N'jiuoi', N'jljpop', CAST(45.00 AS Decimal(18, 2)), CAST(65.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:10:15.203' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (60, 7, N'100048', N'ITM048', N'Chickpeas', N'White chana', N'Kg', CAST(85.00 AS Decimal(18, 2)), CAST(30.00 AS Decimal(18, 2)), CAST(120.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:39.773' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 77, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:32:50.043' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (61, 7, N'100049', N'ITM049', N'Kidney Beans', N'Rajma', N'Kg', CAST(110.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'sa', CAST(N'2026-04-04T21:23:43.483' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 78, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:22.047' AS DateTime), NULL, NULL)
+INSERT [dbo].[Itemmaster] ([Id], [CategoryId], [ItemBarCode], [ItemCode], [ItemName], [Description], [Uom], [Rate], [MinimumStock], [MaximumStock], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (65, 7, N'1050', N'ITM050', N'Horse Gram', N'Kollu', N'KGS', CAST(80.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), 1, N'LAPTOP-INKMOE0V\VALAVAN S', CAST(N'2026-04-26T12:03:18.780' AS DateTime), NULL, NULL)
 GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 79, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:24.240' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 80, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:48.467' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 81, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:49.357' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 82, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:49.527' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 83, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:33:49.757' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 84, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:34:37.033' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 85, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:34:55.353' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 86, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:23.107' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 87, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:24.030' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 88, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:24.350' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 89, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:24.507' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 90, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:24.723' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 91, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:29.673' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 92, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:39.840' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'cie', N'nved', N'NOS', 93, N'343', N'bfd', N'vfdjkls', CAST(12.00 AS Decimal(18, 2)), CAST(2.00 AS Decimal(18, 2)), CAST(25.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:37:43.880' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[itemmaster] ([catcode], [itembarcode], [uom], [id], [itemcode], [itemname], [description], [Rate], [minimumstock], [maximumstock], [isActive], [createdby], [createddate], [updatedby], [updateddate]) VALUES (N'eev', N'e22', N'NOS', 94, N'vb34', N'tubelight', N'hvoie', CAST(45.00 AS Decimal(18, 2)), CAST(23.00 AS Decimal(18, 2)), CAST(98.00 AS Decimal(18, 2)), 1, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-05-17T12:38:56.883' AS DateTime), NULL, NULL)
-GO
-SET IDENTITY_INSERT [dbo].[itemmaster] OFF
+SET IDENTITY_INSERT [dbo].[Itemmaster] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Users] ON 
 GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'pravin', N'pravin@gmail.com', N'pravin@123', N'pravin', NULL, N'p', N'pravin p', N'6380140879', N'6383978719', N' tc road', NULL, N'villupuram', N'Tamil Nadu', N'605602', N'India', CAST(N'2004-07-15' AS Date), 1, 0, N'sa', CAST(N'2026-06-19T13:28:41.533' AS DateTime), NULL, NULL)
+INSERT [dbo].[Users] ([Id], [UserName], [Email], [PasswordHash], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [LastLoginDate], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'string', N'string', N'AQAAAAIAAYagAAAAEO/EvjfXxPt1mOZnFUXssgS94N+NpfhFmFRE9ukXhRFB3OLpPzqlov44u7qJTbL+HA==', N'string', N'tharan', N'string', N'string', N'string', N'string', N'string', N'vpm', N'string', N'string', N'string', N'string', CAST(N'2026-08-23' AS Date), 1, 0, CAST(N'2026-08-23T14:31:00.270' AS DateTime), N'sasi', CAST(N'2026-08-23T12:29:04.980' AS DateTime), N'string', CAST(N'2026-08-23T14:31:34.693' AS DateTime))
 GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'sasitharan', N'sasimaha0072005@gmail.com', N'sasi@2005', N'sasi', N'tharan', N'g', N'sasitharan g', N'6383978719', N'9865527451', N'villupuram alathur', N'near viratikuppam', N'villupuram', N'tamilnadu', N'605602', N'india', CAST(N'2005-04-09' AS Date), 1, 0, N'sa', CAST(N'2026-06-19T13:30:02.420' AS DateTime), NULL, NULL)
+INSERT [dbo].[Users] ([Id], [UserName], [Email], [PasswordHash], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [LastLoginDate], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'monkey', N'monkey@gmail.com', N'AQAAAAIAAYagAAAAEHL7BlV6/Wj2/36L7Uo9YEwk+eprRTe/0AOa9wvxwNlsEkybmg0HrENqDk0koktsOg==', N'akash', N'khan', N'n', N'monkey', N'7458768487', N'45346237', N'hgjwdfgdshfwegfjhsfhgwf', N'kpm', N'vpm', N'tn', N'605603', N'india', CAST(N'2026-08-23' AS Date), 0, 1, CAST(N'2026-08-23T14:40:33.710' AS DateTime), N'akash', CAST(N'2026-08-23T14:35:07.850' AS DateTime), N'null', CAST(N'2026-08-23T15:09:54.953' AS DateTime))
 GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (5, N'user4', N'user4@gmail.com', N'123456', N'Arun', NULL, N'Kumar', N'Arun Kumar', N'9876543201', N'7235618462', N'12 Main St', NULL, N'Chennai', N'Tamil Nadu', N'600001', N'India', CAST(N'2004-05-01' AS Date), 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-21T10:40:15.117' AS DateTime))
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'user5', N'user5@gmail.com', N'123456', N'Bala', NULL, N'Raj', N'Bala Raj', N'9876543202', NULL, N'15 Park Rd', NULL, N'Chennai', N'Tamil Nadu', N'600002', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (7, N'user6', N'user6@gmail.com', N'123456', N'Charles', NULL, N'David', N'Charles David', N'9876543203', NULL, N'18 Lake View', NULL, N'Coimbatore', N'Tamil Nadu', N'641001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (8, N'user7', N'user7@gmail.com', N'123456', N'Deepak', NULL, N'K', N'Deepak K', N'9876543204', NULL, N'22 MG Road', NULL, N'Madurai', N'Tamil Nadu', N'625001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (9, N'user8', N'user8@gmail.com', N'123456', N'Ezhil', NULL, N'M', N'Ezhil M', N'9876543205', NULL, N'10 Gandhi St', NULL, N'Salem', N'Tamil Nadu', N'636001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10, N'user9', N'user9@gmail.com', N'123456', N'Farook', NULL, N'Ali', N'Farook Ali', N'9876543206', NULL, N'14 Anna Nagar', NULL, N'Trichy', N'Tamil Nadu', N'620001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (11, N'user10', N'user10@gmail.com', N'123456', N'Gokul', NULL, N'S', N'Gokul S', N'9876543207', NULL, N'7 Cross Rd', NULL, N'Erode', N'Tamil Nadu', N'638001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (12, N'user11', N'user11@gmail.com', N'123456', N'Hari', NULL, N'Prasad', N'Hari Prasad', N'9876543208', NULL, N'9 Temple St', NULL, N'Vellore', N'Tamil Nadu', N'632001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (13, N'user12', N'user12@gmail.com', N'123456', N'Irfan', NULL, N'Khan', N'Irfan Khan', N'9876543209', NULL, N'11 Market Rd', NULL, N'Tirunelveli', N'Tamil Nadu', N'627001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (14, N'user13', N'user13@gmail.com', N'123456', N'Jagan', NULL, N'R', N'Jagan R', N'9876543210', NULL, N'13 South St', NULL, N'Thanjavur', N'Tamil Nadu', N'613001', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (15, N'user14', N'user14@gmail.com', N'123456', N'Karthik', NULL, N'V', N'Karthik V', N'9876543211', NULL, N'17 East St', NULL, N'Chennai', N'Tamil Nadu', N'600003', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (16, N'user15', N'user15@gmail.com', N'123456', N'Lokesh', NULL, N'B', N'Lokesh B', N'9876543212', NULL, N'21 West St', NULL, N'Madurai', N'Tamil Nadu', N'625002', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (17, N'user16', N'user16@gmail.com', N'123456', N'Manoj', NULL, N'Kumar', N'Manoj Kumar', N'9876543213', NULL, N'25 Ring Rd', NULL, N'Salem', N'Tamil Nadu', N'636002', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (18, N'user17', N'user17@gmail.com', N'123456', N'Naveen', NULL, N'R', N'Naveen R', N'9876543214', NULL, N'29 North St', NULL, N'Trichy', N'Tamil Nadu', N'620002', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (21, N'user20', N'user20@gmail.com', N'123456', N'Suresh', NULL, N'P', N'Suresh P', N'9876543217', NULL, N'41 Hill Rd', NULL, N'Vellore', N'Tamil Nadu', N'632002', N'India', NULL, 1, 0, N'Admin', CAST(N'2026-06-21T10:12:52.917' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (23, N'jhoncena', N'jhoncena@gmail.com', N'jhon@123', N'jhon', N'cena', N'a', N'jhoncena', N'6789546711', N'98765490', N'mailam', N'chendur', N'villupuram', N'tamilnadu', N'605062', N'india', CAST(N'2000-06-01' AS Date), 1, 0, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-21T10:45:27.490' AS DateTime), NULL, NULL)
-GO
-INSERT [dbo].[Users] ([Id], [UserName], [Email], [Password], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (24, N'rock', N'rock@gmail.com', N'password@123', N'rock', N'string', N's', N'rock', N'4563897627', N'string', N'string', N'string', N'villupuram', N'string', N'string', N'string', CAST(N'2026-06-21' AS Date), 1, 0, N'DESKTOP-GLVHGBK\SASIDHARAN G', CAST(N'2026-06-21T18:03:10.777' AS DateTime), NULL, NULL)
+INSERT [dbo].[Users] ([Id], [UserName], [Email], [PasswordHash], [FirstName], [MiddleName], [LastName], [DisplayName], [PhoneNumber], [AlternatePhone], [AddressLine1], [AddressLine2], [City], [State], [ZipCode], [Country], [DateOfBirth], [IsActive], [IsDeleted], [LastLoginDate], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'veld', N'vbsk', N'AQAAAAIAAYagAAAAECh/4L5dHsg76ZJlpv8o9fzcBeZvB7JhLZTsO438qqI+K23Au0tv6CWVYcMNGQYKGA==', N'l;aek', N'ckle', N'string', N'string', N'vhcgjlla', N'string', N'string', N'string', N'string', N'string', N'string', N'string', CAST(N'2026-08-23' AS Date), 0, 1, NULL, N'string', CAST(N'2026-08-23T15:13:01.143' AS DateTime), N'null', CAST(N'2026-08-23T15:13:30.187' AS DateTime))
 GO
 SET IDENTITY_INSERT [dbo].[Users] OFF
 GO
-ALTER TABLE [dbo].[Users] ADD  DEFAULT ((1)) FOR [IsActive]
+SET IDENTITY_INSERT [dbo].[Vendor] ON 
 GO
-ALTER TABLE [dbo].[Users] ADD  DEFAULT ((0)) FOR [IsDeleted]
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'VEND001', N'Aavin Dairy', N'Murugan', N'9876543301', N'murugan@aavin.com', N'12 Milk Colony', N'Near Dairy Plant', N'Chennai', N'Tamil Nadu', N'India', N'600010', N'33AAACA1234A1Z5', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.247' AS DateTime), NULL, NULL)
 GO
-ALTER TABLE [dbo].[Users] ADD  DEFAULT (getdate()) FOR [CreatedDate]
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'VEND002', N'Britannia Distributors', N'Kumar', N'9876543302', N'kumar@britannia.com', N'45 Industrial Area', N'Phase 1', N'Coimbatore', N'Tamil Nadu', N'India', N'641001', N'33BBBCA2345B1Z6', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.250' AS DateTime), NULL, NULL)
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Delete]    Script Date: 21-06-2026 20:19:43 ******/
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'VEND003', N'Sun Oil Suppliers', N'Ravi', N'9876543303', N'ravi@sunoil.com', N'78 Market Road', N'Near Bus Stand', N'Madurai', N'Tamil Nadu', N'India', N'625001', N'33CCCCA3456C1Z7', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.250' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (4, N'VEND004', N'Fresh Farm Foods', N'Sathish', N'9876543304', N'sathish@freshfarm.com', N'10 Farmers Street', N'Near Temple', N'Salem', N'Tamil Nadu', N'India', N'636001', N'33DDDCA4567D1Z8', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (5, N'VEND005', N'Golden Rice Traders', N'Prakash', N'9876543305', N'prakash@goldenrice.com', N'22 Rice Market', N'Godown Area', N'Erode', N'Tamil Nadu', N'India', N'638001', N'33EEECA5678E1Z9', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'VEND006', N'Elite Beverages', N'Arun', N'9876543306', N'arun@elitebev.com', N'55 Beverage Park', N'Near Highway', N'Trichy', N'Tamil Nadu', N'India', N'620001', N'33FFFCA6789F1Y1', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (7, N'VEND007', N'Modern Snacks Pvt Ltd', N'Dinesh', N'9876543307', N'dinesh@modernsnacks.com', N'67 Food Street', N'Industrial Estate', N'Vellore', N'Tamil Nadu', N'India', N'632001', N'33GGGCA7890G1Y2', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (8, N'VEND008', N'Shree Pulses Agency', N'Balaji', N'9876543308', N'balaji@shreepulses.com', N'89 Wholesale Market', N'Near Railway Station', N'Tirunelveli', N'Tamil Nadu', N'India', N'627001', N'33HHHCA8901H1Y3', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (9, N'VEND009', N'Royal Consumer Goods', N'Hari', N'9876543309', N'hari@royalcg.com', N'14 Commercial Complex', N'Phase 2', N'Hosur', N'Tamil Nadu', N'India', N'635109', N'33IIICA9012I1Y4', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10, N'VEND010', N'Galaxy Wholesale Mart', N'Senthil', N'9876543310', N'senthil@galaxywholesale.com', N'101 MG Road', N'Near Shopping Mall', N'Bengaluru', N'Karnataka', N'India', N'560001', N'29JJJCA0123J1Z5', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (11, N'VEND011', N'ABC Stationery Suppliers', N'Manoj', N'9876500011', N'manoj@abcstationery.com', N'14 Gandhi Road', N'Near Bus Stand', N'Karur', N'Tamil Nadu', N'India', N'639001', N'33ABCDE1111A1Z1', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.253' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (12, N'VEND012', N'Green Leaf Traders', N'Karthik', N'9876500012', N'karthik@greenleaf.com', N'22 Market Street', N'Opp Railway Station', N'Thanjavur', N'Tamil Nadu', N'India', N'613001', N'33ABCDE2222B1Z2', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (13, N'VEND013', N'Classic Food Products', N'Suresh', N'9876500013', N'suresh@classicfoods.com', N'78 Anna Salai', N'Phase 2', N'Cuddalore', N'Tamil Nadu', N'India', N'607001', N'33ABCDE3333C1Z3', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (14, N'VEND014', N'Metro Packaging', N'Pradeep', N'9876500014', N'pradeep@metropack.com', N'101 Industrial Estate', N'SIDCO', N'Sivakasi', N'Tamil Nadu', N'India', N'626123', N'33ABCDE4444D1Z4', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (15, N'VEND015', N'Supreme Agro Agency', N'Vijay', N'9876500015', N'vijay@supremeagro.com', N'55 Main Road', N'Near Collector Office', N'Dindigul', N'Tamil Nadu', N'India', N'624001', N'33ABCDE5555E1Z5', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (16, N'VEND016', N'South India Distributors', N'Saravanan', N'9876500016', N'saravanan@sidistributors.com', N'89 GST Road', N'Near Airport', N'Chengalpattu', N'Tamil Nadu', N'India', N'603001', N'33ABCDE6666F1Z6', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (17, N'VEND017', N'Future Retail Supplies', N'Ganesh', N'9876500017', N'ganesh@future-retail.com', N'40 Nehru Street', N'Block A', N'Kanchipuram', N'Tamil Nadu', N'India', N'631501', N'33ABCDE7777G1Z7', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (18, N'VEND018', N'Fresh Choice Wholesalers', N'Mohan', N'9876500018', N'mohan@freshchoice.com', N'17 Lake View', N'Near Market', N'Tiruppur', N'Tamil Nadu', N'India', N'641601', N'33ABCDE8888H1Z8', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.257' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (19, N'VEND019', N'Universal Consumer Goods', N'Ramesh', N'9876500019', N'ramesh@universalcg.com', N'200 Ring Road', N'Sector 3', N'Pudukkottai', N'Tamil Nadu', N'India', N'622001', N'33ABCDE9999J1Z9', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.260' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Vendor] ([Id], [VendorCode], [VendorName], [ContactPerson], [MobileNo], [Email], [Address1], [Address2], [City], [State], [Country], [ZipCode], [GstNo], [IsActive], [IsDeleted], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (20, N'VEND020', N'Elite Home Needs', N'Ashok', N'9876500020', N'ashok@elitehome.com', N'66 Cross Street', N'Near Signal', N'Nagapattinam', N'Tamil Nadu', N'India', N'611001', N'33ABCDE0000K1Z1', 1, 0, N'sa', CAST(N'2026-06-28T13:44:30.260' AS DateTime), NULL, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[Vendor] OFF
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [UQ__Category__A25C5AA7C2BC29F5]    Script Date: 23-08-2026 21:22:49 ******/
+ALTER TABLE [dbo].[Category] ADD  CONSTRAINT [UQ__Category__A25C5AA7C2BC29F5] UNIQUE NONCLUSTERED 
+(
+	[Code] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [UQ_Category_Code]    Script Date: 23-08-2026 21:22:49 ******/
+ALTER TABLE [dbo].[Category] ADD  CONSTRAINT [UQ_Category_Code] UNIQUE NONCLUSTERED 
+(
+	[Code] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [UQ__Customer__0667852196A07634]    Script Date: 23-08-2026 21:22:49 ******/
+ALTER TABLE [dbo].[Customer] ADD  CONSTRAINT [UQ__Customer__0667852196A07634] UNIQUE NONCLUSTERED 
+(
+	[CustomerCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [UQ__Vendor__10C18F5C06464571]    Script Date: 23-08-2026 21:22:49 ******/
+ALTER TABLE [dbo].[Vendor] ADD  CONSTRAINT [UQ__Vendor__10C18F5C06464571] UNIQUE NONCLUSTERED 
+(
+	[VendorCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Customer] ADD  CONSTRAINT [DF__Customer__IsActi__503BEA1C]  DEFAULT ((1)) FOR [IsActive]
+GO
+ALTER TABLE [dbo].[Customer] ADD  CONSTRAINT [DF__Customer__IsDele__51300E55]  DEFAULT ((0)) FOR [IsDeleted]
+GO
+ALTER TABLE [dbo].[Customer] ADD  CONSTRAINT [DF__Customer__Create__5224328E]  DEFAULT (getdate()) FOR [CreatedDate]
+GO
+ALTER TABLE [dbo].[Users] ADD  CONSTRAINT [DF__Users__IsActive__3C34F16F]  DEFAULT ((1)) FOR [IsActive]
+GO
+ALTER TABLE [dbo].[Users] ADD  CONSTRAINT [DF__Users__IsDeleted__3D2915A8]  DEFAULT ((0)) FOR [IsDeleted]
+GO
+ALTER TABLE [dbo].[Users] ADD  CONSTRAINT [DF__Users__CreatedDa__3E1D39E1]  DEFAULT (getutcdate()) FOR [CreatedDate]
+GO
+ALTER TABLE [dbo].[Vendor] ADD  CONSTRAINT [DF__Vendor__IsActive__5BAD9CC8]  DEFAULT ((1)) FOR [IsActive]
+GO
+ALTER TABLE [dbo].[Vendor] ADD  CONSTRAINT [DF__Vendor__IsDelete__5CA1C101]  DEFAULT ((0)) FOR [IsDeleted]
+GO
+ALTER TABLE [dbo].[Vendor] ADD  CONSTRAINT [DF__Vendor__CreatedD__5D95E53A]  DEFAULT (getdate()) FOR [CreatedDate]
+GO
+ALTER TABLE [dbo].[Itemmaster]  WITH CHECK ADD  CONSTRAINT [FK_Itemmaster_Category] FOREIGN KEY([CategoryId])
+REFERENCES [dbo].[Category] ([Id])
+GO
+ALTER TABLE [dbo].[Itemmaster] CHECK CONSTRAINT [FK_Itemmaster_Category]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Category_Delete]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -428,7 +592,7 @@ BEGIN
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetAll]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -465,7 +629,7 @@ BEGIN
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetById]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetById]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -509,7 +673,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_GetPaged]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Category_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -592,7 +756,7 @@ BEGIN
  
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Insert]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Category_Insert]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -654,7 +818,7 @@ BEGIN
 END
 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Category_Update]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Category_Update]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -699,12 +863,172 @@ BEGIN
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Delete]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Customer_Delete]
+(
+    @Id INT
+)
+AS
+BEGIN
+    DELETE FROM Customer
+    WHERE Id=@Id;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+CREATE PROCEDURE [dbo].[sp_Customer_GetAll]
+AS
+BEGIN
+    SELECT *
+    FROM Customer;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_Customer_GetById]
+(
+    @Id INT
+)
+AS
+BEGIN
+    SELECT *
+    FROM Customer
+    WHERE Id=@Id;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Customer_GetPaged]
+(
+    @CustomerCode VARCHAR(20)=NULL,
+    @CustomerName NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @PageNumber INT=1,
+    @PageSize INT=10
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF(@PageNumber<=0) SET @PageNumber=1;
+    IF(@PageSize<=0) SET @PageSize=10;
+
+    DECLARE @Offset INT=(@PageNumber-1)*@PageSize;
+
+    SELECT *,
+           COUNT(*) OVER() AS TotalRecords
+    FROM Customer
+    WHERE
+    (@CustomerCode IS NULL OR CustomerCode LIKE '%'+@CustomerCode+'%')
+    AND (@CustomerName IS NULL OR CustomerName LIKE '%'+@CustomerName+'%')
+    AND (@MobileNo IS NULL OR MobileNo LIKE '%'+@MobileNo+'%')
+    AND (@City IS NULL OR City LIKE '%'+@City+'%')
+    ORDER BY Id
+    OFFSET @Offset ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Customer_Insert]
+(
+    @CustomerCode VARCHAR(20),
+    @CustomerName NVARCHAR(100),
+    @ContactPerson NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @Email VARCHAR(100)=NULL,
+    @Address1 NVARCHAR(200)=NULL,
+    @Address2 NVARCHAR(200)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @State NVARCHAR(100)=NULL,
+    @Country NVARCHAR(100)=NULL,
+    @ZipCode VARCHAR(20)=NULL,
+    @GstNo VARCHAR(50)=NULL
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Customer
+    (
+        CustomerCode,CustomerName,ContactPerson,MobileNo,Email,
+        Address1,Address2,City,State,Country,ZipCode,GstNo,
+        CreatedBy
+    )
+    VALUES
+    (
+        @CustomerCode,@CustomerName,@ContactPerson,@MobileNo,@Email,
+        @Address1,@Address2,@City,@State,@Country,@ZipCode,@GstNo,
+        SYSTEM_USER
+    );
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Customer_Update]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Customer_Update]
+(
+    @Id INT,
+    @CustomerCode VARCHAR(20),
+    @CustomerName NVARCHAR(100),
+    @ContactPerson NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @Email VARCHAR(100)=NULL,
+    @Address1 NVARCHAR(200)=NULL,
+    @Address2 NVARCHAR(200)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @State NVARCHAR(100)=NULL,
+    @Country NVARCHAR(100)=NULL,
+    @ZipCode VARCHAR(20)=NULL,
+    @GstNo VARCHAR(50)=NULL
+)
+AS
+BEGIN
+    UPDATE Customer
+    SET
+        CustomerCode=@CustomerCode,
+        CustomerName=@CustomerName,
+        ContactPerson=@ContactPerson,
+        MobileNo=@MobileNo,
+        Email=@Email,
+        Address1=@Address1,
+        Address2=@Address2,
+        City=@City,
+        State=@State,
+        Country=@Country,
+        ZipCode=@ZipCode,
+        GstNo=@GstNo,
+        UpdatedBy=SYSTEM_USER,
+        UpdatedDate=GETDATE()
+    WHERE Id=@Id;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
 CREATE PROCEDURE [dbo].[sp_Itemmaster_Delete]
 (
     @Id INT
@@ -712,12 +1036,12 @@ CREATE PROCEDURE [dbo].[sp_Itemmaster_Delete]
 AS
 BEGIN
     DELETE FROM Itemmaster
-    WHERE Id = @Id
+    WHERE Id = @Id 
+	 SELECT @Id AS Id;
 END
 
-
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetAll]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -725,14 +1049,34 @@ GO
 CREATE PROCEDURE [dbo].[sp_Itemmaster_GetAll]
 AS
 BEGIN
-    SELECT Id, CatCode, ItemBarCode, Itemcode, Itemname,
-        Description, Uom, Rate,
-        Minimumstock, Maximumstock,
-        IsActive, Createdby, Createddate,
-        Updatedby, Updateddate FROM Itemmaster
+    SELECT
+        I.Id,
+        I.CategoryId,
+ 
+        C.Code AS CategoryCode,
+        C.Name AS CategoryName,
+ 
+        I.ItemBarCode,
+        I.Itemcode,
+        I.Itemname,
+        I.Description,
+        I.Uom,
+        I.Rate,
+        I.Minimumstock,
+        I.Maximumstock,
+        I.IsActive,
+        I.Createdby,
+        I.Createddate,
+        I.Updatedby,
+        I.Updateddate
+    FROM dbo.Itemmaster I
+    INNER JOIN dbo.Category C
+        ON I.CategoryId = C.Id
+    ORDER BY I.Id ASC;
 END
+
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetById]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetById]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -743,123 +1087,162 @@ CREATE PROCEDURE [dbo].[sp_Itemmaster_GetById]
 )
 AS
 BEGIN
-    SELECT id, CatCode, ItemBarCode, Itemcode, Itemname,
-        Description, Uom, Rate,
-        Minimumstock, Maximumstock,
-        IsActive, Createdby, Createddate,
-        Updatedby, Updateddate FROM Itemmaster
-    WHERE Id = @Id
+    SELECT
+        I.Id,
+        I.CategoryId,
+ 
+        C.Code AS CategoryCode,
+        C.Name AS CategoryName,
+ 
+        I.ItemBarCode,
+        I.Itemcode,
+        I.Itemname,
+        I.Description,
+        I.Uom,
+        I.Rate,
+        I.Minimumstock,
+        I.Maximumstock,
+        I.IsActive,
+        I.Createdby,
+        I.Createddate,
+        I.Updatedby,
+        I.Updateddate
+    FROM dbo.Itemmaster I
+    INNER JOIN dbo.Category C
+        ON I.CategoryId = C.Id
+    WHERE I.Id = @Id;
 END
+
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetPaged]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE PROCEDURE [dbo].[sp_Itemmaster_GetPaged]
-
-	@CatCode	VARCHAR(5) = NULL,
-
-	@ItemName	VARCHAR(100) = NULL,
-
-	@Uom		VARCHAR(3) = NULL,
-
+(
+    @CategoryId INT = NULL,
+    @ItemBarCode VARCHAR(25) = NULL,
+    @ItemCode VARCHAR(10) = NULL,
+    @ItemName VARCHAR(100) = NULL,
+    @Uom VARCHAR(3) = NULL,
+    @IsActive BIT = NULL,
     @PageNumber INT = 1,
-
-    @PageSize   INT = 10
-
+    @PageSize INT = 10
+)
 AS
-
 BEGIN
-
     SET NOCOUNT ON;
  
-    -- Default paging
-
-    IF (@PageNumber <= 0) SET @PageNumber = 1;
-
-    IF (@PageSize <= 0) SET @PageSize = 10;
+    -- Default paging values
+    IF (@PageNumber <= 0)
+        SET @PageNumber = 1;
  
-    DECLARE @Offset INT = (@PageNumber - 1) * @PageSize;
+    IF (@PageSize <= 0)
+        SET @PageSize = 10;
  
-    -- Main data
-
-	SELECT 
-
-		Id,
-
-		CatCode,
-
-		ItemBarCode,
-
-		Itemcode,
-
-		Itemname,
-
-		Description,
-
-		Uom,
-
-		Rate,
-
-		Minimumstock,
-
-		Maximumstock,
-
-		IsActive,
-
-		Createdby,
-
-		Createddate,
-
-		Updatedby,
-
-		Updateddate,
-
-		COUNT(*) OVER() AS TotalRecords
-
-	FROM dbo.Itemmaster
-
-	WHERE 
-
-		(@CatCode IS NULL OR CatCode LIKE '%' + @CatCode + '%')
-
-		AND (@ItemName IS NULL OR ItemName LIKE '%' + @ItemName + '%')
-
-		AND (@Uom IS NULL OR Uom LIKE '%' + @Uom + '%')
-
-	ORDER BY Id ASC
-
-	OFFSET @Offset ROWS
-
-	FETCH NEXT @PageSize ROWS ONLY;
+    DECLARE @Offset INT;
  
-	 -- Total count (for pagination UI)
-
-SELECT 
-
-     COUNT(1) AS TotalRecords
-
-FROM dbo.Itemmaster
-
-WHERE 
-
-     (@CatCode IS NULL OR CatCode LIKE '%' + @CatCode + '%')
-
-     AND (@ItemName IS NULL OR ItemName LIKE  '%'+@ItemName+'%')
-
-     AND (@Uom IS NULL OR Uom LIKE '%'+@Uom+'%');
+    SET @Offset = (@PageNumber - 1) * @PageSize;
+ 
+ 
+    ------------------------------------------------------------
+    -- RESULT SET 1 : PAGED ITEMMASTER DATA
+    ------------------------------------------------------------
+ 
+    SELECT
+        I.Id,
+        I.CategoryId,
+ 
+        C.Code AS CategoryCode,
+        C.Name AS CategoryName,
+ 
+        I.ItemBarCode,
+        I.Itemcode,
+        I.Itemname,
+        I.Description,
+        I.Uom,
+        I.Rate,
+        I.Minimumstock,
+        I.Maximumstock,
+        I.IsActive,
+        I.Createdby,
+        I.Createddate,
+        I.Updatedby,
+        I.Updateddate
+ 
+    FROM dbo.Itemmaster I
+ 
+    INNER JOIN dbo.Category C
+        ON I.CategoryId = C.Id
+ 
+    WHERE
+        (@CategoryId IS NULL
+            OR I.CategoryId = @CategoryId)
+ 
+        AND (@ItemBarCode IS NULL
+            OR I.ItemBarCode LIKE '%' + @ItemBarCode + '%')
+ 
+        AND (@ItemCode IS NULL
+            OR I.Itemcode LIKE '%' + @ItemCode + '%')
+ 
+        AND (@ItemName IS NULL
+            OR I.Itemname LIKE '%' + @ItemName + '%')
+ 
+        AND (@Uom IS NULL
+            OR I.Uom LIKE '%' + @Uom + '%')
+ 
+        AND (@IsActive IS NULL
+            OR I.IsActive = @IsActive)
+ 
+    ORDER BY I.Id DESC
+ 
+    OFFSET @Offset ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+ 
+ 
+    ------------------------------------------------------------
+    -- RESULT SET 2 : TOTAL RECORD COUNT
+    ------------------------------------------------------------
+ 
+    SELECT
+        COUNT(1) AS TotalRecords
+ 
+    FROM dbo.Itemmaster I
+ 
+    INNER JOIN dbo.Category C
+        ON I.CategoryId = C.Id
+ 
+    WHERE
+        (@CategoryId IS NULL
+            OR I.CategoryId = @CategoryId)
+ 
+        AND (@ItemBarCode IS NULL
+            OR I.ItemBarCode LIKE '%' + @ItemBarCode + '%')
+ 
+        AND (@ItemCode IS NULL
+            OR I.Itemcode LIKE '%' + @ItemCode + '%')
+ 
+        AND (@ItemName IS NULL
+            OR I.Itemname LIKE '%' + @ItemName + '%')
+ 
+        AND (@Uom IS NULL
+            OR I.Uom LIKE '%' + @Uom + '%')
+ 
+        AND (@IsActive IS NULL
+            OR I.IsActive = @IsActive);
  
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Insert]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Insert]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[sp_Itemmaster_Insert]
 (
-    @CatCode VARCHAR(5),
+    @CategoyId INT,
     @ItemBarCode VARCHAR(25),
     @Itemcode VARCHAR(10),
     @Itemname VARCHAR(100),
@@ -869,37 +1252,56 @@ CREATE PROCEDURE [dbo].[sp_Itemmaster_Insert]
     @Minimumstock DECIMAL(18,2),
     @Maximumstock DECIMAL(18,2),
     @IsActive BIT
-    
 )
 AS
 BEGIN
-    SET NOCOUNT ON;
-
     INSERT INTO Itemmaster
     (
-        CatCode, ItemBarCode, Itemcode, Itemname,
-        Description, Uom, Rate,
-        Minimumstock, Maximumstock,
-        IsActive, Createdby, Createddate, updatedby, updateddate
+        CategoryId, 
+		ItemBarCode, 
+		Itemcode, 
+		Itemname,
+        Description, 
+		Uom, 
+		Rate,
+        Minimumstock, 
+		Maximumstock,
+        IsActive, 
+		Createdby, 
+		Createddate,
+        Updatedby, 
+		Updateddate
     )
     VALUES
     (
-        @CatCode, @ItemBarCode, @Itemcode, @Itemname,
-        @Description, @Uom, @Rate,
-        @Minimumstock, @Maximumstock,
-        @IsActive,SYSTEM_USER, GETDATE(),NULL,NULL
+        @CategoyId, 
+		@ItemBarCode, 
+		@Itemcode, 
+		@Itemname,
+        @Description, 
+		@Uom, 
+		@Rate,
+        @Minimumstock, 
+		@Maximumstock,
+        @IsActive, 
+		SYSTEM_USER,
+		GETDATE(),
+        NULL, 
+		NULL
     )
 END
+
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Update]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Itemmaster_Update]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE PROCEDURE [dbo].[sp_Itemmaster_Update]
 (
     @Id INT,
-    @CatCode VARCHAR(5),
+    @CategoryId INT,
     @ItemBarCode VARCHAR(25),
     @Itemcode VARCHAR(10),
     @Itemname VARCHAR(100),
@@ -909,13 +1311,14 @@ CREATE PROCEDURE [dbo].[sp_Itemmaster_Update]
     @Minimumstock DECIMAL(18,2),
     @Maximumstock DECIMAL(18,2),
     @IsActive BIT
-   
 )
 AS
 BEGIN
-    UPDATE Itemmaster
+    SET NOCOUNT ON;
+ 
+    UPDATE dbo.Itemmaster
     SET
-        CatCode = @CatCode,
+        CategoryId = @CategoryId,
         ItemBarCode = @ItemBarCode,
         Itemcode = @Itemcode,
         Itemname = @Itemname,
@@ -927,201 +1330,1162 @@ BEGIN
         IsActive = @IsActive,
         Updatedby = SYSTEM_USER,
         Updateddate = GETDATE()
-    WHERE Id = @Id
+    WHERE Id = @Id;
+ 
+    SELECT @Id AS Id;
 END
+ 
 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Delete]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Users_Delete]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE PROCEDURE [dbo].[sp_Users_Delete]
+
 (
-@Id INT
+
+    @Id        INT,
+
+    @UpdatedBy NVARCHAR(100)
+
 )
+
 AS
+
 BEGIN
 
-DELETE FROM Users
+    SET NOCOUNT ON;
+ 
+    IF NOT EXISTS
 
-WHERE Id=@Id
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE Id = @Id
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        SELECT CAST(0 AS BIT) AS Success;
+
+        RETURN;
+
+    END;
+ 
+    UPDATE dbo.Users
+
+    SET
+
+        IsDeleted  = 1,
+
+        IsActive   = 0,
+
+        UpdatedBy  = @UpdatedBy,
+
+        UpdatedDate = GETUTCDATE()
+
+    WHERE Id = @Id;
+ 
+    SELECT CAST(1 AS BIT) AS Success;
 
 END
+ 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetAll]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create procedure [dbo].[sp_Users_GetAll]
 
-AS 
+CREATE PROCEDURE [dbo].[sp_Users_GetAll]
+
+AS
+
 BEGIN
 
-SELECT Id,UserName,Email,Password,FirstName,MiddleName,LastName,DisplayName,PhoneNumber,AlternatePhone,AddressLine1,AddressLine2,City,
-State,ZipCode,Country,DateOfBirth,IsActive,IsDeleted,CreatedBy,CreatedDate,UpdatedBy,UpdatedDate FROM Users
+    SET NOCOUNT ON;
+ 
+    SELECT
+
+        Id,
+
+        UserName,
+
+        Email,
+
+        FirstName,
+
+        MiddleName,
+
+        LastName,
+
+        DisplayName,
+
+        PhoneNumber,
+
+        AlternatePhone,
+
+        AddressLine1,
+
+        AddressLine2,
+
+        City,
+
+        State,
+
+        ZipCode,
+
+        Country,
+
+        DateOfBirth,
+
+        IsActive,
+
+        IsDeleted,
+
+        LastLoginDate,
+
+        CreatedBy,
+
+        CreatedDate,
+
+        UpdatedBy,
+
+        UpdatedDate
+
+    FROM dbo.Users
+
+    WHERE IsDeleted = 0
+
+    ORDER BY Id;
 
 END
-
+ 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetById]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetByEmail]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+ 
+create PROCEDURE [dbo].[sp_Users_GetByEmail]
+
+(
+
+    @Email VARCHAR(255)
+
+)
+
+AS
+
+BEGIN
+
+    SET NOCOUNT ON;
+ 
+    SELECT
+
+        Id,
+
+        UserName,
+
+        Email,
+
+        FirstName,
+
+        LastName,
+
+        DisplayName,
+
+        IsActive,
+
+        IsDeleted
+
+    FROM dbo.Users
+
+    WHERE Email = @Email;
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
 CREATE PROCEDURE [dbo].[sp_Users_GetById]
+
 (
-@Id INT
+
+    @Id INT
+
 )
+
 AS
+
 BEGIN
 
-SELECT Id,UserName,Email,Password,FirstName,MiddleName,LastName,DisplayName,PhoneNumber,AlternatePhone,AddressLine1,AddressLine2,City,
-State,ZipCode,Country,DateOfBirth,IsActive,IsDeleted,CreatedBy,CreatedDate,UpdatedBy,UpdatedDate FROM Users
+    SET NOCOUNT ON;
+ 
+    SELECT
 
-WHERE Id=@Id
+        Id,
+
+        UserName,
+
+        Email,
+
+        FirstName,
+
+        MiddleName,
+
+        LastName,
+
+        DisplayName,
+
+        PhoneNumber,
+
+        AlternatePhone,
+
+        AddressLine1,
+
+        AddressLine2,
+
+        City,
+
+        State,
+
+        ZipCode,
+
+        Country,
+
+        DateOfBirth,
+
+        IsActive,
+
+        IsDeleted,
+
+        LastLoginDate,
+
+        CreatedBy,
+
+        CreatedDate,
+
+        UpdatedBy,
+
+        UpdatedDate
+
+    FROM dbo.Users
+
+    WHERE Id = @Id
+
+      AND IsDeleted = 0;
 
 END
+
+ 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_GetPaged]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetByUserName]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[sp_Users_GetPaged]
+ 
+create PROCEDURE [dbo].[sp_Users_GetByUserName]
+
 (
-    @UserName VARCHAR(100) = NULL,
-    @FirstName VARCHAR(100) = NULL,
-    @LastName VARCHAR(100) = NULL,
-    @PhoneNumber VARCHAR(25) = NULL,
-    @City VARCHAR(100) = NULL,
-    @DateOfBirth DATE = NULL,
-    @IsActive BIT = NULL,
-    @PageNumber INT = 1,
-    @PageSize INT = 10
+
+    @UserName VARCHAR(100)
+
+)
+
+AS
+
+BEGIN
+
+    SET NOCOUNT ON;
+ 
+    SELECT
+
+        Id,
+
+        UserName,
+
+        Email,
+
+        PasswordHash,
+
+        FirstName,
+
+        MiddleName,
+
+        LastName,
+
+        DisplayName,
+
+        PhoneNumber,
+
+        IsActive,
+
+        IsDeleted,
+
+        LastLoginDate
+
+    FROM dbo.Users
+
+    WHERE UserName = @UserName;
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Users_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_Users_GetPaged]
+
+(
+
+    @UserName    VARCHAR(100) = NULL,
+
+    @Email       VARCHAR(255) = NULL,
+
+    @FirstName   VARCHAR(100) = NULL,
+
+    @LastName    VARCHAR(100) = NULL,
+
+    @IsActive    BIT = NULL,
+
+    @PageNumber  INT = 1,
+
+    @PageSize    INT = 10
+
+)
+
+AS
+
+BEGIN
+
+    SET NOCOUNT ON;
+ 
+    IF (@PageNumber <= 0)
+
+        SET @PageNumber = 1;
+ 
+    IF (@PageSize <= 0)
+
+        SET @PageSize = 10;
+ 
+    DECLARE @Offset INT = (@PageNumber - 1) * @PageSize;
+ 
+    /*
+
+        ============================================================
+
+        RESULT SET 1
+
+        Paged User Records
+
+        ============================================================
+
+    */
+ 
+    SELECT
+
+        Id,
+
+        UserName,
+
+        Email,
+
+        FirstName,
+
+        MiddleName,
+
+        LastName,
+
+        DisplayName,
+
+        PhoneNumber,
+
+        AlternatePhone,
+
+        AddressLine1,
+
+        AddressLine2,
+
+        City,
+
+        State,
+
+        ZipCode,
+
+        Country,
+
+        DateOfBirth,
+
+        IsActive,
+
+        IsDeleted,
+
+        LastLoginDate,
+
+        CreatedBy,
+
+        CreatedDate,
+
+        UpdatedBy,
+
+        UpdatedDate,
+ 
+        COUNT(*) OVER() AS TotalRecords
+ 
+    FROM dbo.Users
+ 
+    WHERE
+
+        IsDeleted = 0
+ 
+        AND
+
+        (
+
+            @UserName IS NULL
+
+            OR UserName LIKE '%' + @UserName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @Email IS NULL
+
+            OR Email LIKE '%' + @Email + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @FirstName IS NULL
+
+            OR FirstName LIKE '%' + @FirstName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @LastName IS NULL
+
+            OR LastName LIKE '%' + @LastName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @IsActive IS NULL
+
+            OR IsActive = @IsActive
+
+        )
+ 
+    ORDER BY Id ASC
+ 
+    OFFSET @Offset ROWS
+
+    FETCH NEXT @PageSize ROWS ONLY;
+ 
+ 
+    /*
+
+        ============================================================
+
+        RESULT SET 2
+
+        Total Records
+
+        ============================================================
+
+    */
+ 
+    SELECT
+
+        COUNT(1) AS TotalRecords
+ 
+    FROM dbo.Users
+ 
+    WHERE
+
+        IsDeleted = 0
+ 
+        AND
+
+        (
+
+            @UserName IS NULL
+
+            OR UserName LIKE '%' + @UserName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @Email IS NULL
+
+            OR Email LIKE '%' + @Email + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @FirstName IS NULL
+
+            OR FirstName LIKE '%' + @FirstName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @LastName IS NULL
+
+            OR LastName LIKE '%' + @LastName + '%'
+
+        )
+ 
+        AND
+
+        (
+
+            @IsActive IS NULL
+
+            OR IsActive = @IsActive
+
+        );
+ 
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Users_Insert]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sp_Users_Insert]
+
+(
+
+    @UserName       VARCHAR(100),
+
+    @Email          VARCHAR(255),
+
+    @PasswordHash   VARCHAR(500),
+
+    @FirstName      VARCHAR(100),
+
+    @MiddleName     VARCHAR(100) = NULL,
+
+    @LastName       VARCHAR(100),
+
+    @DisplayName    VARCHAR(200),
+
+    @PhoneNumber    VARCHAR(25),
+
+    @AlternatePhone VARCHAR(25) = NULL,
+
+    @AddressLine1   VARCHAR(255),
+
+    @AddressLine2   VARCHAR(255) = NULL,
+
+    @City           VARCHAR(100),
+
+    @State          VARCHAR(100),
+
+    @ZipCode        VARCHAR(20),
+
+    @Country        VARCHAR(100),
+
+    @DateOfBirth    DATE = NULL,
+
+    @IsActive       BIT = 1,
+
+    @CreatedBy      NVARCHAR(100)
+
+)
+
+AS
+
+BEGIN
+
+    SET NOCOUNT ON;
+ 
+    IF EXISTS
+
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE UserName = @UserName
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        THROW 50001, 'Username already exists.', 1;
+
+    END;
+ 
+    IF EXISTS
+
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE Email = @Email
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        THROW 50002, 'Email already exists.', 1;
+
+    END;
+ 
+    INSERT INTO dbo.Users
+
+    (
+
+        UserName,
+
+        Email,
+
+        PasswordHash,
+
+        FirstName,
+
+        MiddleName,
+
+        LastName,
+
+        DisplayName,
+
+        PhoneNumber,
+
+        AlternatePhone,
+
+        AddressLine1,
+
+        AddressLine2,
+
+        City,
+
+        State,
+
+        ZipCode,
+
+        Country,
+
+        DateOfBirth,
+
+        IsActive,
+
+        IsDeleted,
+
+        CreatedBy,
+
+        CreatedDate
+
+    )
+
+    VALUES
+
+    (
+
+        @UserName,
+
+        @Email,
+
+        @PasswordHash,
+
+        @FirstName,
+
+        @MiddleName,
+
+        @LastName,
+
+        @DisplayName,
+
+        @PhoneNumber,
+
+        @AlternatePhone,
+
+        @AddressLine1,
+
+        @AddressLine2,
+
+        @City,
+
+        @State,
+
+        @ZipCode,
+
+        @Country,
+
+        @DateOfBirth,
+
+        @IsActive,
+
+        0,
+
+        @CreatedBy,
+
+        GETUTCDATE()
+
+    );
+ 
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS Id;
+
+END
+
+ 
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Users_Update]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Users_Update]
+
+(
+
+    @Id             INT,
+
+    @UserName       VARCHAR(100),
+
+    @Email          VARCHAR(255),
+
+    @FirstName      VARCHAR(100),
+
+    @MiddleName     VARCHAR(100) = NULL,
+
+    @LastName       VARCHAR(100),
+
+    @DisplayName    VARCHAR(200),
+
+    @PhoneNumber    VARCHAR(25),
+
+    @AlternatePhone VARCHAR(25) = NULL,
+
+    @AddressLine1   VARCHAR(255),
+
+    @AddressLine2   VARCHAR(255) = NULL,
+
+    @City           VARCHAR(100),
+
+    @State          VARCHAR(100),
+
+    @ZipCode        VARCHAR(20),
+
+    @Country        VARCHAR(100),
+
+    @DateOfBirth    DATE = NULL,
+
+    @IsActive       BIT,
+
+    @UpdatedBy      NVARCHAR(100)
+
+)
+
+AS
+
+BEGIN
+
+  
+ 
+    IF NOT EXISTS
+
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE Id = @Id
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        THROW 50003, 'User not found.', 1;
+
+    END;
+ 
+    IF EXISTS
+
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE UserName = @UserName
+
+          AND Id <> @Id
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        THROW 50004, 'Username already exists.', 1;
+
+    END;
+ 
+    IF EXISTS
+
+    (
+
+        SELECT 1
+
+        FROM dbo.Users
+
+        WHERE Email = @Email
+
+          AND Id <> @Id
+
+          AND IsDeleted = 0
+
+    )
+
+    BEGIN
+
+        THROW 50005, 'Email already exists.', 1;
+
+    END;
+ 
+    UPDATE dbo.Users
+
+    SET
+
+        UserName       = @UserName,
+
+        Email          = @Email,
+
+        FirstName      = @FirstName,
+
+        MiddleName     = @MiddleName,
+
+        LastName       = @LastName,
+
+        DisplayName    = @DisplayName,
+
+        PhoneNumber    = @PhoneNumber,
+
+        AlternatePhone = @AlternatePhone,
+
+        AddressLine1   = @AddressLine1,
+
+        AddressLine2   = @AddressLine2,
+
+        City           = @City,
+
+        State          = @State,
+
+        ZipCode        = @ZipCode,
+
+        Country        = @Country,
+
+        DateOfBirth    = @DateOfBirth,
+
+        IsActive       = @IsActive,
+
+        UpdatedBy      = @UpdatedBy,
+
+        UpdatedDate    = GETUTCDATE()
+
+    WHERE Id = @Id;
+ 
+    SELECT CAST(1 AS BIT) AS Success;
+
+END
+
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Users_UpdateLastLogin]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create PROCEDURE [dbo].[sp_Users_UpdateLastLogin]
+
+(
+
+    @Id INT
+
+)
+
+AS
+
+BEGIN
+
+    SET NOCOUNT ON;
+ 
+    UPDATE dbo.Users
+
+    SET
+
+        LastLoginDate = GETUTCDATE()
+
+    WHERE Id = @Id
+
+      AND IsDeleted = 0
+
+      AND IsActive = 1;
+ 
+    SELECT CAST(1 AS BIT) AS Success;
+
+END
+
+ 
+
+ 
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Delete]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_Vendor_Delete]
+(
+    @Id INT
 )
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    DECLARE @Offset INT = (@PageNumber - 1) * @PageSize;
+    DELETE FROM Vendor
+    WHERE Id=@Id;
+
+    SELECT @@ROWCOUNT;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetAll]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_Vendor_GetAll]
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT *
+    FROM Vendor
+    ORDER BY Id;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetById]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_Vendor_GetById]
+(
+    @Id INT
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT *
+    FROM Vendor
+    WHERE Id=@Id;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_GetPaged]    Script Date: 23-08-2026 21:22:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_Vendor_GetPaged]
+(
+    @VendorCode VARCHAR(20)=NULL,
+    @VendorName NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @PageNumber INT=1,
+    @PageSize INT=10
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF(@PageNumber<=0) SET @PageNumber=1;
+    IF(@PageSize<=0) SET @PageSize=10;
+
+    DECLARE @Offset INT;
+    SET @Offset=(@PageNumber-1)*@PageSize;
 
     SELECT
-        Id,UserName,Email,Password,FirstName,MiddleName,
-        LastName,DisplayName,PhoneNumber,AlternatePhone,
-        AddressLine1,AddressLine2,City,State,ZipCode,
-        Country,DateOfBirth,
+        Id,
+        VendorCode,
+        VendorName,
+        ContactPerson,
+        MobileNo,
+        Email,
+        Address1,
+        Address2,
+        City,
+        State,
+        Country,
+        ZipCode,
+        GstNo,
+        IsActive,
+        IsDeleted,
+        CreatedBy,
+        CreatedDate,
+        UpdatedBy,
+        UpdatedDate,
         COUNT(*) OVER() AS TotalRecords
-    FROM Users
+    FROM Vendor
     WHERE
-        (@UserName IS NULL OR UserName LIKE '%' + @UserName + '%')
-        AND (@FirstName IS NULL OR FirstName LIKE '%' + @FirstName + '%')
-        AND (@LastName IS NULL OR LastName LIKE '%' + @LastName + '%')
-        AND (@PhoneNumber IS NULL OR PhoneNumber LIKE '%' + @PhoneNumber + '%')
-        AND (@City IS NULL OR City LIKE '%' + @City + '%')
-        AND (@DateOfBirth IS NULL OR CAST(DateOfBirth AS DATE) = @DateOfBirth)
-        AND (@IsActive IS NULL OR IsActive = @IsActive)
+        (@VendorCode IS NULL OR @VendorCode='' OR VendorCode LIKE '%'+@VendorCode+'%')
+        AND (@VendorName IS NULL OR @VendorName='' OR VendorName LIKE '%'+@VendorName+'%')
+        AND (@MobileNo IS NULL OR @MobileNo='' OR MobileNo LIKE '%'+@MobileNo+'%')
+        AND (@City IS NULL OR @City='' OR City LIKE '%'+@City+'%')
     ORDER BY Id
     OFFSET @Offset ROWS
     FETCH NEXT @PageSize ROWS ONLY;
 
     SELECT COUNT(*) AS TotalRecords
-    FROM Users;
+    FROM Vendor
+    WHERE
+        (@VendorCode IS NULL OR @VendorCode='' OR VendorCode LIKE '%'+@VendorCode+'%')
+        AND (@VendorName IS NULL OR @VendorName='' OR VendorName LIKE '%'+@VendorName+'%')
+        AND (@MobileNo IS NULL OR @MobileNo='' OR MobileNo LIKE '%'+@MobileNo+'%')
+        AND (@City IS NULL OR @City='' OR City LIKE '%'+@City+'%');
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Insert]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Insert]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE   PROCEDURE [dbo].[sp_Users_Insert]
+CREATE PROCEDURE [dbo].[sp_Vendor_Insert]
 (
-    @UserName varchar(100),
-    @Email varchar(255),
-    @Password varchar(500),
-    @FirstName varchar(100),
-    @MiddleName varchar(100) = NULL,
-    @LastName varchar(100),
-    @DisplayName varchar(200),
-    @PhoneNumber varchar(25),
-    @AlternatePhone varchar(25) = NULL,
-    @AddressLine1 varchar(255),
-    @AddressLine2 varchar(255) = NULL,
-    @City varchar(100),
-    @State varchar(100),
-    @ZipCode varchar(20),
-    @Country varchar(100),
-    @DateOfBirth DATE = NULL
+    @VendorCode VARCHAR(20),
+    @VendorName NVARCHAR(100),
+    @ContactPerson NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @Email VARCHAR(100)=NULL,
+    @Address1 NVARCHAR(200)=NULL,
+    @Address2 NVARCHAR(200)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @State NVARCHAR(100)=NULL,
+    @Country NVARCHAR(100)=NULL,
+    @ZipCode VARCHAR(20)=NULL,
+    @GstNo VARCHAR(50)=NULL
 )
 AS
 BEGIN
-    INSERT INTO Users
+    INSERT INTO Vendor
     (
-        UserName,Email,Password,FirstName,MiddleName,LastName,
-        DisplayName,PhoneNumber,AlternatePhone,AddressLine1,
-        AddressLine2,City,State,ZipCode,Country,DateOfBirth,
-        CreatedBy
+        VendorCode,VendorName,ContactPerson,MobileNo,Email,
+        Address1,Address2,City,State,Country,
+        ZipCode,GstNo,CreatedBy,UpdatedBy,UpdatedDate
     )
     VALUES
     (
-        @UserName,@Email,@Password,@FirstName,@MiddleName,@LastName,
-        @DisplayName,@PhoneNumber,@AlternatePhone,@AddressLine1,
-        @AddressLine2,@City,@State,@ZipCode,@Country,@DateOfBirth,
-        SYSTEM_USER
+        @VendorCode,@VendorName,@ContactPerson,@MobileNo,@Email,
+        @Address1,@Address2,@City,@State,@Country,
+        @ZipCode,@GstNo,SYSTEM_USER,NULL,NULL
     )
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_Users_Update]    Script Date: 21-06-2026 20:19:43 ******/
+/****** Object:  StoredProcedure [dbo].[sp_Vendor_Update]    Script Date: 23-08-2026 21:22:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create procedure [dbo].[sp_Users_Update]
+CREATE PROCEDURE [dbo].[sp_Vendor_Update]
 (
-@Id int,
-@UserName varchar(100),
-@Email varchar(255),
-@Password varchar(500),
-@FirstName varchar(100),
-@MiddleName varchar(100) = NULL,
-@LastName varchar(100),
-@DisplayName varchar(200),
-@PhoneNumber varchar(25),
-@AlternatePhone varchar(25),
-@AddressLine1 varchar(255),
-@AddressLine2 varchar(255)= NULL,
-@City varchar(100),
-@State varchar(100),
-@ZipCode varchar(20),
-@Country varchar(100),
-@DateOfBirth Date
+    @Id INT,
+    @VendorCode VARCHAR(20),
+    @VendorName NVARCHAR(100),
+    @ContactPerson NVARCHAR(100)=NULL,
+    @MobileNo VARCHAR(20)=NULL,
+    @Email VARCHAR(100)=NULL,
+    @Address1 NVARCHAR(200)=NULL,
+    @Address2 NVARCHAR(200)=NULL,
+    @City NVARCHAR(100)=NULL,
+    @State NVARCHAR(100)=NULL,
+    @Country NVARCHAR(100)=NULL,
+    @ZipCode VARCHAR(20)=NULL,
+    @GstNo VARCHAR(50)=NULL,
+    @IsActive BIT,
+    @IsDeleted BIT
 )
-AS 
-	BEGIN
+AS
+BEGIN
+    SET NOCOUNT ON;
 
-	Update Users
+    UPDATE Vendor
+    SET
+        VendorCode=@VendorCode,
+        VendorName=@VendorName,
+        ContactPerson=@ContactPerson,
+        MobileNo=@MobileNo,
+        Email=@Email,
+        Address1=@Address1,
+        Address2=@Address2,
+        City=@City,
+        State=@State,
+        Country=@Country,
+        ZipCode=@ZipCode,
+        GstNo=@GstNo,
+        IsActive=@IsActive,
+        IsDeleted=@IsDeleted,
+        UpdatedBy=SYSTEM_USER,
+        UpdatedDate=GETDATE()
+    WHERE Id=@Id;
 
-	SET
-	UserName =@UserName,
-	Email=@Email,
-	Password=@Password,
-	FirstName=@FirstName,
-	MiddleName=@MiddleName,
-	LastName=@LastName,
-	DisplayName=@DisplayName,
-	PhoneNumber=@PhoneNumber,
-	AlternatePhone=@AlternatePhone,
-	AddressLine1=@AddressLine1,
-	AddressLine2=@AddressLine2,
-	City=@City,
-	State=@State,
-	ZipCode=@ZipCode,
-	Country=@Country,
-	DateOfBirth=@DateOfBirth,
-	UpdatedBy=SYSTEM_USER,
-	UpdatedDate=GETDATE()
-WHERE Id=@Id
-
+    SELECT @@ROWCOUNT;
 END
 GO

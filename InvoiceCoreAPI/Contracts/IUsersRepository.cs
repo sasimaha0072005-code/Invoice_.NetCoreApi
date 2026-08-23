@@ -1,24 +1,17 @@
-﻿
+﻿namespace ProductApi.Contracts;
 using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Entities;
-
-namespace InvoiceCoreAPI.Contracts;
+using ProductApi.DTOs;
 
 public interface IUsersRepository
 {
-    Task<int> AddAsync(Users users);
     Task<IEnumerable<Users>> GetAllAsync();
     Task<Users?> GetByIdAsync(int id);
-    Task<bool> UpdateAsync(Users users);
-    Task<bool> DeleteAsync(int id);
-    Task<PagedResultDto<Users>> GetAllPagedAsync(
-        string? UserName,
-        string? FirstName,
-        string? LastName,
-        string? PhoneNumber,
-        string? City,
-        DateTime? DateOfBirth,
-        bool? IsActive,
-        int PageNumber,
-        int PageSize);
+    Task<Users?> GetByUserNameAsync(string userName);
+    Task<Users?> GetByEmailAsync(string email);
+    Task<int> InsertAsync(Users user);
+    Task<bool> UpdateAsync(int id, Users user);
+    Task<bool> DeleteAsync(int id,string updatedBy);
+    Task<PagedResultDto<Users>> GetPagedAsync(UserFilterDto filter);
+    Task<bool> UpdateLastLoginAsync(int id);
 }
