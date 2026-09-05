@@ -11,20 +11,19 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepositories>();
+builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepositoriesEFSp>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
-
 builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
 
-builder.Services.AddScoped<IItemMasterService, ItemMasterService>();
+builder.Services.AddScoped<IItemmasterService, ItemmasterServiceEFSp>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<IUsersService, UsersService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 
-builder.Services.AddAutoMapper(typeof(ItemMasterProfile));
+builder.Services.AddAutoMapper(typeof(ItemmasterProfile));
 builder.Services.AddAutoMapper(typeof(CategoryProfile));
 builder.Services.AddAutoMapper(typeof(VendorProfile));
 builder.Services.AddAutoMapper(typeof(UsersProfile));
@@ -107,31 +106,23 @@ builder.Services.AddSwaggerGen(c => {
 
     });
 
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement{
-
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+{
+    {
+        new OpenApiSecurityScheme
         {
-
-            new OpenApiSecurityScheme{
-
-                Reference = new OpenApiReference{
-
-                    Type = ReferenceType.SecurityScheme,
-
-                    Id = "Bearer"
-
-                }
-
-            },
-
-            Array.Empty<string>()
-
-        }
-
-    });
-
+            Reference = new OpenApiReference
+            {
+                Type = ReferenceType.SecurityScheme,
+                Id = "Bearer"
+            }
+        },
+        Array.Empty<string>()
+    }
+});
 });
 
-WebApplication app = builder.Build();
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 

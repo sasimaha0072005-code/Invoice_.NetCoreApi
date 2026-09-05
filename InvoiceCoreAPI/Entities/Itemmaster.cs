@@ -18,9 +18,7 @@ public class Itemmaster
 
     [Required]
 
-    [StringLength(5)]
-
-    public string CatCode { get; set; }
+    public required int CategoryId  { get; set; }
 
     [Required]
 

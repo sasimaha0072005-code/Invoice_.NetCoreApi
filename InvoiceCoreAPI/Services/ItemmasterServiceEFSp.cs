@@ -12,7 +12,7 @@ namespace InvoiceCoreAPI.Services
 
 {
 
-    public class ItemMasterService : IItemMasterService
+    public class ItemmasterServiceEFSp : IItemmasterService
 
     {
 
@@ -20,7 +20,7 @@ namespace InvoiceCoreAPI.Services
 
         private readonly IMapper _mapper;
 
-        public ItemMasterService(IItemmasterRepository repository, IMapper mapper)
+        public ItemmasterServiceEFSp(IItemmasterRepository repository, IMapper mapper)
 
         {
 
@@ -78,16 +78,10 @@ namespace InvoiceCoreAPI.Services
 
         }
 
-    
-    public async Task<PagedResultDto<ItemmasterDto>> GetAllPagedAsync(
-string? catCode,
-string? itemName,
-string? uom,
-int pageNumber,
-int pageSize)
+
+        public async Task<PagedResultDto<ItemmasterDto>> GetAllPagedAsync(ItemmasterFilterDto search)
         {
-            var result = await _repository.GetAllPagedAsync(
-                catCode, itemName, uom, pageNumber, pageSize);
+            var result = await _repository.GetAllPagedAsync(search);
 
             return new PagedResultDto<ItemmasterDto>
             {
@@ -95,6 +89,7 @@ int pageSize)
                 TotalRecords = result.TotalRecords
             };
         }
+
 
     }
 }

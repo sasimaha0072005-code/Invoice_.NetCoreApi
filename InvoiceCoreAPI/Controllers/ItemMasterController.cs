@@ -10,11 +10,11 @@ namespace InvoiceCoreAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class ItemMasterController : ControllerBase
+    public class ItemmasterController : ControllerBase
     {
-        private readonly IItemMasterService _service;
+        private readonly IItemmasterService _service;
 
-        public ItemMasterController(IItemMasterService service)
+        public ItemmasterController(IItemmasterService service)
         {
             _service = service;
         }
@@ -190,17 +190,11 @@ namespace InvoiceCoreAPI.Controllers
         }
     
     [HttpGet("GetAllPaged")]
-        public async Task<IActionResult> GetAllPaged(
-        string? catCode,
-        string? itemName,
-        string? uom,
-        int pageNumber = 1,
-        int pageSize = 10)
+        public async Task<IActionResult> GetAllPaged([FromQuery] ItemmasterFilterDto search)
         {
             try
             {
-                var result = await _service.GetAllPagedAsync(
-                    catCode, itemName, uom, pageNumber, pageSize);
+                var result = await _service.GetAllPagedAsync(search);
 
                 return Ok(new ApiResponse<IEnumerable<ItemmasterDto>>
                 {
@@ -224,6 +218,8 @@ namespace InvoiceCoreAPI.Controllers
                 });
             }
         }
+
     }
-    }
+}
+    
 

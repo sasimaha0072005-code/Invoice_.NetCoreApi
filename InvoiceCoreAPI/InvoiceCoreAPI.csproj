@@ -28,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataBase\" />
     <Folder Include="Properties\" />
   </ItemGroup>
 
