@@ -11,6 +11,11 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.CategoryDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -27,6 +32,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -38,7 +48,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -68,6 +84,11 @@
         "Name": "pageSize",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -84,6 +105,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -105,6 +131,11 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.CategoryDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -121,6 +152,11 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.CustomerDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -137,6 +173,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -148,7 +189,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -188,6 +235,11 @@
         "Name": "pageSize",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -204,6 +256,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -225,14 +282,19 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.CustomerDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "Create",
-    "RelativePath": "api/Itemmaster/Create",
+    "RelativePath": "api/v1/ItemMaster/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -246,9 +308,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "Delete",
-    "RelativePath": "api/Itemmaster/Delete/{id}",
+    "RelativePath": "api/v1/ItemMaster/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -262,9 +324,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "GetAll",
-    "RelativePath": "api/Itemmaster/GetAll",
+    "RelativePath": "api/v1/ItemMaster/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -272,9 +334,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "GetAllPaged",
-    "RelativePath": "api/Itemmaster/GetAllPaged",
+    "RelativePath": "api/v1/ItemMaster/GetAllPaged",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -323,9 +385,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "GetById",
-    "RelativePath": "api/Itemmaster/GetById/{id}",
+    "RelativePath": "api/v1/ItemMaster/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -339,62 +401,72 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.ItemmasterController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
+    "Method": "TestException",
+    "RelativePath": "api/v1/ItemMaster/TestException",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvoiceCoreAPI.Controllers.ItemMasterController",
     "Method": "Update",
-    "RelativePath": "api/Itemmaster/Update/{id}",
+    "RelativePath": "api/v1/ItemMaster/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "InvoiceCoreAPI.DTO.ItemmasterDto",
-        "IsRequired": true
-      },
-      {
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "InvoiceCoreAPI.DTO.ItemmasterDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProductApi.Controllers.LoginController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.LoginController",
     "Method": "Login",
-    "RelativePath": "api/Login/Login",
+    "RelativePath": "api/v1/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "InvoiceCoreAPI.DTO.LoginDto",
+        "Name": "request",
+        "Type": "InvoiceCoreAPI.DTO.LoginRequestDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
     "Method": "Create",
-    "RelativePath": "api/Users/Create",
+    "RelativePath": "api/v1/User/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "InvoiceCoreAPI.DTO.UsersDto",
+        "Type": "InvoiceCoreAPI.DTO.UsersCreateDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
     "Method": "Delete",
-    "RelativePath": "api/Users/Delete/{id}",
+    "RelativePath": "api/v1/User/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -403,14 +475,19 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "updatedBy",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
     "Method": "GetAll",
-    "RelativePath": "api/Users/GetAll",
+    "RelativePath": "api/v1/User/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -418,65 +495,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
-    "Method": "GetAllPaged",
-    "RelativePath": "api/Users/GetAllPaged",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "UserName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FirstName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "LastName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PhoneNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "City",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DateOfBirth",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "IsActive",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
     "Method": "GetById",
-    "RelativePath": "api/Users/GetById/{id}",
+    "RelativePath": "api/v1/User/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -490,9 +511,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceCoreAPI.Controllers.UsersController",
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
+    "Method": "GetPaged",
+    "RelativePath": "api/v1/User/GetPaged",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "InvoiceCoreAPI.DTO.UsersFilterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvoiceCoreAPI.Controllers.UserController",
     "Method": "Update",
-    "RelativePath": "api/Users/Update/{id}",
+    "RelativePath": "api/v1/User/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -504,7 +541,7 @@
       },
       {
         "Name": "dto",
-        "Type": "InvoiceCoreAPI.DTO.UsersDto",
+        "Type": "InvoiceCoreAPI.DTO.UserUpdateDto",
         "IsRequired": true
       }
     ],
@@ -522,6 +559,11 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.VendorDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -538,6 +580,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -549,7 +596,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -589,6 +642,11 @@
         "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -605,6 +663,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -626,6 +689,11 @@
         "Name": "dto",
         "Type": "InvoiceCoreAPI.DTO.VendorDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -637,7 +705,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[InvoiceCoreAPI.WeatherForecast, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",

@@ -1,6 +1,8 @@
 ﻿using InvoiceCoreAPI.Contracts;
+using InvoiceCoreAPI.Controllers;
 using InvoiceCoreAPI.Data;
 using InvoiceCoreAPI.DTO;
+using InvoiceCoreAPI.DTOs;
 using InvoiceCoreAPI.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -11,9 +13,11 @@ namespace InvoiceCoreAPI.Repositories;
 public class ItemmasterRepositoriesEFSp : IItemmasterRepository
 {
     private readonly AppDbContext _dbContext;
-    public ItemmasterRepositoriesEFSp(AppDbContext dbContext)
+    private readonly ILogger<ItemmasterRepositoriesEFSp> _logger;
+    public ItemmasterRepositoriesEFSp(AppDbContext dbContext, ILogger<ItemmasterRepositoriesEFSp> logger)
     {
         _dbContext = dbContext;
+        _logger = logger;
     }
     public async Task<int> AddAsync(Itemmaster itemmaster)
     {
@@ -29,7 +33,7 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
             @Minimumstock,
             @Maximumstock,
             @IsActive",
-            new SqlParameter("@CatCode", itemmaster.CategoryId),
+            new SqlParameter("@CategoryId", itemmaster.CategoryId),
             new SqlParameter("@ItemBarCode", itemmaster.ItemBarCode),
             new SqlParameter("@Itemcode", itemmaster.ItemCode),
             new SqlParameter("@Itemname", itemmaster.ItemName),
@@ -59,7 +63,7 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
             @Maximumstock,
             @IsActive",
             new SqlParameter("@Id", itemmaster.Id),
-            new SqlParameter("@CatCode", itemmaster.CategoryId),
+            new SqlParameter("@CategoryId", itemmaster.CategoryId),
             new SqlParameter("@ItemBarCode", itemmaster.ItemBarCode),
             new SqlParameter("@Itemcode", itemmaster.ItemCode),
             new SqlParameter("@Itemname", itemmaster.ItemName),
@@ -78,10 +82,9 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
     {
         var items = await _dbContext.Itemmasters
             .FromSqlRaw("EXEC sp_Itemmaster_GetById @Id",
-                new SqlParameter("@Id", id))
+            new SqlParameter("@Id", id))
             .AsNoTracking()
             .ToListAsync();
-
         return items.FirstOrDefault();
     }
 
@@ -101,8 +104,9 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
         return affectedRows > 0;
     }
     public async Task<PagedResultDto<Itemmaster>> GetAllPagedAsync(
- ItemmasterFilterDto search)
+     ItemmasterFilterDto search)
     {
+        _logger.LogInformation("ItemsMaster Service Repostiory GetAllPaged Async Method Called");
         using var connection = _dbContext.Database.GetDbConnection();
 
         if (connection.State != ConnectionState.Open)
@@ -159,7 +163,8 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
 
         var items = new List<Itemmaster>();
 
-        // Result Set 1 - Itemmaster recordswhile (await reader.ReadAsync())
+        // Result Set 1 - Itemmaster records
+        while (await reader.ReadAsync())
         {
             items.Add(new Itemmaster
             {
@@ -179,7 +184,8 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
 
                 Description = reader.IsDBNull(
                     reader.GetOrdinal("Description"))
-                    ? null : reader.GetString(
+                    ? null
+                    : reader.GetString(
                         reader.GetOrdinal("Description")),
 
                 Uom = reader.GetString(
@@ -199,7 +205,8 @@ public class ItemmasterRepositoriesEFSp : IItemmasterRepository
             });
         }
 
-        // Result Set 2 - TotalRecordsawait reader.NextResultAsync();
+        // Result Set 2 - TotalRecords
+        await reader.NextResultAsync();
 
         var totalRecords = 0;
 

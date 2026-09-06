@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\controllers\\itemmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\controllers\\itemmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\repositories\\itemmasterrepositoriesefsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\repositories\\itemmasterrepositoriesefsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersControllers.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\UsersControllers.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Controllers\\UsersControllers.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\UsersControllers.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Controllers\\UsersControllers.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T07:11:44.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemmasterController.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\ItemmasterController.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Controllers\\ItemmasterController.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Controllers\\ItemmasterController.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Controllers\\ItemmasterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T06:58:41.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemmasterRepositoriesEFSp.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\ItemmasterRepositoriesEFSp.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Repositories\\ItemmasterRepositoriesEFSp.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Repositories\\ItemmasterRepositoriesEFSp.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\Repositories\\ItemmasterRepositoriesEFSp.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAiwNQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T06:56:55.419Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

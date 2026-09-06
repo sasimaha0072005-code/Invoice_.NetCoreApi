@@ -1,7 +1,8 @@
 ﻿using InvoiceCoreAPI.DTO;
+using InvoiceCoreAPI.DTOs;
 namespace InvoiceCoreAPI.Contracts
 {
-    public interface IItemmasterService
+    public interface IItemMasterService
     {
         Task<int> AddAsync(ItemmasterDto itemmaster);
         Task<IEnumerable<ItemmasterDto>> GetAllAsync();
@@ -10,6 +11,5 @@ namespace InvoiceCoreAPI.Contracts
         Task<bool> DeleteAsync(int id);
 
         Task<PagedResultDto<ItemmasterDto>> GetAllPagedAsync(ItemmasterFilterDto search);
-
     }
 }

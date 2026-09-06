@@ -10,6 +10,15 @@
         "tags": [
           "Category"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -31,6 +40,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -44,6 +60,15 @@
       "post": {
         "tags": [
           "Category"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -84,6 +109,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -126,6 +158,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -173,6 +212,13 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -186,6 +232,15 @@
       "get": {
         "tags": [
           "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -208,6 +263,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -221,6 +283,15 @@
       "post": {
         "tags": [
           "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -261,6 +332,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -303,6 +381,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -364,6 +449,13 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -373,10 +465,10 @@
         }
       }
     },
-    "/api/Itemmaster/GetAll": {
+    "/api/v1/ItemMaster/GetAll": {
       "get": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "responses": {
           "200": {
@@ -385,10 +477,10 @@
         }
       }
     },
-    "/api/Itemmaster/GetById/{id}": {
+    "/api/v1/ItemMaster/GetById/{id}": {
       "get": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "parameters": [
           {
@@ -408,10 +500,10 @@
         }
       }
     },
-    "/api/Itemmaster/Create": {
+    "/api/v1/ItemMaster/Create": {
       "post": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "requestBody": {
           "content": {
@@ -439,10 +531,10 @@
         }
       }
     },
-    "/api/Itemmaster/Update/{id}": {
+    "/api/v1/ItemMaster/Update/{id}": {
       "put": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "parameters": [
           {
@@ -481,10 +573,10 @@
         }
       }
     },
-    "/api/Itemmaster/Delete/{id}": {
+    "/api/v1/ItemMaster/Delete/{id}": {
       "delete": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "parameters": [
           {
@@ -504,10 +596,10 @@
         }
       }
     },
-    "/api/Itemmaster/GetAllPaged": {
+    "/api/v1/ItemMaster/GetAllPaged": {
       "get": {
         "tags": [
-          "Itemmaster"
+          "ItemMaster"
         ],
         "parameters": [
           {
@@ -577,7 +669,19 @@
         }
       }
     },
-    "/api/Login/Login": {
+    "/api/v1/ItemMaster/TestException": {
+      "get": {
+        "tags": [
+          "ItemMaster"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Login": {
       "post": {
         "tags": [
           "Login"
@@ -586,17 +690,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginRequestDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginRequestDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginRequestDto"
               }
             }
           }
@@ -608,10 +712,10 @@
         }
       }
     },
-    "/api/Users/GetAll": {
+    "/api/v1/User/GetAll": {
       "get": {
         "tags": [
-          "Users"
+          "User"
         ],
         "responses": {
           "200": {
@@ -620,10 +724,10 @@
         }
       }
     },
-    "/api/Users/GetById/{id}": {
+    "/api/v1/User/GetById/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "User"
         ],
         "parameters": [
           {
@@ -643,26 +747,26 @@
         }
       }
     },
-    "/api/Users/Create": {
+    "/api/v1/User/GetPaged": {
       "post": {
         "tags": [
-          "Users"
+          "User"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UsersFilterDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UsersFilterDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UsersFilterDto"
               }
             }
           }
@@ -674,10 +778,41 @@
         }
       }
     },
-    "/api/Users/Update/{id}": {
+    "/api/v1/User/Create": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/User/Update/{id}": {
       "put": {
         "tags": [
-          "Users"
+          "User"
         ],
         "parameters": [
           {
@@ -694,17 +829,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UserUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UserUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsersDto"
+                "$ref": "#/components/schemas/UserUpdateDto"
               }
             }
           }
@@ -716,10 +851,10 @@
         }
       }
     },
-    "/api/Users/Delete/{id}": {
+    "/api/v1/User/Delete/{id}": {
       "delete": {
         "tags": [
-          "Users"
+          "User"
         ],
         "parameters": [
           {
@@ -730,87 +865,12 @@
               "type": "integer",
               "format": "int32"
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Users/GetAllPaged": {
-      "get": {
-        "tags": [
-          "Users"
-        ],
-        "parameters": [
+          },
           {
-            "name": "UserName",
+            "name": "updatedBy",
             "in": "query",
             "schema": {
               "type": "string"
-            }
-          },
-          {
-            "name": "FirstName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "LastName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "PhoneNumber",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "City",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "DateOfBirth",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "IsActive",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "pageNumber",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          },
-          {
-            "name": "pageSize",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 10
             }
           }
         ],
@@ -825,6 +885,15 @@
       "get": {
         "tags": [
           "Vendor"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -847,6 +916,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -860,6 +936,15 @@
       "post": {
         "tags": [
           "Vendor"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -900,6 +985,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -942,6 +1034,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1003,6 +1102,13 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1018,6 +1124,15 @@
           "WeatherForecast"
         ],
         "operationId": "GetWeatherForecast",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -1189,9 +1304,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "catCode": {
-            "type": "string",
-            "nullable": true
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
           },
           "itemBarCode": {
             "type": "string",
@@ -1253,7 +1368,7 @@
         },
         "additionalProperties": false
       },
-      "LoginDto": {
+      "LoginRequestDto": {
         "type": "object",
         "properties": {
           "userName": {
@@ -1267,13 +1382,9 @@
         },
         "additionalProperties": false
       },
-      "UsersDto": {
+      "UserUpdateDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "userName": {
             "type": "string",
             "nullable": true
@@ -1342,25 +1453,121 @@
           "isActive": {
             "type": "boolean"
           },
-          "isDeleted": {
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsersCreateDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "middleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "alternatePhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "addressLine1": {
+            "type": "string",
+            "nullable": true
+          },
+          "addressLine2": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
             "type": "boolean"
           },
           "createdBy": {
             "type": "string",
             "nullable": true
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedBy": {
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsersFilterDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
             "type": "string",
             "nullable": true
           },
-          "updatedDate": {
+          "email": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
