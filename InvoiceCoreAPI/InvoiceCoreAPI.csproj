@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="log\" />
+    <Folder Include="logs\" />
     <Folder Include="Properties\" />
   </ItemGroup>
 

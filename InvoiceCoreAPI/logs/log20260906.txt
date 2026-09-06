@@ -1,884 +1,280 @@
-2026-09-06 11:11:57.991 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 11:11:58.204 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 11:11:58.326 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 11:11:58.328 +05:30 [INF] Hosting environment: Development
-2026-09-06 11:11:58.329 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 11:11:59.928 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 11:12:00.311 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 401.1154ms
-2026-09-06 11:12:00.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 11:12:00.363 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 11:12:00.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.7337ms
-2026-09-06 11:12:00.429 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.9158ms
-2026-09-06 11:12:00.501 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 11:12:00.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.9669ms
-2026-09-06 11:14:19.772 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/User/Create - application/json 482
-2026-09-06 11:14:19.789 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:14:19.790 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:14:19.847 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.UserController.Create (InvoiceCoreAPI)'
-2026-09-06 11:14:19.869 +05:30 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(InvoiceCoreAPI.DTO.UsersCreateDto) on controller InvoiceCoreAPI.Controllers.UserController (InvoiceCoreAPI).
-2026-09-06 11:14:20.362 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.UsersDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:14:20.382 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.UserController.Create (InvoiceCoreAPI) in 507.7707ms
-2026-09-06 11:14:20.383 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.UserController.Create (InvoiceCoreAPI)'
-2026-09-06 11:14:20.386 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/User/Create - 200 null application/json; charset=utf-8 613.7887ms
-2026-09-06 11:16:58.870 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Login/Login - application/json 50
-2026-09-06 11:16:58.878 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:16:58.879 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:16:58.885 +05:30 [INF] Executing endpoint 'ProductApi.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:16:58.891 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginDto) on controller ProductApi.Controllers.LoginController (InvoiceCoreAPI).
-2026-09-06 11:16:58.900 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
-2026-09-06 11:16:58.917 +05:30 [INF] Executed action ProductApi.Controllers.LoginController.Login (InvoiceCoreAPI) in 23.3251ms
-2026-09-06 11:16:58.918 +05:30 [INF] Executed endpoint 'ProductApi.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:16:58.920 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Login/Login - 401 null application/problem+json; charset=utf-8 49.9215ms
-2026-09-06 11:24:19.026 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 11:24:19.233 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 11:24:19.344 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 11:24:19.346 +05:30 [INF] Hosting environment: Development
-2026-09-06 11:24:19.348 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 11:24:21.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 11:24:21.372 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 341.2812ms
-2026-09-06 11:24:21.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 11:24:21.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 11:24:21.436 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.6935ms
-2026-09-06 11:24:21.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.3961ms
-2026-09-06 11:24:21.546 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 11:24:21.574 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.3648ms
-2026-09-06 11:24:42.934 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
-2026-09-06 11:24:42.943 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:24:42.944 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:24:42.983 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:24:43.002 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
-2026-09-06 11:24:43.369 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:24:43.380 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 373.9164ms
-2026-09-06 11:24:43.382 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:24:43.384 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 401 null application/json; charset=utf-8 450.3967ms
-2026-09-06 11:24:54.621 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
-2026-09-06 11:24:54.627 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:24:54.628 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:24:54.632 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:24:54.634 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
-2026-09-06 11:24:54.736 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[InvoiceCoreAPI.DTO.LoginResponseDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:24:54.749 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 112.4215ms
-2026-09-06 11:24:54.750 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:24:54.751 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 200 null application/json; charset=utf-8 130.7711ms
-2026-09-06 11:25:35.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:25:35.494 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:25:35.499 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:25:36.378 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+2026-09-06 16:35:56.028 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-06 16:35:56.246 +05:30 [INF] Now listening on: http://localhost:5120
+2026-09-06 16:35:56.381 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-06 16:35:56.382 +05:30 [INF] Hosting environment: Development
+2026-09-06 16:35:56.383 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
+2026-09-06 16:35:58.781 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2026-09-06 16:35:59.201 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 435.8636ms
+2026-09-06 16:35:59.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-06 16:35:59.250 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
+2026-09-06 16:35:59.262 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 15.7201ms
+2026-09-06 16:35:59.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.0555ms
+2026-09-06 16:35:59.413 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2026-09-06 16:35:59.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.2326ms
+2026-09-06 16:41:38.471 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-06 16:41:38.712 +05:30 [INF] Now listening on: http://localhost:5120
+2026-09-06 16:41:38.862 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-06 16:41:38.864 +05:30 [INF] Hosting environment: Development
+2026-09-06 16:41:38.865 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
+2026-09-06 16:41:40.459 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2026-09-06 16:41:40.886 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 448.7191ms
+2026-09-06 16:41:40.939 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-06 16:41:40.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
+2026-09-06 16:41:40.951 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.3225ms
+2026-09-06 16:41:40.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.9796ms
+2026-09-06 16:41:41.075 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2026-09-06 16:41:41.128 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.8311ms
+2026-09-06 16:42:08.243 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:42:08.256 +05:30 [INF] CORS policy execution failed.
+2026-09-06 16:42:08.257 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
+2026-09-06 16:42:08.319 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:42:08.340 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:42:23.401 +05:30 [ERR] Error occurred during login.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 488
+   at InvoiceCoreAPI.Repositories.UserRepositorySpDap.GetByUserNameAsync(String userName) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Repositories\UsersRepositorySpDap.cs:line 37
+   at InvoiceCoreAPI.Services.UserServiceSpDap.ValidateUserAsync(String userName, String password) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Services\UsersServicesSpDap.cs:line 244
+   at InvoiceCoreAPI.Controllers.LoginController.Login(LoginRequestDto request) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Controllers\LoginController.cs:line 49
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2026-09-06 16:42:23.459 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:42:23.469 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 15124.3766ms
+2026-09-06 16:42:23.471 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:42:23.474 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 500 null application/json; charset=utf-8 15230.8342ms
+2026-09-06 16:42:48.986 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:42:48.991 +05:30 [INF] CORS policy execution failed.
+2026-09-06 16:42:48.992 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
+2026-09-06 16:42:48.995 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:42:48.999 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:43:03.758 +05:30 [ERR] Error occurred during login.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 488
+   at InvoiceCoreAPI.Repositories.UserRepositorySpDap.GetByUserNameAsync(String userName) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Repositories\UsersRepositorySpDap.cs:line 37
+   at InvoiceCoreAPI.Services.UserServiceSpDap.ValidateUserAsync(String userName, String password) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Services\UsersServicesSpDap.cs:line 244
+   at InvoiceCoreAPI.Controllers.LoginController.Login(LoginRequestDto request) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Controllers\LoginController.cs:line 49
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2026-09-06 16:43:03.770 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:43:03.773 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 14771.0532ms
+2026-09-06 16:43:03.776 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:43:03.778 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 500 null application/json; charset=utf-8 14792.3666ms
+2026-09-06 16:43:42.955 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:43:42.965 +05:30 [INF] CORS policy execution failed.
+2026-09-06 16:43:42.967 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
+2026-09-06 16:43:42.972 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:43:42.975 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:43:57.782 +05:30 [ERR] Error occurred during login.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 488
+   at InvoiceCoreAPI.Repositories.UserRepositorySpDap.GetByUserNameAsync(String userName) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Repositories\UsersRepositorySpDap.cs:line 37
+   at InvoiceCoreAPI.Services.UserServiceSpDap.ValidateUserAsync(String userName, String password) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Services\UsersServicesSpDap.cs:line 244
+   at InvoiceCoreAPI.Controllers.LoginController.Login(LoginRequestDto request) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Controllers\LoginController.cs:line 49
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2026-09-06 16:43:57.796 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:43:57.800 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 14820.8958ms
+2026-09-06 16:43:57.802 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:43:57.804 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 500 null application/json; charset=utf-8 14849.2322ms
+2026-09-06 16:50:22.212 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-06 16:50:22.502 +05:30 [INF] Now listening on: http://localhost:5120
+2026-09-06 16:50:22.702 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-06 16:50:22.704 +05:30 [INF] Hosting environment: Development
+2026-09-06 16:50:22.706 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
+2026-09-06 16:50:24.577 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2026-09-06 16:50:25.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 565.557ms
+2026-09-06 16:50:25.232 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-06 16:50:25.233 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
+2026-09-06 16:50:25.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 14.4612ms
+2026-09-06 16:50:25.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.1779ms
+2026-09-06 16:50:25.418 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2026-09-06 16:50:25.489 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.405ms
+2026-09-06 16:50:49.549 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:50:49.570 +05:30 [INF] CORS policy execution successful.
+2026-09-06 16:50:49.636 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:50:49.672 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:51:04.916 +05:30 [ERR] Error occurred during login.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 488
+   at InvoiceCoreAPI.Repositories.UserRepositorySpDap.GetByUserNameAsync(String userName) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Repositories\UsersRepositorySpDap.cs:line 37
+   at InvoiceCoreAPI.Services.UserServiceSpDap.ValidateUserAsync(String userName, String password) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Services\UsersServicesSpDap.cs:line 244
+   at InvoiceCoreAPI.Controllers.LoginController.Login(LoginRequestDto request) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Controllers\LoginController.cs:line 49
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2026-09-06 16:51:04.981 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:51:04.999 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 15318.6889ms
+2026-09-06 16:51:05.002 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:51:05.006 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 500 null application/json; charset=utf-8 15458.3871ms
+2026-09-06 16:55:42.534 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-06 16:55:42.818 +05:30 [INF] Now listening on: http://localhost:5120
+2026-09-06 16:55:43.035 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-06 16:55:43.037 +05:30 [INF] Hosting environment: Development
+2026-09-06 16:55:43.039 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
+2026-09-06 16:55:45.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2026-09-06 16:55:45.887 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 572.1669ms
+2026-09-06 16:55:46.021 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-06 16:55:46.024 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
+2026-09-06 16:55:46.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 13.725ms
+2026-09-06 16:55:46.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.0438ms
+2026-09-06 16:55:46.208 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2026-09-06 16:55:46.284 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.1944ms
+2026-09-06 16:56:09.473 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:56:09.495 +05:30 [INF] CORS policy execution successful.
+2026-09-06 16:56:09.584 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:56:09.629 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:56:10.731 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[InvoiceCoreAPI.DTO.LoginResponseDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-06 16:56:10.780 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 1140.3381ms
+2026-09-06 16:56:10.785 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:56:10.791 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 200 null application/json; charset=utf-8 1318.2299ms
+2026-09-06 16:57:10.117 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-06 16:57:10.405 +05:30 [INF] Now listening on: http://localhost:5120
+2026-09-06 16:57:10.657 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-06 16:57:10.659 +05:30 [INF] Hosting environment: Development
+2026-09-06 16:57:10.662 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
+2026-09-06 16:57:13.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2026-09-06 16:57:13.831 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 655.4694ms
+2026-09-06 16:57:13.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-06 16:57:13.985 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
+2026-09-06 16:57:14.006 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 24.2323ms
+2026-09-06 16:57:14.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.9359ms
+2026-09-06 16:57:14.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2026-09-06 16:57:14.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.0101ms
+2026-09-06 16:57:41.889 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
+2026-09-06 16:57:41.915 +05:30 [INF] CORS policy execution failed.
+2026-09-06 16:57:41.917 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
+2026-09-06 16:57:41.991 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:57:42.024 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
+2026-09-06 16:57:42.995 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[InvoiceCoreAPI.DTO.LoginResponseDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-06 16:57:43.033 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 1000.8122ms
+2026-09-06 16:57:43.037 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
+2026-09-06 16:57:43.043 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 200 null application/json; charset=utf-8 1154.6301ms
+2026-09-06 16:58:11.875 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
+2026-09-06 16:58:11.960 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:11.969 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
+2026-09-06 16:58:13.582 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 EXEC sp_Category_GetAll
-2026-09-06 11:25:36.442 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:25:36.452 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI) in 951.3544ms
-2026-09-06 11:25:36.453 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:25:36.459 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 200 null application/json; charset=utf-8 1008.1758ms
-2026-09-06 11:26:59.156 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - null null
-2026-09-06 11:26:59.167 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:26:59.175 +05:30 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:26:59.210 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_GetById @Id
-2026-09-06 11:26:59.214 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:26:59.217 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI) in 40.5492ms
-2026-09-06 11:26:59.219 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:26:59.220 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - 200 null application/json; charset=utf-8 65.9319ms
-2026-09-06 11:27:47.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:27:47.242 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:27:47.243 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:27:47.294 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_GetAll
-2026-09-06 11:27:47.299 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:27:47.301 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI) in 55.9438ms
-2026-09-06 11:27:47.302 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:27:47.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 200 null application/json; charset=utf-8 73.3752ms
-2026-09-06 11:27:57.726 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - null null
-2026-09-06 11:27:57.730 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:27:57.734 +05:30 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:27:57.744 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_GetById @Id
-2026-09-06 11:27:57.747 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:27:57.748 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI) in 12.3406ms
-2026-09-06 11:27:57.750 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:27:57.751 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - 200 null application/json; charset=utf-8 25.0643ms
-2026-09-06 11:28:13.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAllPaged?Code=2&pageNumber=1&pageSize=10 - null null
-2026-09-06 11:28:13.051 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:28:13.057 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, Int32, Int32) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:28:13.075 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:28:13.078 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI) in 19.3035ms
-2026-09-06 11:28:13.079 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:28:13.080 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAllPaged?Code=2&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 41.6857ms
-2026-09-06 11:28:54.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAll - null null
-2026-09-06 11:28:54.536 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:28:54.540 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:28:54.553 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetAll
-2026-09-06 11:28:54.581 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:28:54.593 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI) in 50.918ms
-2026-09-06 11:28:54.594 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:28:54.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAll - 200 null application/json; charset=utf-8 64.7086ms
-2026-09-06 11:29:12.759 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetById/2 - null null
-2026-09-06 11:29:12.767 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:29:12.776 +05:30 [INF] Route matched with {action = "GetById", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:29:12.789 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetById @Id
-2026-09-06 11:29:12.794 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:29:12.797 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI) in 18.7082ms
-2026-09-06 11:29:12.798 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:29:12.799 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetById/2 - 200 null application/json; charset=utf-8 39.9911ms
-2026-09-06 11:29:29.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?CategoryId=2 - null null
-2026-09-06 11:29:29.878 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:29:29.893 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:29:29.967 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:29:29.970 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 74.7869ms
-2026-09-06 11:29:29.972 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:29:29.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?CategoryId=2 - 500 null application/json; charset=utf-8 99.0874ms
-2026-09-06 11:29:43.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?PageNumber=1 - null null
-2026-09-06 11:29:43.568 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:29:43.569 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:29:43.608 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:29:43.610 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 39.9052ms
-2026-09-06 11:29:43.611 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:29:43.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?PageNumber=1 - 500 null application/json; charset=utf-8 48.6396ms
-2026-09-06 11:30:12.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar003 - null null
-2026-09-06 11:30:12.144 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:30:12.146 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:30:12.187 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:30:12.189 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 40.8147ms
-2026-09-06 11:30:12.190 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:30:12.191 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar003 - 500 null application/json; charset=utf-8 52.8717ms
-2026-09-06 11:34:45.751 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 11:34:45.768 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 16.8887ms
-2026-09-06 11:34:45.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 11:34:45.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 11:34:45.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 3.1453ms
-2026-09-06 11:34:45.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9461ms
-2026-09-06 11:34:45.886 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 11:34:45.905 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5191ms
-2026-09-06 11:34:56.783 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:34:56.788 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:34:56.792 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:34:56.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 10.4542ms
-2026-09-06 11:35:29.525 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
-2026-09-06 11:35:29.530 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:35:29.531 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:35:29.532 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:35:29.533 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
-2026-09-06 11:35:29.646 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[InvoiceCoreAPI.DTO.LoginResponseDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:35:29.647 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 112.3767ms
-2026-09-06 11:35:29.649 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 11:35:29.650 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 200 null application/json; charset=utf-8 125.06ms
-2026-09-06 11:36:04.081 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:36:04.087 +05:30 [INF] Failed to validate the token.
-Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
- ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14120: JWT is not well formed, there is only one dot (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
-   --- End of inner exception stack trace ---
-2026-09-06 11:36:04.112 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-2026-09-06 11:36:04.113 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:36:04.115 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:36:04.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 35.7349ms
-2026-09-06 11:36:07.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:36:07.658 +05:30 [INF] Failed to validate the token.
-Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
- ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14120: JWT is not well formed, there is only one dot (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
-   --- End of inner exception stack trace ---
-2026-09-06 11:36:07.661 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-2026-09-06 11:36:07.662 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:36:07.663 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:36:07.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 9.8532ms
-2026-09-06 11:36:08.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:36:08.573 +05:30 [INF] Failed to validate the token.
-Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
- ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14120: JWT is not well formed, there is only one dot (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
-   --- End of inner exception stack trace ---
-2026-09-06 11:36:08.577 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-2026-09-06 11:36:08.579 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:36:08.580 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:36:08.581 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 11.9682ms
-2026-09-06 11:36:09.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:36:09.386 +05:30 [INF] Failed to validate the token.
-Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
- ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14120: JWT is not well formed, there is only one dot (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
-   --- End of inner exception stack trace ---
-2026-09-06 11:36:09.388 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-2026-09-06 11:36:09.389 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:36:09.390 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:36:09.391 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 9.341ms
-2026-09-06 11:36:10.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:36:10.351 +05:30 [INF] Failed to validate the token.
-Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
- ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14120: JWT is not well formed, there is only one dot (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
-   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
-   --- End of inner exception stack trace ---
-2026-09-06 11:36:10.353 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
-The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
-2026-09-06 11:36:10.354 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 11:36:10.355 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 11:36:10.356 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 401 0 null 8.5065ms
-2026-09-06 11:37:04.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - null null
-2026-09-06 11:37:04.742 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:37:04.743 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:37:04.752 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_GetAll
-2026-09-06 11:37:04.755 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:37:04.756 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI) in 11.3241ms
-2026-09-06 11:37:04.758 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:37:04.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 200 null application/json; charset=utf-8 22.1931ms
-2026-09-06 11:37:15.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - null null
-2026-09-06 11:37:15.740 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:37:15.745 +05:30 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:37:15.754 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_GetById @Id
-2026-09-06 11:37:15.758 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:37:15.759 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI) in 11.8319ms
-2026-09-06 11:37:15.761 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:37:15.762 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetById/2 - 200 null application/json; charset=utf-8 25.2647ms
-2026-09-06 11:37:30.787 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Category/Update/2 - application/json 240
-2026-09-06 11:37:30.824 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:37:30.825 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:37:30.829 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.Update (InvoiceCoreAPI)'
-2026-09-06 11:37:30.834 +05:30 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.CategoryDto) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:37:30.864 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@Id='?' (DbType = Int32), @Code='?' (Size = 6), @name='?' (Size = 6), Description='?' (Size = 6), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Category_Update
-
-            @Id,
-
-            @Code,
-
-            @name,
-
-            @Description,
-
-            @IsActive
-2026-09-06 11:37:30.868 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:37:30.870 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.Update (InvoiceCoreAPI) in 33.7325ms
-2026-09-06 11:37:30.872 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.Update (InvoiceCoreAPI)'
-2026-09-06 11:37:30.873 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Category/Update/2 - 200 null application/json; charset=utf-8 85.7539ms
-2026-09-06 11:37:46.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Category/GetAllPaged?pageNumber=1&pageSize=10 - null null
-2026-09-06 11:37:46.387 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:37:46.388 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, Int32, Int32) on controller InvoiceCoreAPI.Controllers.CategoryController (InvoiceCoreAPI).
-2026-09-06 11:37:46.399 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:37:46.401 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI) in 11.5675ms
-2026-09-06 11:37:46.403 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:37:46.404 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 20.6117ms
-2026-09-06 11:37:59.028 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Customer/GetAll - null null
-2026-09-06 11:37:59.034 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:37:59.040 +05:30 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CustomerController (InvoiceCoreAPI).
-2026-09-06 11:37:59.054 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+2026-09-06 16:58:13.712 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CategoryDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:58:13.734 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI) in 1760.1034ms
+2026-09-06 16:58:13.738 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CategoryController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:13.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Category/GetAll - 200 null application/json; charset=utf-8 1879.424ms
+2026-09-06 16:58:21.576 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Customer/GetAll - null null
+2026-09-06 16:58:21.597 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:21.608 +05:30 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.CustomerController (InvoiceCoreAPI).
+2026-09-06 16:58:21.660 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 EXEC sp_Customer_GetAll
-2026-09-06 11:37:59.080 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CustomerDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:37:59.086 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI) in 44.1688ms
-2026-09-06 11:37:59.087 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:37:59.088 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Customer/GetAll - 200 null application/json; charset=utf-8 60.13ms
-2026-09-06 11:38:11.071 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Customer/GetById/2 - null null
-2026-09-06 11:38:11.075 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:38:11.079 +05:30 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.CustomerController (InvoiceCoreAPI).
-2026-09-06 11:38:11.092 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Customer_GetById
-
-            @Id
-2026-09-06 11:38:11.099 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.CustomerDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:38:11.102 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CustomerController.GetById (InvoiceCoreAPI) in 20.1169ms
-2026-09-06 11:38:11.103 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:38:11.104 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Customer/GetById/2 - 200 null application/json; charset=utf-8 33.2091ms
-2026-09-06 11:38:27.354 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Customer/Update/2 - application/json 480
-2026-09-06 11:38:27.358 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:38:27.359 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:38:27.360 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CustomerController.Update (InvoiceCoreAPI)'
-2026-09-06 11:38:27.368 +05:30 [INF] Route matched with {action = "Update", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.CustomerDto) on controller InvoiceCoreAPI.Controllers.CustomerController (InvoiceCoreAPI).
-2026-09-06 11:38:27.391 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@Id='?' (DbType = Int32), @CustomerCode='?' (Size = 6), @CustomerName='?' (Size = 6), @ContactPerson='?' (Size = 6), @MobilNo='?' (Size = 6), @Email='?' (Size = 6), @Address1='?' (Size = 6), @Address2='?' (Size = 6), @City='?' (Size = 6), @State='?' (Size = 6), @Country='?' (Size = 6), @ZipCode='?' (Size = 6), @GstNo='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Customer_Update
-
-            @Id,
-
-            @CustomerCode,
-
-            @CustomerName,
-
-            @ContactPerson,
-
-            @MobilNo,
-
-            @Email,
-
-            @Address1,
-
-            @Address2,
-
-            @City,
-
-            @State,
-
-            @Country,
-
-            @ZipCode,
-
-            @GstNo
-2026-09-06 11:38:27.395 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:38:27.397 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CustomerController.Update (InvoiceCoreAPI) in 26.9274ms
-2026-09-06 11:38:27.399 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CustomerController.Update (InvoiceCoreAPI)'
-2026-09-06 11:38:27.400 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Customer/Update/2 - 200 null application/json; charset=utf-8 46.2985ms
-2026-09-06 11:38:49.973 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Customer/GetAllPaged?CustomerCode=c002&pageNumber=1&pageSize=10 - null null
-2026-09-06 11:38:49.978 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:38:49.987 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller InvoiceCoreAPI.Controllers.CustomerController (InvoiceCoreAPI).
-2026-09-06 11:38:50.001 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CustomerDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:38:50.003 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CustomerController.GetAllPaged (InvoiceCoreAPI) in 13.3821ms
-2026-09-06 11:38:50.004 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:38:50.005 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Customer/GetAllPaged?CustomerCode=c002&pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 32.7428ms
-2026-09-06 11:39:00.065 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAll - null null
-2026-09-06 11:39:00.069 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:39:00.070 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:39:00.085 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+2026-09-06 16:58:21.720 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.CustomerDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:58:21.733 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI) in 119.8799ms
+2026-09-06 16:58:21.736 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.CustomerController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:21.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Customer/GetAll - 200 null application/json; charset=utf-8 162.8935ms
+2026-09-06 16:58:28.568 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - null null
+2026-09-06 16:58:28.578 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:28.584 +05:30 [INF] Route matched with {action = "GetAll", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
+2026-09-06 16:58:28.677 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 EXEC sp_Itemmaster_GetAll
-2026-09-06 11:39:00.089 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:39:00.091 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI) in 13.5537ms
-2026-09-06 11:39:00.092 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 11:39:00.093 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAll - 200 null application/json; charset=utf-8 28.3311ms
-2026-09-06 11:39:12.808 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetById/1 - null null
-2026-09-06 11:39:12.812 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:39:12.813 +05:30 [INF] Route matched with {action = "GetById", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:39:12.823 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetById @Id
-2026-09-06 11:39:12.825 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 11:39:12.827 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI) in 9.4419ms
-2026-09-06 11:39:12.828 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 11:39:12.829 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetById/1 - 200 null application/json; charset=utf-8 21.4776ms
-2026-09-06 11:39:25.173 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/1 - application/json 372
-2026-09-06 11:39:25.177 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:39:25.177 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:39:25.179 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:39:25.182 +05:30 [INF] Route matched with {action = "Update", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(InvoiceCoreAPI.DTO.ItemmasterDto, Int32) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:39:25.203 +05:30 [ERR] Failed executing DbCommand (8ms) [Parameters=[@Id='?' (DbType = Int32), @CatCode='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 11:39:25.254 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:39:25.256 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI) in 71.6353ms
-2026-09-06 11:39:25.257 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:39:25.258 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/1 - 500 null application/json; charset=utf-8 84.5234ms
-2026-09-06 11:39:52.438 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/1 - application/json 369
-2026-09-06 11:39:52.442 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:39:52.443 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:39:52.456 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:39:52.457 +05:30 [INF] Route matched with {action = "Update", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(InvoiceCoreAPI.DTO.ItemmasterDto, Int32) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:39:52.469 +05:30 [ERR] Failed executing DbCommand (5ms) [Parameters=[@Id='?' (DbType = Int32), @CatCode='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 11:39:52.511 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:39:52.513 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI) in 52.0032ms
-2026-09-06 11:39:52.515 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:39:52.516 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/1 - 500 null application/json; charset=utf-8 77.6365ms
-2026-09-06 11:40:31.321 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/2 - application/json 369
-2026-09-06 11:40:31.326 +05:30 [INF] CORS policy execution failed.
-2026-09-06 11:40:31.327 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 11:40:31.329 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:40:31.341 +05:30 [INF] Route matched with {action = "Update", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(InvoiceCoreAPI.DTO.ItemmasterDto, Int32) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:40:31.351 +05:30 [ERR] Failed executing DbCommand (6ms) [Parameters=[@Id='?' (DbType = Int32), @CatCode='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 11:40:31.391 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:40:31.393 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI) in 49.981ms
-2026-09-06 11:40:31.394 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.Update (InvoiceCoreAPI)'
-2026-09-06 11:40:31.396 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Itemmaster/Update/2 - 500 null application/json; charset=utf-8 74.4221ms
-2026-09-06 11:40:53.491 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?CategoryId=1 - null null
-2026-09-06 11:40:53.497 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:40:53.505 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:40:53.550 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:40:53.551 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 44.4208ms
-2026-09-06 11:40:53.553 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:40:53.554 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?CategoryId=1 - 500 null application/json; charset=utf-8 62.9256ms
-2026-09-06 11:41:23.546 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar001 - null null
-2026-09-06 11:41:23.552 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:41:23.553 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:41:23.590 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:41:23.592 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 37.6111ms
-2026-09-06 11:41:23.593 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:41:23.594 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar001 - 500 null application/json; charset=utf-8 48.2405ms
-2026-09-06 11:55:49.833 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar001&PageNumber=1&PageSize=10 - null null
-2026-09-06 11:55:49.848 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:55:49.850 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:55:50.018 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:55:50.021 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 167.9938ms
-2026-09-06 11:55:50.024 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:55:50.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?ItemBarCode=bar001&PageNumber=1&PageSize=10 - 500 null application/json; charset=utf-8 193.4283ms
-2026-09-06 11:56:31.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
-2026-09-06 11:56:31.289 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:56:31.323 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTO.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemmasterController (InvoiceCoreAPI).
-2026-09-06 11:56:31.399 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 11:56:31.403 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI) in 73.58ms
-2026-09-06 11:56:31.407 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemmasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 11:56:31.409 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 500 null application/json; charset=utf-8 130.0848ms
-2026-09-06 12:11:00.651 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 12:11:00.948 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 12:11:01.178 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 12:11:01.180 +05:30 [INF] Hosting environment: Development
-2026-09-06 12:11:01.182 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 12:11:03.870 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:11:04.219 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 363.8035ms
-2026-09-06 12:11:04.771 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:11:04.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:11:04.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.2168ms
-2026-09-06 12:11:04.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.8392ms
-2026-09-06 12:11:04.946 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:11:04.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.2475ms
-2026-09-06 12:11:37.808 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/1 - application/json 368
-2026-09-06 12:11:37.856 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:11:37.858 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:11:37.985 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:11:37.993 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:11:37.996 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/1 - 401 0 null 187.8742ms
-2026-09-06 12:12:10.515 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/v1/Login - application/json 50
-2026-09-06 12:12:10.528 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:12:10.530 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:12:10.541 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 12:12:10.588 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(InvoiceCoreAPI.DTO.LoginRequestDto) on controller InvoiceCoreAPI.Controllers.LoginController (InvoiceCoreAPI).
-2026-09-06 12:12:11.490 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[InvoiceCoreAPI.DTO.LoginResponseDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 12:12:11.530 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI) in 932.9306ms
-2026-09-06 12:12:11.534 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.LoginController.Login (InvoiceCoreAPI)'
-2026-09-06 12:12:11.539 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/v1/Login - 200 null application/json; charset=utf-8 1024.0062ms
-2026-09-06 12:12:45.613 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/1 - application/json 368
-2026-09-06 12:12:45.628 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:12:45.630 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:12:45.690 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:12:45.699 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:12:46.918 +05:30 [ERR] Failed executing DbCommand (52ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:12:47.038 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:12:47.047 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 1343.0927ms
-2026-09-06 12:12:47.050 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:12:47.060 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/1 - 500 null application/json; charset=utf-8 1446.8417ms
-2026-09-06 12:13:10.542 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - null null
-2026-09-06 12:13:10.573 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:13:10.582 +05:30 [INF] Route matched with {action = "GetAll", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:13:10.943 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetAll
-2026-09-06 12:13:11.067 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:13:11.082 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI) in 496.8411ms
-2026-09-06 12:13:11.086 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:13:11.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - 200 null application/json; charset=utf-8 546.6881ms
-2026-09-06 12:13:40.161 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 368
-2026-09-06 12:13:40.167 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:13:40.190 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:13:40.193 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:13:40.194 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:13:40.312 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:13:40.316 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:13:40.318 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 120.2763ms
-2026-09-06 12:13:40.321 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:13:40.324 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 163.5971ms
-2026-09-06 12:13:56.554 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 369
-2026-09-06 12:13:56.561 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:13:56.563 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:13:56.566 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:13:56.569 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:13:56.593 +05:30 [ERR] Failed executing DbCommand (6ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:13:56.652 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:13:56.655 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 82.6875ms
-2026-09-06 12:13:56.657 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:13:56.659 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 500 null application/json; charset=utf-8 105.0951ms
-2026-09-06 12:14:25.672 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
-2026-09-06 12:14:25.682 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 12:14:25.716 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(InvoiceCoreAPI.DTOs.ItemmasterFilterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:14:25.738 +05:30 [INF] ItemMaster Service GetAllPaged Method Called 
-2026-09-06 12:14:25.743 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
-2026-09-06 12:14:25.781 +05:30 [INF] Items retrieved successfully
-2026-09-06 12:14:25.783 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:14:25.786 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetAllPaged (InvoiceCoreAPI) in 66.4402ms
-2026-09-06 12:14:25.789 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAllPaged (InvoiceCoreAPI)'
-2026-09-06 12:14:25.791 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAllPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 120.1989ms
-2026-09-06 12:15:22.371 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 254
-2026-09-06 12:15:22.380 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:15:22.381 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:15:22.385 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:15:22.414 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:15:22.436 +05:30 [ERR] Failed executing DbCommand (11ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:15:22.510 +05:30 [INF] Executing ObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:15:22.513 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 92.4775ms
-2026-09-06 12:15:22.516 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:15:22.518 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 500 null application/json; charset=utf-8 147.7112ms
-2026-09-06 12:16:00.492 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 253
-2026-09-06 12:16:00.503 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:16:00.505 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:16:00.507 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:16:00.512 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:16:00.546 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:16:00.551 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:16:00.554 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 37.6096ms
-2026-09-06 12:16:00.557 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:16:00.560 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 68.0003ms
-2026-09-06 12:16:19.472 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 253
-2026-09-06 12:16:19.477 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:16:19.479 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:16:19.482 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:16:19.513 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:16:19.527 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:16:19.532 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:16:19.535 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 18.4196ms
-2026-09-06 12:16:19.538 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:16:19.540 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 68.3709ms
-2026-09-06 12:17:49.129 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 245
-2026-09-06 12:17:49.136 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:17:49.137 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:17:49.139 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:17:49.142 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:17:49.173 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 4), @Itemcode='?' (Size = 3), @Itemname='?' (Size = 5), Description='?' (Size = 4), @Uom='?' (Size = 2), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:17:49.178 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:17:49.181 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 37.0171ms
-2026-09-06 12:17:49.183 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:17:49.185 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 56.939ms
-2026-09-06 12:18:44.822 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 245
-2026-09-06 12:18:44.831 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:18:44.833 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:18:44.836 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:18:44.838 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:18:44.857 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 4), @Itemcode='?' (Size = 3), @Itemname='?' (Size = 5), Description='?' (Size = 4), @Uom='?' (Size = 2), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:18:44.861 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:18:44.864 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 22.8945ms
-2026-09-06 12:18:44.867 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:18:44.870 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 48.3434ms
-2026-09-06 12:21:29.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetById/3 - null null
-2026-09-06 12:21:29.605 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 12:21:29.617 +05:30 [INF] Route matched with {action = "GetById", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:21:29.666 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetById @Id
-2026-09-06 12:21:29.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 12:21:29.681 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetById (InvoiceCoreAPI) in 59.8655ms
-2026-09-06 12:21:29.683 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetById (InvoiceCoreAPI)'
-2026-09-06 12:21:29.685 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetById/3 - 200 null application/json; charset=utf-8 91.1565ms
-2026-09-06 12:23:56.832 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 220
-2026-09-06 12:23:56.841 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:23:56.842 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:23:56.846 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:23:56.848 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:23:56.913 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 4), @Itemcode='?' (Size = 3), @Itemname='?' (Size = 5), Description='?' (Size = 4), @Uom='?' (Size = 2), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:23:56.918 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:23:56.921 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 37.3964ms
-2026-09-06 12:23:56.923 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:23:56.926 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 93.1318ms
-2026-09-06 12:28:17.252 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 12:28:17.634 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 12:28:17.943 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 12:28:17.945 +05:30 [INF] Hosting environment: Development
-2026-09-06 12:28:17.948 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 12:28:20.321 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:28:20.701 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 397.7304ms
-2026-09-06 12:28:20.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:28:20.809 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:28:20.820 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 13.7844ms
-2026-09-06 12:28:20.874 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.3861ms
-2026-09-06 12:28:20.987 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:28:21.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.8193ms
-2026-09-06 12:28:29.386 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - null null
-2026-09-06 12:28:29.464 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:28:29.473 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:28:29.476 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - 401 0 null 90.1868ms
-2026-09-06 12:28:57.525 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 12:28:57.795 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 12:28:57.981 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 12:28:57.984 +05:30 [INF] Hosting environment: Development
-2026-09-06 12:28:57.986 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 12:29:00.124 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:29:00.448 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 337.0564ms
-2026-09-06 12:29:00.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:29:00.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:29:00.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 11.4068ms
-2026-09-06 12:29:00.769 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.7481ms
-2026-09-06 12:29:00.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:29:00.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.541ms
-2026-09-06 12:29:08.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - null null
-2026-09-06 12:29:08.760 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:29:08.787 +05:30 [INF] Route matched with {action = "GetAll", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:29:10.401 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetAll
-2026-09-06 12:29:10.559 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:29:10.607 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI) in 1811.0621ms
-2026-09-06 12:29:10.611 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:29:10.624 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - 200 null application/json; charset=utf-8 1954.2782ms
-2026-09-06 12:30:44.101 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 235
-2026-09-06 12:30:44.152 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:30:44.154 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:30:44.158 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:30:44.175 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:30:44.347 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 4), @Itemname='?' (Size = 8), Description='?' (Size = 13), @Uom='?' (Size = 2), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:30:44.356 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:30:44.362 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 182.0161ms
-2026-09-06 12:30:44.364 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:30:44.367 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 404 null application/json; charset=utf-8 266.0964ms
-2026-09-06 12:38:52.958 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 12:38:53.261 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 12:38:53.582 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 12:38:53.588 +05:30 [INF] Hosting environment: Development
-2026-09-06 12:38:53.589 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 12:38:55.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:38:56.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 401.88ms
-2026-09-06 12:38:56.296 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:38:56.299 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:38:56.308 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.1878ms
-2026-09-06 12:38:56.365 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.1652ms
-2026-09-06 12:38:56.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:38:56.568 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.9838ms
-2026-09-06 12:39:04.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - null null
-2026-09-06 12:39:04.790 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:39:04.818 +05:30 [INF] Route matched with {action = "GetAll", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:39:06.519 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_GetAll
-2026-09-06 12:39:06.684 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:39:06.741 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI) in 1913.934ms
-2026-09-06 12:39:06.744 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:39:06.758 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - 200 null application/json; charset=utf-8 2049.8198ms
-2026-09-06 12:40:17.997 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - application/json 227
-2026-09-06 12:40:18.025 +05:30 [INF] CORS policy execution failed.
-2026-09-06 12:40:18.028 +05:30 [INF] Request origin http://localhost:5120 does not have permission to access the resource.
-2026-09-06 12:40:18.032 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:40:18.048 +05:30 [INF] Route matched with {action = "Update", controller = "ItemMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, InvoiceCoreAPI.DTO.ItemmasterDto) on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
-2026-09-06 12:40:18.201 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 5), @Itemcode='?' (Size = 4), @Itemname='?' (Size = 5), Description='?' (Size = 9), @Uom='?' (Size = 2), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-EXEC sp_Itemmaster_Update
-            @Id,
-            @CategoryId,
-            @ItemBarCode,
-            @Itemcode,
-            @Itemname,
-            @Description,
-            @Uom,
-            @Rate,
-            @Minimumstock,
-            @Maximumstock,
-            @IsActive
-2026-09-06 12:40:18.208 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:40:18.213 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI) in 160.7559ms
-2026-09-06 12:40:18.217 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.Update (InvoiceCoreAPI)'
-2026-09-06 12:40:18.219 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/v1/ItemMaster/Update/3 - 200 null application/json; charset=utf-8 222.5263ms
-2026-09-06 12:40:35.127 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - null null
-2026-09-06 12:40:35.148 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:40:35.158 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:40:35.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - 401 0 null 34.0305ms
-2026-09-06 12:42:22.725 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2026-09-06 12:42:23.022 +05:30 [INF] Now listening on: http://localhost:5120
-2026-09-06 12:42:23.212 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2026-09-06 12:42:23.216 +05:30 [INF] Hosting environment: Development
-2026-09-06 12:42:23.217 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI
-2026-09-06 12:42:25.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:42:25.810 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 402.568ms
-2026-09-06 12:42:25.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:42:25.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:42:25.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 17.1691ms
-2026-09-06 12:42:25.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.9859ms
-2026-09-06 12:42:26.095 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:42:26.156 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.4346ms
-2026-09-06 12:42:32.724 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - null null
-2026-09-06 12:42:32.819 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:42:32.850 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.UserController (InvoiceCoreAPI).
-2026-09-06 12:42:33.367 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.UsersDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2026-09-06 12:42:33.406 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI) in 547.9604ms
-2026-09-06 12:42:33.409 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI)'
-2026-09-06 12:42:33.413 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - 200 null application/json; charset=utf-8 689.4788ms
-2026-09-06 12:42:43.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/User/GetById/1 - null null
-2026-09-06 12:42:43.578 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.UserController.GetById (InvoiceCoreAPI)'
-2026-09-06 12:42:43.595 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller InvoiceCoreAPI.Controllers.UserController (InvoiceCoreAPI).
-2026-09-06 12:42:43.676 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[InvoiceCoreAPI.DTO.UsersDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2026-09-06 12:42:43.682 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.UserController.GetById (InvoiceCoreAPI) in 83.1058ms
-2026-09-06 12:42:43.685 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.UserController.GetById (InvoiceCoreAPI)'
-2026-09-06 12:42:43.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/User/GetById/1 - 200 null application/json; charset=utf-8 120.8217ms
-2026-09-06 12:43:02.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - null null
-2026-09-06 12:43:02.952 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:43:02.959 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:43:02.962 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - 401 0 null 29.6202ms
-2026-09-06 12:43:10.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - null null
-2026-09-06 12:43:10.221 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:43:10.224 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:43:10.226 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - 401 0 null 33.5234ms
-2026-09-06 12:43:21.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
-2026-09-06 12:43:21.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 15.093ms
-2026-09-06 12:43:21.100 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_vs/browserLink - null null
-2026-09-06 12:43:21.100 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - null null
-2026-09-06 12:43:21.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 10.7061ms
-2026-09-06 12:43:21.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2477ms
-2026-09-06 12:43:21.244 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
-2026-09-06 12:43:21.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.8314ms
-2026-09-06 12:43:28.709 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - null null
-2026-09-06 12:43:28.730 +05:30 [INF] Authorization failed. These requirements were not met:
-DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
-2026-09-06 12:43:28.732 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
-2026-09-06 12:43:28.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - 401 0 null 25.5387ms
+2026-09-06 16:58:28.730 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.ItemmasterDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:58:28.748 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI) in 160.7375ms
+2026-09-06 16:58:28.752 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:28.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/GetAll - 200 null application/json; charset=utf-8 187.0412ms
+2026-09-06 16:58:40.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - null null
+2026-09-06 16:58:40.981 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:40.990 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.UserController (InvoiceCoreAPI).
+2026-09-06 16:58:41.014 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.UsersDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:58:41.020 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI) in 25.742ms
+2026-09-06 16:58:41.023 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.UserController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:41.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/User/GetAll - 200 null application/json; charset=utf-8 51.3913ms
+2026-09-06 16:58:49.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - null null
+2026-09-06 16:58:49.180 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.VendorController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:49.186 +05:30 [INF] Route matched with {action = "GetAll", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller InvoiceCoreAPI.Controllers.VendorController (InvoiceCoreAPI).
+2026-09-06 16:58:49.214 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetAll
+2026-09-06 16:58:49.272 +05:30 [INF] Executing OkObjectResult, writing value of type 'InvoiceCoreAPI.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[InvoiceCoreAPI.DTO.VendorDto, InvoiceCoreAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-06 16:58:49.286 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.VendorController.GetAll (InvoiceCoreAPI) in 95.9129ms
+2026-09-06 16:58:49.290 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.VendorController.GetAll (InvoiceCoreAPI)'
+2026-09-06 16:58:49.292 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Vendor/GetAll - 200 null application/json; charset=utf-8 119.0399ms
+2026-09-06 17:01:24.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/TestException - null null
+2026-09-06 17:01:24.899 +05:30 [INF] Executing endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.TestException (InvoiceCoreAPI)'
+2026-09-06 17:01:24.908 +05:30 [INF] Route matched with {action = "TestException", controller = "ItemMaster"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestException() on controller InvoiceCoreAPI.Controllers.ItemMasterController (InvoiceCoreAPI).
+2026-09-06 17:01:39.225 +05:30 [INF] Executed action InvoiceCoreAPI.Controllers.ItemMasterController.TestException (InvoiceCoreAPI) in 14310.4529ms
+2026-09-06 17:01:39.228 +05:30 [INF] Executed endpoint 'InvoiceCoreAPI.Controllers.ItemMasterController.TestException (InvoiceCoreAPI)'
+2026-09-06 17:01:39.253 +05:30 [ERR] Unhandled exception occurred. Method: GET, Path: /api/v1/ItemMaster/TestException
+System.Exception: This is a test exception
+   at InvoiceCoreAPI.Controllers.ItemMasterController.TestException() in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Controllers\ItemMasterController.cs:line 222
+   at lambda_method394(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at InvoiceCoreAPI.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\Middleware\ExceptionHandlingMiddleware.cs:line 22
+2026-09-06 17:01:39.290 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/v1/ItemMaster/TestException - 500 null application/json 14415.0671ms
