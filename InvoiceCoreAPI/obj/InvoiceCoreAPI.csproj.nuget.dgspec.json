@@ -95,6 +95,10 @@
               "target": "Package",
               "version": "[4.20.72, )"
             },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[10.0.0, )"
