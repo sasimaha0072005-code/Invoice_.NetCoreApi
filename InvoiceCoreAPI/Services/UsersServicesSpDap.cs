@@ -1,5 +1,6 @@
 ﻿using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
+using InvoiceCoreAPI.Entities;
 using InvoiceCoreAPI.Models;
 using Microsoft.AspNetCore.Identity;
 using InvoiceCoreAPI.Entities;
@@ -12,7 +13,7 @@ public class UserServiceSpDap : IUsersService
     private readonly PasswordHasher<Users> _passwordHasher;
 
     public UserServiceSpDap(
-        IUsersRepository repository)
+         IUsersRepository repository)
     {
         _repository = repository;
 

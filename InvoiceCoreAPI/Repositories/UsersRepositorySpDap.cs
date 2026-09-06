@@ -2,8 +2,12 @@
 using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Entities;
+using ProductApi.Contracts;
+using ProductApi.DTOs;
 using System.Data;
+
 namespace InvoiceCoreAPI.Repositories;
+
 public class UserRepositorySpDap : IUsersRepository
 {
     private readonly IDbConnection _connection;
@@ -119,18 +123,25 @@ public class UserRepositorySpDap : IUsersRepository
     }
 
     public async Task<bool> DeleteAsync(int id, string updatedBy)
+
     {
+
         var parameters = new DynamicParameters();
 
         parameters.Add("Id", id);
+
         parameters.Add("UpdatedBy", updatedBy);
 
         var result = await _connection.QuerySingleAsync<bool>(
+
             "dbo.sp_Users_Delete",
+
             parameters,
+
             commandType: CommandType.StoredProcedure);
 
         return result;
+
     }
     /* public async Task<bool> DeleteAsync(int id, string updatedBy)
      {
@@ -187,3 +198,5 @@ public class UserRepositorySpDap : IUsersRepository
         return result > 0;
     }
 }
+
+  

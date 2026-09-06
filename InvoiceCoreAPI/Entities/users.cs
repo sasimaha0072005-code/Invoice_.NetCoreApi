@@ -62,6 +62,8 @@ public class Users
 
     [Required]
     [StringLength(100)]
+    public DateTime? LastLoginDate { get; set; }
+
     public string CreatedBy { get; set; } = string.Empty;
 
     public DateTime CreatedDate { get; set; }

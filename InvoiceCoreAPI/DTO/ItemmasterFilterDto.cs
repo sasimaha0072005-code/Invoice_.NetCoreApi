@@ -1,7 +1,7 @@
 ﻿namespace InvoiceCoreAPI.DTOs;
 
-public class ItemmasterFilterDto
-{
+    public class ItemmasterFilterDto
+    {
     public int? CategoryId { get; set; }
 
     public string? ItemBarCode { get; set; }
