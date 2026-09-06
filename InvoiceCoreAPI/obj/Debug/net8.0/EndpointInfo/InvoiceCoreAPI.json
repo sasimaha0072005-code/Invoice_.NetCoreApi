@@ -5,19 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Category/GetAll": {
+    "/api/v1/Category/GetAll": {
       "get": {
         "tags": [
           "Category"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -26,7 +17,7 @@
         }
       }
     },
-    "/api/Category/GetById/{id}": {
+    "/api/v1/Category/GetById/{id}": {
       "get": {
         "tags": [
           "Category"
@@ -40,13 +31,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -56,19 +40,10 @@
         }
       }
     },
-    "/api/Category/Create": {
+    "/api/v1/Category/Create": {
       "post": {
         "tags": [
           "Category"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -96,7 +71,7 @@
         }
       }
     },
-    "/api/Category/Update/{id}": {
+    "/api/v1/Category/Update/{id}": {
       "put": {
         "tags": [
           "Category"
@@ -110,13 +85,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -145,7 +113,7 @@
         }
       }
     },
-    "/api/Category/Delete/{id}": {
+    "/api/v1/Category/Delete/{id}": {
       "delete": {
         "tags": [
           "Category"
@@ -159,13 +127,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -175,7 +136,7 @@
         }
       }
     },
-    "/api/Category/GetAllPaged": {
+    "/api/v1/Category/GetAllPaged": {
       "get": {
         "tags": [
           "Category"
@@ -212,13 +173,6 @@
               "format": "int32",
               "default": 10
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -228,20 +182,11 @@
         }
       }
     },
-    "/api/Customer/GetAll": {
+    "/api/v1/Customer/GetAll": {
       "get": {
         "tags": [
           "Customer"
         ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -249,7 +194,7 @@
         }
       }
     },
-    "/api/Customer/GetById/{id}": {
+    "/api/v1/Customer/GetById/{id}": {
       "get": {
         "tags": [
           "Customer"
@@ -263,13 +208,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -279,19 +217,10 @@
         }
       }
     },
-    "/api/Customer/Create": {
+    "/api/v1/Customer/Create": {
       "post": {
         "tags": [
           "Customer"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -319,7 +248,7 @@
         }
       }
     },
-    "/api/Customer/Update/{id}": {
+    "/api/v1/Customer/Update/{id}": {
       "put": {
         "tags": [
           "Customer"
@@ -333,13 +262,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -368,7 +290,7 @@
         }
       }
     },
-    "/api/Customer/Delete/{id}": {
+    "/api/v1/Customer/Delete/{id}": {
       "delete": {
         "tags": [
           "Customer"
@@ -382,13 +304,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -398,7 +313,7 @@
         }
       }
     },
-    "/api/Customer/GetAllPaged": {
+    "/api/v1/Customer/GetAllPaged": {
       "get": {
         "tags": [
           "Customer"
@@ -448,13 +363,6 @@
               "type": "integer",
               "format": "int32",
               "default": 10
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -881,19 +789,10 @@
         }
       }
     },
-    "/api/Vendor/GetAll": {
+    "/api/v1/Vendor/GetAll": {
       "get": {
         "tags": [
           "Vendor"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -902,7 +801,7 @@
         }
       }
     },
-    "/api/Vendor/GetById/{id}": {
+    "/api/v1/Vendor/GetById/{id}": {
       "get": {
         "tags": [
           "Vendor"
@@ -916,13 +815,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -932,19 +824,10 @@
         }
       }
     },
-    "/api/Vendor/Create": {
+    "/api/v1/Vendor/Create": {
       "post": {
         "tags": [
           "Vendor"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -972,7 +855,7 @@
         }
       }
     },
-    "/api/Vendor/Update/{id}": {
+    "/api/v1/Vendor/Update/{id}": {
       "put": {
         "tags": [
           "Vendor"
@@ -986,13 +869,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -1021,7 +897,7 @@
         }
       }
     },
-    "/api/Vendor/Delete/{id}": {
+    "/api/v1/Vendor/Delete/{id}": {
       "delete": {
         "tags": [
           "Vendor"
@@ -1035,13 +911,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -1051,7 +920,7 @@
         }
       }
     },
-    "/api/Vendor/GetAllPaged": {
+    "/api/v1/Vendor/GetAllPaged": {
       "get": {
         "tags": [
           "Vendor"
@@ -1101,13 +970,6 @@
               "type": "integer",
               "format": "int32",
               "default": 10
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],

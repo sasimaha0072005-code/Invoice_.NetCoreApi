@@ -2,8 +2,6 @@
 using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Entities;
-using ProductApi.Contracts;
-using ProductApi.DTOs;
 using System.Data;
 
 namespace InvoiceCoreAPI.Repositories;
