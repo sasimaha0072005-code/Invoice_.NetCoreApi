@@ -7,14 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using Microsoft.AspNetCore.Identity.Data;
-using ProductApi.DTOs;
-namespace ProductApi.Controllers;
+
+namespace InvoiceCoreAPI.Controllers;
 
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
 [ApiVersion("1.0")]
-[Authorize]
 public class LoginController : ControllerBase
 {
     private readonly IUsersService _userService;

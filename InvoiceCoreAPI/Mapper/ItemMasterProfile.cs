@@ -8,11 +8,11 @@ namespace InvoiceCoreAPI.Mapper
 
 {
 
-    public class ItemMasterProfile : Profile
+    public class ItemmasterProfile : Profile
 
     {
 
-        public ItemMasterProfile()
+        public ItemmasterProfile()
 
         {
 

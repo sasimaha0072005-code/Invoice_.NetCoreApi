@@ -3,28 +3,25 @@ using InvoiceCoreAPI.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProductApi.DTOs;
+namespace InvoiceCoreAPI.Controllers;
 
-
-namespace ProductApi.Controllers;
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
 [ApiVersion("1.0")]
-//[Authorize]
+[Authorize]
 public class UserController : ControllerBase
 {
     private readonly IUsersService _service;
     private readonly ILogger<UserController> _logger;
 
     public UserController(
-         IUsersService service,
+        IUsersService service,
         ILogger<UserController> logger)
     {
         _service = service;
         _logger = logger;
     }
 
-   
     [HttpGet("GetAll")]
     public async Task<IActionResult> GetAll()
     {
@@ -49,8 +46,6 @@ public class UserController : ControllerBase
                 });
         }
     }
-
-   
 
     [HttpGet("GetById/{id:int}")]
     public async Task<IActionResult> GetById(int id)
@@ -83,15 +78,14 @@ public class UserController : ControllerBase
         }
     }
 
-    
     [HttpPost("GetPaged")]
     public async Task<IActionResult> GetPaged(
-        [FromBody] UserFilterDto filter)
+        [FromBody] UsersFilterDto filter)
     {
         try
         {
             var response =
-                await _service.GetPagedAsync(filter);
+                await _service.GetAllPagedAsync(filter);
 
             return Ok(response);
         }
@@ -111,17 +105,15 @@ public class UserController : ControllerBase
         }
     }
 
-  
-
     [HttpPost("Create")]
     [AllowAnonymous]
     public async Task<IActionResult> Create(
-        [FromBody] UserCreateDto dto)
+        [FromBody] UsersCreateDto dto)
     {
         try
         {
             var response =
-                await _service.CreateAsync(dto);
+                await _service.AddAsync(dto);
 
             if (!response.Success)
             {
@@ -145,8 +137,6 @@ public class UserController : ControllerBase
                 });
         }
     }
-
-   
 
     [HttpPut("Update/{id:int}")]
     public async Task<IActionResult> Update(
@@ -188,7 +178,7 @@ public class UserController : ControllerBase
         try
         {
             var response =
-                await _service.DeleteAsync(id,updatedBy);
+                await _service.DeleteAsync(id, updatedBy);
 
             if (!response.Success)
             {

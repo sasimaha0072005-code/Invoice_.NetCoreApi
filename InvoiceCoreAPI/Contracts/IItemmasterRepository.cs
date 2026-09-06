@@ -1,8 +1,6 @@
 ﻿using InvoiceCoreAPI.DTO;
+using InvoiceCoreAPI.DTOs;
 using InvoiceCoreAPI.Entities;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace InvoiceCoreAPI.Contracts;
 
@@ -13,12 +11,5 @@ public interface IItemmasterRepository
     Task<Itemmaster?> GetByIdAsync(int id);
     Task<bool> UpdateAsync(Itemmaster itemmaster);
     Task<bool> DeleteAsync(int id);
-    Task<PagedResultDto<Itemmaster>> GetAllPagedAsync(
-    int? CategoryId,
-    string? itemName,
-    string? uom,
-    int pageNumber,
-    int pageSize);
+    Task<PagedResultDto<Itemmaster>> GetAllPagedAsync(ItemmasterFilterDto search);
 }
-
-

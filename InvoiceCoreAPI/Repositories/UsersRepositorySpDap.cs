@@ -2,8 +2,6 @@
 using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Entities;
-using ProductApi.Contracts;
-using ProductApi.DTOs;
 using System.Data;
 
 namespace InvoiceCoreAPI.Repositories;
@@ -59,7 +57,7 @@ public class UserRepositorySpDap : IUsersRepository
             commandType: CommandType.StoredProcedure);
     }
 
-    public async Task<int> InsertAsync(Users user)
+    public async Task<int> AddAsync(Users user)
     {
         var parameters = new
         {
@@ -98,8 +96,7 @@ public class UserRepositorySpDap : IUsersRepository
         parameters.Add("Id", id);
         parameters.Add("UserName", user.UserName);
         parameters.Add("Email", user.Email);
-        //parameters.Add("PasswordHash", user.PasswordHash);
-        parameters.Add("FirstName", user.FirstName);
+        //parameters.Add("PasswordHash", user.PasswordHash);parameters.Add("FirstName", user.FirstName);
         parameters.Add("MiddleName", user.MiddleName);
         parameters.Add("LastName", user.LastName);
         parameters.Add("DisplayName", user.DisplayName);
@@ -144,9 +141,21 @@ public class UserRepositorySpDap : IUsersRepository
         return result;
 
     }
+    /* public async Task<bool> DeleteAsync(int id, string updatedBy)
+     {
+         var result = await _connection.ExecuteAsync(
+             "dbo.sp_Users_Delete",
+             new
+             {
+                 Id = id,
+                 UpdatedBy = updatedBy
+             },
+             commandType: CommandType.StoredProcedure);
 
-    public async Task<PagedResultDto<Users>> GetPagedAsync(
-        UserFilterDto filter)
+         return result > 0;
+     }*/
+    public async Task<PagedResultDto<Users>> GetAllPagedAsync(
+    UsersFilterDto filter)
     {
         using var multi = await _connection.QueryMultipleAsync(
             "dbo.sp_Users_GetPaged",

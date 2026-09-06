@@ -4,6 +4,7 @@ using InvoiceCoreAPI.Contracts;
 using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Models;
 using Microsoft.AspNetCore.Authorization;
+using InvoiceCoreAPI.DTOs;
 
 namespace InvoiceCoreAPI.Controllers
 {
@@ -15,11 +16,13 @@ namespace InvoiceCoreAPI.Controllers
     public class ItemMasterController : ControllerBase
     {
         private readonly IItemMasterService _service;
-
-        public ItemMasterController(IItemMasterService service)
+        private readonly ILogger<ItemMasterController> _logger;
+        public ItemMasterController(IItemMasterService service, ILogger<ItemMasterController> logger)
         {
             _service = service;
+            _logger = logger;
         }
+
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
@@ -29,7 +32,7 @@ namespace InvoiceCoreAPI.Controllers
                 return Ok(new ApiResponse<IEnumerable<ItemmasterDto>>
                 {
                     Success = true,
-                    Message = "Itemmastyer retrieved successfully",
+                    Message = "Itemmaster retrieved successfully",
                     Data = data
                 });
             }
@@ -54,7 +57,6 @@ namespace InvoiceCoreAPI.Controllers
             try
             {
                 var item = await _service.GetByIdAsync(id);
-
                 if (item == null)
                 {
                     return NotFound(new ApiResponse<string>
@@ -63,7 +65,6 @@ namespace InvoiceCoreAPI.Controllers
                         Message = "Item not found"
                     });
                 }
-
                 return Ok(new ApiResponse<ItemmasterDto>
                 {
                     Success = true,
@@ -80,19 +81,18 @@ namespace InvoiceCoreAPI.Controllers
                     Error = new ApiError
                     {
                         Code = "500",
-                        Details = ex.Message 
+                        Details = ex.Message
                     }
                 });
             }
         }
 
         [HttpPost("Create")]
-        public async Task<IActionResult> Create([FromBody] ItemmasterDto dto)
+        public async Task<IActionResult> Create(ItemmasterDto dto)
         {
             try
             {
                 var id = await _service.AddAsync(dto);
-
                 return Ok(new ApiResponse<int>
                 {
                     Success = true,
@@ -116,14 +116,12 @@ namespace InvoiceCoreAPI.Controllers
         }
 
         [HttpPut("Update/{id}")]
-        public async Task<IActionResult> Update(ItemmasterDto dto, int id)
+        public async Task<IActionResult> Update(int id, ItemmasterDto dto)
         {
             try
             {
                 dto.Id = id;
-
                 var updated = await _service.UpdateAsync(dto);
-
                 if (!updated)
                 {
                     return NotFound(new ApiResponse<string>
@@ -132,11 +130,10 @@ namespace InvoiceCoreAPI.Controllers
                         Message = "Item not found"
                     });
                 }
-
                 return Ok(new ApiResponse<string>
                 {
                     Success = true,
-                    Message = "Item updated successfully"
+                    Message = "Item Updated successfully"
                 });
             }
             catch (Exception ex)
@@ -160,7 +157,6 @@ namespace InvoiceCoreAPI.Controllers
             try
             {
                 var deleted = await _service.DeleteAsync(id);
-
                 if (!deleted)
                 {
                     return NotFound(new ApiResponse<string>
@@ -169,7 +165,6 @@ namespace InvoiceCoreAPI.Controllers
                         Message = "Item not found"
                     });
                 }
-
                 return Ok(new ApiResponse<string>
                 {
                     Success = true,
@@ -183,6 +178,7 @@ namespace InvoiceCoreAPI.Controllers
                     Success = false,
                     Message = "Error deleting item",
                     Error = new ApiError
+
                     {
                         Code = "500",
                         Details = ex.Message
@@ -190,19 +186,13 @@ namespace InvoiceCoreAPI.Controllers
                 });
             }
         }
-    
-    [HttpGet("GetAllPaged")]
-        public async Task<IActionResult> GetAllPaged(
-        int? categoryId,
-        string? itemName,
-        string? uom,
-        int pageNumber = 1,
-        int pageSize = 10)
+        [HttpGet("GetAllPaged")]
+        public async Task<IActionResult> GetAllPaged([FromQuery] ItemmasterFilterDto search)
         {
             try
             {
-                var result = await _service.GetAllPagedAsync(
-                   categoryId , itemName, uom, pageNumber, pageSize);
+                var result = await _service.GetAllPagedAsync(search);
+                _logger.LogInformation("Items retrieved successfully");
 
                 return Ok(new ApiResponse<IEnumerable<ItemmasterDto>>
                 {
@@ -226,6 +216,11 @@ namespace InvoiceCoreAPI.Controllers
                 });
             }
         }
-    }
-    }
 
+        [HttpGet("TestException")]
+        public IActionResult TestException()
+        {
+            throw new Exception("This is a test exception");
+        }
+    }
+}

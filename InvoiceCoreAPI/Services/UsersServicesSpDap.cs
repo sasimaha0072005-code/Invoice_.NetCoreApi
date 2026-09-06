@@ -3,10 +3,9 @@ using InvoiceCoreAPI.DTO;
 using InvoiceCoreAPI.Entities;
 using InvoiceCoreAPI.Models;
 using Microsoft.AspNetCore.Identity;
-using ProductApi.Contracts;
-using ProductApi.DTOs;
-
-
+using InvoiceCoreAPI.Entities;
+using InvoiceCoreAPI.Models;
+namespace InvoiceCoreAPI.Services;
 public class UserServiceSpDap : IUsersService
 {
     private readonly IUsersRepository _repository;
@@ -58,8 +57,8 @@ public class UserServiceSpDap : IUsersService
         };
     }
 
-    public async Task<ApiResponse<UsersDto>> CreateAsync(
-        UserCreateDto dto)
+    public async Task<ApiResponse<UsersDto>> AddAsync(
+        UsersCreateDto dto)
     {
         var existingUser =
             await _repository.GetByUserNameAsync(dto.UserName);
@@ -114,7 +113,7 @@ public class UserServiceSpDap : IUsersService
                 dto.Password);
 
         var id =
-            await _repository.InsertAsync(entity);
+            await _repository.AddAsync(entity);
 
         entity.Id = id;
 
@@ -213,17 +212,16 @@ public class UserServiceSpDap : IUsersService
         {
             Success = result,
             Message = result
-                ? "User deleted successfully."
-                : "Unable to delete user.",
+                ? "User deleted successfully." : "Unable to delete user.",
             Data = result
         };
     }
 
     public async Task<ApiResponse<PagedResultDto<UsersDto>>>
-     GetPagedAsync(UserFilterDto filter)
+     GetAllPagedAsync(UsersFilterDto filter)
     {
         var result =
-            await _repository.GetPagedAsync(filter);
+            await _repository.GetAllPagedAsync(filter);
 
         return new ApiResponse<PagedResultDto<UsersDto>>
         {
