@@ -11,3 +11,4 @@ namespace Invoice.AI
         public string? Summary { get; set; }
     }
 }
+
