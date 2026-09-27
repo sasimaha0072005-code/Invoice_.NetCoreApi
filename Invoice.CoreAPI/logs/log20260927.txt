@@ -1,0 +1,268 @@
+2026-09-27 12:09:52.264 +05:30 [INF] User profile is available. Using 'C:\Users\SASIDHARAN G\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-27 12:09:52.591 +05:30 [INF] Now listening on: http://localhost:5135
+2026-09-27 12:09:52.744 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-27 12:09:52.744 +05:30 [INF] Hosting environment: Development
+2026-09-27 12:09:52.744 +05:30 [INF] Content root path: C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\Invoice.CoreAPI
+2026-09-27 12:09:56.542 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger - null null
+2026-09-27 12:09:57.926 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger - 301 null null 1404.0136ms
+2026-09-27 12:09:57.930 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/index.html - null null
+2026-09-27 12:09:58.100 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/index.html - 200 null text/html;charset=utf-8 170.6178ms
+2026-09-27 12:09:58.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui.css - null null
+2026-09-27 12:09:58.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/index.css - null null
+2026-09-27 12:09:58.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui-bundle.js - null null
+2026-09-27 12:09:58.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui-standalone-preset.js - null null
+2026-09-27 12:09:58.169 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/index.js - null null
+2026-09-27 12:09:58.170 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-27 12:09:58.173 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/index.js - 200 null application/javascript;charset=utf-8 3.8631ms
+2026-09-27 12:09:58.176 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 5.9878ms
+2026-09-27 12:09:58.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/_vs/browserLink - null null
+2026-09-27 12:09:58.197 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/index.css - 200 152 text/css 32.0998ms
+2026-09-27 12:09:58.197 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui.css - 200 26499 text/css 35.5862ms
+2026-09-27 12:09:58.205 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui-standalone-preset.js - 200 77731 text/javascript 38.2632ms
+2026-09-27 12:09:58.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/swagger-ui-bundle.js - 200 421507 text/javascript 59.8322ms
+2026-09-27 12:09:58.311 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.7936ms
+2026-09-27 12:09:58.494 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/v1/swagger.json - null null
+2026-09-27 12:09:58.511 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/swagger/favicon-32x32.png - null null
+2026-09-27 12:09:58.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/favicon-32x32.png - 200 628 image/png 2.8797ms
+2026-09-27 12:09:58.527 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.243ms
+2026-09-27 12:13:33.835 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5135/api/v1/User/Create - application/json 472
+2026-09-27 12:13:33.966 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI)'
+2026-09-27 12:13:34.014 +05:30 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.UserCreateDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-09-27 12:13:34.927 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:13:34.968 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI) in 946.7231ms
+2026-09-27 12:13:34.969 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI)'
+2026-09-27 12:13:34.972 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5135/api/v1/User/Create - 200 null application/json; charset=utf-8 1136.9924ms
+2026-09-27 12:13:50.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:13:50.669 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:13:50.676 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:13:50.677 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 53.1066ms
+2026-09-27 12:14:24.739 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5135/api/Login - application/json 50
+2026-09-27 12:14:24.748 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:14:24.766 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-09-27 12:14:24.991 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:14:24.999 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 232.6569ms
+2026-09-27 12:14:24.999 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:14:24.999 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5135/api/Login - 200 null application/json; charset=utf-8 260.1768ms
+2026-09-27 12:15:20.886 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:15:20.922 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:15:20.943 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:15:20.945 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:15:20.947 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:15:20.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 61.3365ms
+2026-09-27 12:16:16.829 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5135/api/Login - application/json 50
+2026-09-27 12:16:16.830 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:16:16.831 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-09-27 12:16:16.953 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:16:16.954 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 122.952ms
+2026-09-27 12:16:16.954 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:16:16.954 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5135/api/Login - 200 null application/json; charset=utf-8 125.1785ms
+2026-09-27 12:17:12.064 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:12.066 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:12.066 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:12.067 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:12.067 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:12.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 3.7077ms
+2026-09-27 12:17:14.109 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:14.110 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:14.110 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:14.111 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:14.111 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:14.111 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.5218ms
+2026-09-27 12:17:14.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:14.976 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:14.976 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:14.977 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:14.977 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:14.977 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.3499ms
+2026-09-27 12:17:22.268 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:22.269 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:22.270 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:22.270 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:22.270 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:22.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.0725ms
+2026-09-27 12:17:23.041 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:23.042 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:23.042 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:23.042 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:23.042 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:23.043 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 1.6842ms
+2026-09-27 12:17:23.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:23.671 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:23.671 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:23.671 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:23.671 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:23.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.9428ms
+2026-09-27 12:17:24.285 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:24.286 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:24.287 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:24.287 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:24.287 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:24.287 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 1.7949ms
+2026-09-27 12:17:24.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:24.503 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:24.503 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:24.503 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:24.504 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:24.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 1.9586ms
+2026-09-27 12:17:24.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:24.719 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:24.719 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:24.719 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:24.719 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:24.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.6223ms
+2026-09-27 12:17:24.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:17:24.931 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-09-27 12:17:24.931 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-09-27 12:17:24.931 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 12:17:24.931 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 12:17:24.932 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 401 0 null 2.4243ms
+2026-09-27 12:18:03.161 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5135/api/Login - application/json 50
+2026-09-27 12:18:03.162 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:18:03.162 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-09-27 12:18:03.263 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:18:03.264 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 101.2395ms
+2026-09-27 12:18:03.264 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-09-27 12:18:03.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5135/api/Login - 200 null application/json; charset=utf-8 103.0474ms
+2026-09-27 12:18:56.990 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - null null
+2026-09-27 12:18:57.047 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-09-27 12:18:57.061 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-09-27 12:18:57.077 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 12:18:57.081 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI) in 20.5927ms
+2026-09-27 12:18:57.081 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-09-27 12:18:57.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetAll - 200 null application/json; charset=utf-8 118.2633ms
+2026-09-27 12:19:23.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5135/api/v1/User/GetById/323 - null null
+2026-09-27 12:19:23.786 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI)'
+2026-09-27 12:19:23.819 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-09-27 12:19:23.830 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:19:23.830 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI) in 11.3122ms
+2026-09-27 12:19:23.830 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI)'
+2026-09-27 12:19:23.831 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5135/api/v1/User/GetById/323 - 200 null application/json; charset=utf-8 46.8888ms
+2026-09-27 12:20:05.984 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5135/api/v1/User/Update/323 - application/json 461
+2026-09-27 12:20:05.986 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI)'
+2026-09-27 12:20:06.002 +05:30 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.UsersUpdateDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-09-27 12:20:06.163 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 12:20:06.163 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI) in 161.6656ms
+2026-09-27 12:20:06.163 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI)'
+2026-09-27 12:20:06.164 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5135/api/v1/User/Update/323 - 400 null application/json; charset=utf-8 215.1051ms
