@@ -9,14 +9,7 @@ namespace Invoice.DAL.Test;
 
 public class ItemmasterRepositoryTests
 {
-    private const string ConnectionString =
-        "Server=DESKTOP-GLVHGBK\\SQLEXPRESS,1435;" +
-        "Database=Invoice_Test;" +
-        "User Id=sa;" +
-        "Password=123456;" +
-        "Encrypt=False;" +
-        "TrustServerCertificate=True";
-
+    private static string ConnectionString = TestDatabase.ConnectionString;
     private static AppDbContext CreateDbContext()
     {
         var options = new DbContextOptionsBuilder<AppDbContext>()
