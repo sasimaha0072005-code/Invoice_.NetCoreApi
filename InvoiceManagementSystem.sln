@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.8.12009.203 stable
+VisualStudioVersion = 18.8.12009.203
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceCoreAPI", "InvoiceCoreAPI\InvoiceCoreAPI.csproj", "{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.Model", "Invoice.Model\Invoice.Model.csproj", "{00655B0D-84B7-4957-8E14-9A51E5723F89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.DAL.Test", "Invoice.DAL.Test\Invoice.DAL.Test.csproj", "{FBD4322D-EA2D-4E43-B2B1-5AE951187098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice.BAL.Test", "Invoice.BAL.Test\Invoice.BAL.Test.csproj", "{D49D5A55-5B86-42B3-AA31-681C45991CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{FBD4322D-EA2D-4E43-B2B1-5AE951187098}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBD4322D-EA2D-4E43-B2B1-5AE951187098}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBD4322D-EA2D-4E43-B2B1-5AE951187098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49D5A55-5B86-42B3-AA31-681C45991CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49D5A55-5B86-42B3-AA31-681C45991CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49D5A55-5B86-42B3-AA31-681C45991CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49D5A55-5B86-42B3-AA31-681C45991CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

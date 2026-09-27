@@ -16,4 +16,5 @@ public interface IVendorRepository
         string? City,
         int pageNumber,
         int pageSize);
+    Task<int> GetVendorCountAsync(bool? activeOnly);
 }
