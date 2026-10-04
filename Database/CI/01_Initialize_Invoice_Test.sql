@@ -1376,7 +1376,6 @@ CREATE OR ALTER PROCEDURE dbo.sp_User_Update
     @Id INT,
     @UserName VARCHAR(100),
     @Email VARCHAR(255),
-    @PasswordHash VARCHAR(500),
     @FirstName VARCHAR(100),
     @MiddleName VARCHAR(100) = NULL,
     @LastName VARCHAR(100),
