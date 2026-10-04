@@ -16,5 +16,4 @@ obj/
 TestResults/
 coveragereport/
 CoverageReport/ 
-
 Invoice.CoreAPI/logs/*.txt
