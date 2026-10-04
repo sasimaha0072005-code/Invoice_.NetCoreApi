@@ -4,6 +4,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*Invoice.CoreAPI/logs/.txt
  
 # Build files
 bin/
@@ -14,4 +15,4 @@ obj/
  
 TestResults/
 coveragereport/
-CoverageReport/
+CoverageReport/ 
