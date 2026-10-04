@@ -1434,7 +1434,6 @@ BEGIN
     SET
         UserName = @UserName,
         Email = @Email,
-        PasswordHash = @PasswordHash,
         FirstName = @FirstName,
         MiddleName = @MiddleName,
         LastName = @LastName,
