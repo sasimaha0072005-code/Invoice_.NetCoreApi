@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\vendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\vendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\usersupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\usersfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\usersfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\usersfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\usersfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoice.dtos\\userfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E226097-C1DA-46A9-9F55-DB9D4E0A8EEF}|Invoice.DTOs\\Invoice.DTOs.csproj|solutionrelative:invoice.dtos\\userfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|c:\\test\\api\\invoice_.netcoreapi\\invoice_.netcoreapi\\invoicecoreapi\\dto\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC78DAA4-1EA2-4EC7-A854-6C2A813FD6C1}|InvoiceCoreAPI\\InvoiceCoreAPI.csproj|solutionrelative:invoicecoreapi\\dto\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
-              "RelativeDocumentMoniker": "InvoiceCoreAPI\\Program.cs",
-              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\Program.cs",
-              "RelativeToolTip": "InvoiceCoreAPI\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAC8AAAA0AAAAAAAAAA==",
+              "Title": "VendorDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\VendorDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\VendorDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\VendorDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\VendorDto.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowCoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T15:47:14.155Z",
+              "WhenOpened": "2026-09-13T12:12:37.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UserUpdateDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserUpdateDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UserUpdateDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:10:53.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersUpdateDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersUpdateDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\UsersUpdateDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersUpdateDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\UsersUpdateDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:09:51.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersUpdateDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersUpdateDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UsersUpdateDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersUpdateDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UsersUpdateDto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:10:05.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersFilterDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersFilterDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\UsersFilterDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\UsersFilterDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\UsersFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:08:37.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersFilterDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersFilterDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UsersFilterDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersFilterDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UsersFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:08:55.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UsersDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UsersDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UsersDto.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wB4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:07:57.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserfilterDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserfilterDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UserfilterDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserfilterDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UserfilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:01:29.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "Invoice.DTOs\\UserCreateDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\Invoice.DTOs\\UserCreateDto.cs",
+              "RelativeToolTip": "Invoice.DTOs\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T12:00:39.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PagedResultDto.cs",
+              "DocumentMoniker": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\PagedResultDto.cs",
+              "RelativeDocumentMoniker": "InvoiceCoreAPI\\DTO\\PagedResultDto.cs",
+              "ToolTip": "C:\\Test\\Api\\Invoice_.NetCoreApi\\Invoice_.NetCoreApi\\InvoiceCoreAPI\\DTO\\PagedResultDto.cs",
+              "RelativeToolTip": "InvoiceCoreAPI\\DTO\\PagedResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T11:58:57.542Z",
               "EditorCaption": ""
             },
             {

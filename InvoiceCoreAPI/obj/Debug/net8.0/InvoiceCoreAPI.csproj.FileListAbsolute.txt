@@ -1,12 +1,3 @@
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.csproj.AssemblyReference.cache
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.AssemblyInfoInputs.cache
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.AssemblyInfo.cs
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.csproj.CoreCompileInputs.cache
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.sourcelink.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\appsettings.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\InvoiceCoreAPI.staticwebassets.endpoints.json
@@ -64,6 +55,7 @@ C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\Moq.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\xunit.core.dll
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\OpenAI.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\Serilog.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -90,6 +82,7 @@ C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Net.ServerSentEvents.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -162,6 +155,15 @@ C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.csproj.AssemblyReference.cache
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.AssemblyInfoInputs.cache
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.AssemblyInfo.cs
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.csproj.CoreCompileInputs.cache
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.sourcelink.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -170,6 +172,7 @@ C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\swae.build.ex.cache
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceC.72C8BF59.Up2Date
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.dll
@@ -177,5 +180,3 @@ C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.pdb
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\InvoiceCoreAPI.genruntimeconfig.cache
 C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\obj\Debug\net8.0\ref\InvoiceCoreAPI.dll
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\OpenAI.dll
-C:\Test\Api\Invoice_.NetCoreApi\Invoice_.NetCoreApi\InvoiceCoreAPI\bin\Debug\net8.0\System.Net.ServerSentEvents.dll
