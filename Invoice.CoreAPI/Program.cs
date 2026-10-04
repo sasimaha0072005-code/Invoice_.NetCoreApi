@@ -1,4 +1,5 @@
 using Asp.Versioning;
+using Invoice.AI;
 using Invoice.BAL.Contracts;
 using Invoice.BAL.Mapper;
 using Invoice.BAL.Services;
@@ -349,6 +350,7 @@ builder.Services.AddAuthorization();
 // Build Application
 
 // ============================================================
+builder.Services.AddInvoiceAI(builder.Configuration);
 
 var app = builder.Build();
 
