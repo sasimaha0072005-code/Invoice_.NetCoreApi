@@ -471,9 +471,13 @@ public class ItemmasterRepositoryTests
         await SeedTestDataAsync(context);
 
         var repository = new ItemmasterRepositoriesEFSp(context);
+        var Category = await context.Categories
+            .AsNoTracking()
+            .FirstAsync(x => x.Code == "TST01");
 
         var search = new ItemmasterFilterDto
         {
+            CategoryId = Category.Id,
             IsActive = true,
             PageNumber = 1,
             PageSize = 10
