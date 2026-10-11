@@ -830,27 +830,22 @@ public class VendorRepositoriesTests
     {
 
         await using var context = CreateDbContext();
-
         var repository = new VendorRepositories(context);
 
         await CleanupTestDataAsync(context);
 
         var baselineActive =
-
             await repository.GetVendorCountAsync(true);
 
         var baselineInactive =
-
             await repository.GetVendorCountAsync(false);
 
         await SeedTestDataAsync(context);
 
         var activeCount =
-
             await repository.GetVendorCountAsync(true);
 
         var inactiveCount =
-
             await repository.GetVendorCountAsync(false);
 
         // Active vendors:
