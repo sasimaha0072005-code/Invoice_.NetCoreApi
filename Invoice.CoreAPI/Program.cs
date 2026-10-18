@@ -223,6 +223,10 @@ builder.Services.AddScoped<ISalesInvoiceService, SalesInvoiceServiceEFSp>();
 builder.Services.AddScoped<IStockRepository, StockRepositoryEFSp>();
 builder.Services.AddScoped<IStockService, StockServiceEFSp>();
 
+// ============================================================
+//  Master count Service 
+// ============================================================
+builder.Services.AddScoped<IMasterCountService, MasterCountService>();
 
 // ============================================================
 
@@ -233,6 +237,8 @@ builder.Services.AddScoped<IStockService, StockServiceEFSp>();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
+
+
 
 {
 
