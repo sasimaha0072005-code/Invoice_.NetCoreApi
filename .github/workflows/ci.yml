@@ -1,3 +1,4 @@
+
 name: IMS .NET 10 CI Arul sir
 
 on:
@@ -17,7 +18,6 @@ on:
       - main
 
 # Read repository contents.
-
 # Docker/GHCR push is handled separately in CD.
 
 permissions:
@@ -59,9 +59,7 @@ jobs:
     steps:
 
       # ---------------------------------------------------------
-
       # 1. Checkout source code
-
       # ---------------------------------------------------------
 
       - name: Checkout source code
@@ -69,9 +67,7 @@ jobs:
         uses: actions/checkout@v4
 
       # ---------------------------------------------------------
-
       # 2. Setup .NET 10
-
       # ---------------------------------------------------------
 
       - name: Setup .NET 10
@@ -83,9 +79,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       # ---------------------------------------------------------
-
       # 3. Display .NET version
-
       # ---------------------------------------------------------
 
       - name: Display .NET version
@@ -94,9 +88,7 @@ jobs:
 
 
       # ---------------------------------------------------------
-
       # 4. Install sqlcmd
-
       # ---------------------------------------------------------
 
       - name: Install sqlcmd
@@ -106,27 +98,31 @@ jobs:
         run: |
 
           set -euo pipefail
- 
-          # Remove the incorrect Ubuntu 24.04 repository
 
-          sudo rm -f /etc/apt/sources.list.d/mssql-release.list
- 
-          # Update package lists using the runner's existing repositories
+          # Install Microsoft package repository
+
+          curl -fsSL https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb -o packages-microsoft-prod.deb
+
+          sudo dpkg -i packages-microsoft-prod.deb
+
+          # Update package lists
 
           sudo apt-get update
- 
+
           # Install SQL Server command-line tools
 
           sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
- 
+
           # Add sqlcmd to GitHub Actions PATH
 
           echo "/opt/mssql-tools18/bin" >> "$GITHUB_PATH"
 
+          # Verify installation
+
+          /opt/mssql-tools18/bin/sqlcmd -?
+
       # ---------------------------------------------------------
-
       # 5. Wait for SQL Server
-
       # ---------------------------------------------------------
 
       - name: Wait for SQL Server
@@ -137,20 +133,17 @@ jobs:
 
           echo "Waiting for SQL Server..."
 
-          for i in $(seq 1 40); do
+          for i in $(seq 1 60); do
+
+            echo "Checking SQL Server... Attempt $i/60"
 
             if sqlcmd \
-
               -S localhost,1433 \
-
               -U sa \
-
               -P "$SA_PASSWORD" \
-
               -C \
-
               -l 5 \
-
+              -b \
               -Q "SELECT 1" > /dev/null 2>&1; then
 
               echo "SQL Server is ready after $i attempt(s)."
@@ -159,22 +152,30 @@ jobs:
 
             fi
 
-            echo "Not ready yet... attempt $i/40"
-
-            sleep 3
+            sleep 5
 
           done
 
           echo "::error::SQL Server did not become ready in time."
 
+          echo "========== DOCKER STATUS =========="
+
           docker ps -a
+
+          echo "========== SQL SERVER LOGS =========="
+
+          CONTAINER_ID=$(docker ps -aq --filter ancestor=mcr.microsoft.com/mssql/server:2022-latest | head -n 1)
+
+          if [ -n "$CONTAINER_ID" ]; then
+
+            docker logs "$CONTAINER_ID"
+
+          fi
 
           exit 1
 
       # ---------------------------------------------------------
-
       # 6. Create Invoice_Test database
-
       # ---------------------------------------------------------
 
       - name: Create Invoice_Test database
@@ -200,9 +201,7 @@ jobs:
             -Q "IF DB_ID('Invoice_Test') IS NULL CREATE DATABASE Invoice_Test"
 
       # ---------------------------------------------------------
-
       # 7. Initialize Invoice_Test database
-
       # ---------------------------------------------------------
 
       - name: Initialize Invoice_Test database
@@ -230,9 +229,7 @@ jobs:
             -i "Database/CI/01_Initialize_Invoice_Test.sql"
 
       # ---------------------------------------------------------
-
       # 8. Verify database initialization
-
       # ---------------------------------------------------------
 
       - name: Verify database initialization
@@ -280,9 +277,7 @@ jobs:
             -Q "SET NOCOUNT ON; SELECT COUNT(*) AS StoredProcedureCount FROM sys.procedures"
 
       # ---------------------------------------------------------
-
       # 9. Restore NuGet dependencies
-
       # ---------------------------------------------------------
 
       - name: Restore dependencies
@@ -290,9 +285,7 @@ jobs:
         run: dotnet restore
 
       # ---------------------------------------------------------
-
       # 10. Build solution
-
       # ---------------------------------------------------------
 
       - name: Build solution
@@ -300,9 +293,7 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       # ---------------------------------------------------------
-
       # 11. Run unit tests with code coverage
-
       # ---------------------------------------------------------
 
       - name: Run unit tests with coverage
@@ -322,9 +313,7 @@ jobs:
           --results-directory ./TestResults
 
       # ---------------------------------------------------------
-
       # 12. Restore local tools
-
       # ---------------------------------------------------------
 
       - name: Restore local tools (ReportGenerator)
@@ -332,9 +321,7 @@ jobs:
         run: dotnet tool restore
 
       # ---------------------------------------------------------
-
       # 13. Generate coverage report
-
       # ---------------------------------------------------------
 
       - name: Generate coverage report
@@ -350,9 +337,7 @@ jobs:
           -reporttypes:"Html;Cobertura;MarkdownSummaryGithub"
 
       # ---------------------------------------------------------
-
       # 14. Add coverage summary to GitHub Actions
-
       # ---------------------------------------------------------
 
       - name: Add coverage summary to job
@@ -370,9 +355,7 @@ jobs:
           fi
 
       # ---------------------------------------------------------
-
       # 15. Upload test results
-
       # ---------------------------------------------------------
 
       - name: Upload test results
@@ -390,9 +373,7 @@ jobs:
           if-no-files-found: ignore
 
       # ---------------------------------------------------------
-
       # 16. Upload coverage report
-
       # ---------------------------------------------------------
 
       - name: Upload coverage report
@@ -408,4 +389,3 @@ jobs:
           path: ./CoverageReport
 
           if-no-files-found: ignore
- 
