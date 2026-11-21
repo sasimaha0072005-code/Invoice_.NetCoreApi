@@ -59,7 +59,6 @@ jobs:
       - name: Display .NET version
         run: dotnet --info
  
-      
       # ---------------------------------------------------------
       # 4. Install sqlcmd
       # ---------------------------------------------------------
@@ -67,16 +66,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
+ 
           # Remove the incorrect Ubuntu 24.04 repository
           sudo rm -f /etc/apt/sources.list.d/mssql-release.list
-
+ 
           # Update package lists using the runner's existing repositories
           sudo apt-get update
-
+ 
           # Install SQL Server command-line tools
           sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
-
+ 
           # Add sqlcmd to GitHub Actions PATH
           echo "/opt/mssql-tools18/bin" >> "$GITHUB_PATH"
  
